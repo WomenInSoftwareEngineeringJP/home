@@ -1,4 +1,5 @@
 import createTheme from '@mui/material/styles/createTheme'
+import typography from './typography/default';
 
 const theme = createTheme({
     palette: {
@@ -16,6 +17,7 @@ const theme = createTheme({
         contrastText: '#000',
       },
     },
+    typography
   });
 
   export default theme
