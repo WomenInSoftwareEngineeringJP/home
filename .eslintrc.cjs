@@ -28,4 +28,9 @@ module.exports = {
         '@typescript-eslint/no-unsafe-call': ['off'],
         '@stylistic/ts/indent': ['error', 4],
     },
+    settings: {
+        react: {
+            version: 'detect'
+        },
+    }
 }

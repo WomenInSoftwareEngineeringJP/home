@@ -26,6 +26,7 @@ const DrawerContents: FC = () => {
         <List>
             {navList}
             <ListItem>
+                Coming soon!
             </ListItem>
         </List>
     </Box>
