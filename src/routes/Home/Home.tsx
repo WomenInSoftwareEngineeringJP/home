@@ -23,7 +23,9 @@ const Home: FC = () => {
                 Software-adjacent roles like Data Science, Product, UI/UX, Machine Learning, etc., are welcome, too.
             </Typography>
 
-            <Button variant='contained'>✨ Join us on Slack ✨</Button>
+            <Button variant='contained' href='https://join.slack.com/t/womencodersjapan/shared_invite/zt-2h79966bm-dE7SyiGvv2CXBxbz_0JzKw' target='_blank'>
+                ✨ Join us on Slack ✨
+            </Button>
         </Stack>
     </Container>
 }

@@ -6,7 +6,7 @@ import DesktopHeader from '../DesktopHeader'
 describe('Header', () => {
     it('should display the DesktopHeader', async () => {
         render(<DesktopHeader />)
-        const title = await screen.findByText('Women in Software Engineering')
+        const title = await screen.findByText('WiSE Japan')
         expect(title).toBeVisible()
     })
 

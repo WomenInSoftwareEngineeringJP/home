@@ -6,7 +6,7 @@ import MobileHeader from '../MobileHeader'
 describe('MobileHeader', () => {
     it('should display the MobileHeader', async () => {
         render(<MobileHeader />)
-        const title = await screen.findByText('Women in Software Engineering')
+        const title = await screen.findByText('WiSE Japan')
         expect(title).toBeVisible()
     })
 })

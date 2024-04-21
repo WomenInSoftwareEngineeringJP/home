@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import SideDrawer from '../SideDrawer/SideDrawer';
-import StyledNavLink from './StyledNavLink';
+import StyledNavLink from '@/components/StyledNavLink/StyledNavLink'
 
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -26,8 +26,10 @@ const DesktopHeader: FC = () => {
         <Stack direction='row' spacing={2} sx={{ alignItems: 'center' }}>
             <SideDrawer />
             <StyledNavLink to="/" style={{ textDecoration: 'none', color: 'white' }}>
-                <Typography variant="h1">Women in Software Engineering</Typography>
+                <Typography variant="h1">WiSE Japan</Typography>
+                <Typography variant="caption">Women in Software Engineering Japan</Typography>
             </StyledNavLink>
+
             <StyledNavLink to="/codeofconduct" style={{ textDecoration: 'none', color: 'white' }}>
                 <Typography variant="overline">Code of Conduct</Typography>
             </StyledNavLink>
