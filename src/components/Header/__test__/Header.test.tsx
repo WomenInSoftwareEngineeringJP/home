@@ -6,7 +6,7 @@ import Header from '../Header'
 describe('Header', () => {
     it('should display the Header in desktop mode on wide screens', async () => {
         render(<Header />)
-        const title = await screen.findByText('Ann Kilzer')
+        const title = await screen.findByText('Women in Software Engineering')
         expect(title).toBeVisible()
         const toolbar = await screen.findByLabelText('desktop-toolbar')
         expect(toolbar).toBeVisible()

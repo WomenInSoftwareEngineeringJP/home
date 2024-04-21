@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen } from '@testing-library/react'
-import DesktopToolbar from '../DesktopToolbar'
+import DesktopHeader from '../DesktopHeader'
 
 describe('Header', () => {
-    it('should display the DesktopToolbar', async () => {
-        render(<DesktopToolbar />)
-        const title = await screen.findByText('Ann Kilzer')
+    it('should display the DesktopHeader', async () => {
+        render(<DesktopHeader />)
+        const title = await screen.findByText('Women in Software Engineering')
         expect(title).toBeVisible()
     })
 

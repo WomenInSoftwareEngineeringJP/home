@@ -2,16 +2,16 @@ import { FC } from 'react'
 import AppBar from '@mui/material/AppBar'
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import MobileToolbar from './MobileToolbar';
-import DesktopToolbar from './DesktopToolbar';
+import MobileHeader from './MobileHeader';
+import DesktopHeader from './DesktopHeader';
 
 
 
 const Header: FC = () => {
     const theme = useTheme()
-    let inner = (<DesktopToolbar />)
+    let inner = (<DesktopHeader />)
     if (useMediaQuery(theme.breakpoints.down('sm'))) {
-        inner = (<MobileToolbar />)
+        inner = (<MobileHeader />)
     }
 
     return <AppBar position="static" aria-label="header">

@@ -6,7 +6,7 @@ import Home from '../Home'
 describe('Home Route', () => {
     it('should display the Home Route', async () => {
         render(<Home />)
-        const hello = await screen.findByText('Hello!')
+        const hello = await screen.findByText('Welcome to our Website')
         expect(hello).toBeVisible()
     })
 
