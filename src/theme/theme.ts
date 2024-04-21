@@ -7,9 +7,9 @@ const theme = createTheme({
         mode: 'dark',
         primary: {
             light: purple[200],
-            main: purple[300],
-            dark: purple[400],
-            contrastText: '#FFF',
+            main: purple[800],
+            dark: purple[700],
+            contrastText: '#FFF'
         },
       secondary: {
         light: lightBlue[400],
@@ -31,10 +31,10 @@ const theme = createTheme({
         disabledBackground: grey[300]
       },
       background: {
-        default: deepPurple[900],
-        paper: deepPurple[800]
+        default: '#170D45',
+        paper: deepPurple[900]
       },
-      divider: purple[100]
+      divider: lightBlue[300]
       
     },
     typography
