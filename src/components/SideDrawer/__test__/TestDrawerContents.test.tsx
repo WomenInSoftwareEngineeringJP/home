@@ -6,8 +6,8 @@ import DrawerContents from '../DrawerContents'
 describe('DrawerContents', () => {
     it('should display the DrawerContents', async () => {
         render(<DrawerContents />)
-        const home = await screen.findByText('Coming soon!')
-        expect(home).toBeVisible()
+        const japanese = await screen.findByText('日本語')
+        expect(japanese).toBeVisible()
     })
 
     it.todo('should show the NavLinks on mobile screens')
