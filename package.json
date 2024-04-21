@@ -1,5 +1,5 @@
 {
-    "name": "homepage",
+    "name": "home",
     "homepage": "https://<organization>.github.io/<repo>/",
     "private": true,
     "version": "0.0.0",
