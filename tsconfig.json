@@ -28,7 +28,6 @@
     },
     "include": [
         "src",
-        "e2e"
     ],
     "references": [
         {
