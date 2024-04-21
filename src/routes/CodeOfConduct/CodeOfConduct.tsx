@@ -2,11 +2,16 @@ import { FC } from 'react'
 import Container from '@mui/material/Container'
 import Stack from '@mui/material/Stack'
 import { Typography } from '@mui/material'
-
+import { useTranslation } from 'react-i18next';
 
 const CodeOfConduct: FC = () => {
+    const { t } = useTranslation();
+
     return <Container style={{ padding: 32 }}>
         <Stack spacing={2}>
+            <Typography variant='h1'>
+                {t('codeOfConduct')}
+            </Typography>
             <Typography variant='body2' >
                 Women in Software Engineering Japan (WiSE Japan) is dedicated to providing an empowering experience for everyone who participates in or supports our community. Our events are intended to inspire women to excel in technology careers, and anyone who is there for this purpose is welcome. Because we value the safety and security of our members and strive to have an inclusive community, we do not tolerate harassment of members or event participants in any form. This Code of Conduct was created to clearly define what we mean by a harassment-free experience, so that our community and those who support it are clear about our intent and have access to procedures for addressing issues, should they arise.
             </Typography>

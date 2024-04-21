@@ -3,11 +3,14 @@ import Stack from '@mui/material/Stack'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button'
+import { useTranslation } from 'react-i18next';
 
 const Home: FC = () => {
+    const { t } = useTranslation();
+
     return <Container style={{ padding: 32 }}>
         <Stack spacing={2}>
-            <Typography variant="h2">✨ Hello World ✨</Typography>
+            <Typography variant="h1">{t('helloWorld')}</Typography>
             <Typography variant="body1">
                 Many of us were saddened to hear of the sudden closure of Women Who Code.
                 There is a need for an organization to empower diverse women in technology careers in Tokyo and across Japan.
@@ -23,8 +26,12 @@ const Home: FC = () => {
                 Software-adjacent roles like Data Science, Product, UI/UX, Machine Learning, etc., are welcome, too.
             </Typography>
 
-            <Button variant='contained' href='https://join.slack.com/t/womencodersjapan/shared_invite/zt-2h79966bm-dE7SyiGvv2CXBxbz_0JzKw' target='_blank'>
-                ✨ Join us on Slack ✨
+            <Button
+                variant='contained'
+                href='https://join.slack.com/t/womencodersjapan/shared_invite/zt-2h79966bm-dE7SyiGvv2CXBxbz_0JzKw'
+                target='_blank'
+            >
+                {t('joinUs')}
             </Button>
         </Stack>
     </Container>
