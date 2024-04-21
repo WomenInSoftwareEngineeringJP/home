@@ -4,6 +4,7 @@ import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography'
+import Divider from '@mui/material/Divider'
 import ColorSwatch from './ColorSwatch';
 import StarIcon from '@mui/icons-material/Star'
 
@@ -27,6 +28,7 @@ const ThemePreview: FC = () => {
                 <Typography variant="caption">Caption</Typography>
                 <Typography variant="overline">Overline</Typography>
 
+                <Divider />
 
                 <Typography variant="h4">Colors</Typography>
                 <Grid container spacing={2}>
@@ -35,17 +37,21 @@ const ThemePreview: FC = () => {
                     <Grid item xs={4}><ColorSwatch color="tertiary">Tertiary</ColorSwatch></Grid>
                 </Grid>
 
+                <Divider />
 
                 <Typography variant="h4">Buttons</Typography>
-                <Button variant="outlined">This is an MUI Button</Button>
+                <Button variant='text'>This is an MUI Button</Button>
+                <Button variant='contained'>This is an MUI Button</Button>
+                <Button variant='outlined'>This is an MUI Button</Button>
 
+                <Divider />
 
                 <Stack spacing={2}>
                     <Typography variant="h4">Icons</Typography>
                     <StarIcon />
                 </Stack>
             </Stack>
-        </Container>
+        </Container >
     )
 }
 
