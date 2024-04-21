@@ -7,6 +7,7 @@ import ThemePreview from './ThemePreview/ThemePreview'
 import Home from './Home/Home'
 import BaseLayout from './BaseLayout'
 import NotFound from './NotFound/NotFound'
+import CodeOfConduct from './CodeOfConduct/CodeOfConduct'
 
 const browserRouter = createBrowserRouter([{
     element: <BaseLayout />,
@@ -14,6 +15,10 @@ const browserRouter = createBrowserRouter([{
         {
             path: '/',
             element: <Home />,
+        },
+        {
+            path: 'codeofconduct',
+            element: <CodeOfConduct />
         },
         {
             path: 'theme',

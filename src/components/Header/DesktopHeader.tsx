@@ -16,6 +16,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     '@media all': {
         minHeight: 80,
     },
+    maxWidth: '100%'
 }))
 
 
@@ -26,6 +27,9 @@ const DesktopHeader: FC = () => {
             <SideDrawer />
             <StyledNavLink to="/" style={{ textDecoration: 'none', color: 'white' }}>
                 <Typography variant="h1">Women in Software Engineering</Typography>
+            </StyledNavLink>
+            <StyledNavLink to="/codeofconduct" style={{ textDecoration: 'none', color: 'white' }}>
+                <Typography variant="overline">Code of Conduct</Typography>
             </StyledNavLink>
         </Stack>
     </StyledToolbar>
