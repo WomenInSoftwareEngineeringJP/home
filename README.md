@@ -1,4 +1,9 @@
-# React + TypeScript + Vite
+https://img.shields.io/website?url=https%3A%2F%2Fwomeninsoftwareengineeringjp.github.io%2Fhome%2F
+https://img.shields.io/github/languages/count/WomenInSoftwareEngineeringJP/home
+https://img.shields.io/github/stars/WomenInSoftwareEngineeringJP
+
+
+# WiSE JP Homepage
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
