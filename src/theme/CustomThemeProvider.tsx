@@ -5,7 +5,6 @@ import { FC, PropsWithChildren } from 'react'
 
 
 const CustomThemeProvider: FC<PropsWithChildren> = ({ children }) => {
-
     return <ThemeProvider theme={theme}>
         {children}
     </ThemeProvider>
