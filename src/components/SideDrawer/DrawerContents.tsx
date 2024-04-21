@@ -6,6 +6,7 @@ import ListItem from '@mui/material/ListItem'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import StyledNavLink from '../StyledNavLink/StyledNavLink'
+import LocaleToggle from '../LocaleToggle/LocaleToggle'
 
 const DrawerContents: FC = () => {
     const theme = useTheme()
@@ -26,7 +27,7 @@ const DrawerContents: FC = () => {
         <List>
             {navList}
             <ListItem>
-                Coming soon!
+                <LocaleToggle />
             </ListItem>
         </List>
     </Box>
