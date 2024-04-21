@@ -1,7 +1,7 @@
 {
     "name": "home",
     "homepage": "https://<organization>.github.io/<repo>/",
-    "private": true,
+    "private": false,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
