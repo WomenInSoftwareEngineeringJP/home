@@ -29,7 +29,7 @@ const browserRouter = createBrowserRouter([{
             element: <NotFound />
         }
     ]
-}], { basename: import.meta.env.DEV ? '/' : '/home/' })
+}], { basename: '/' })
 
 
 const Router: FC = () => (<RouterProvider router={browserRouter} />)
