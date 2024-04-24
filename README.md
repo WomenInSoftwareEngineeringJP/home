@@ -47,7 +47,7 @@ Command lines
 npm run test
 ```
 
-UI Mode
+[UI Mode](https://vitest.dev/guide/ui)
 ```sh
 npm run test:ui 
 ```
