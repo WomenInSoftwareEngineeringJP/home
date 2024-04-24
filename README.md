@@ -6,31 +6,55 @@
 
 # WiSE JP Homepage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Review the [CONTRIBUTING](https://github.com/WomenInSoftwareEngineeringJP/home/blob/main/CONTRIBUTING.md) guidelines
+2. NodeJS to match the version [here](https://github.com/WomenInSoftwareEngineeringJP/home/blob/main/.nvmrc)
 
-## Expanding the ESLint configuration
+## Running the app locally
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Install dependencies
+```sh
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Run for dev mode
+```sh
+npm run dev
+```
+
+Build for prod
+```sh
+npm run build
+```
+
+
+## Quality Strategy
+
+### Unit tests 📦️
+We are using [Vitest](https://vitest.dev/guide/) 
+and [Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for our unit tests.
+
+Please aim for about 80% or greater test coverage. Perfection on metrics can often be the wrong target, so we aim for "good enough"
+
+Automated tests are incorporated into GitHub Actions so we can easily see if our application is safe to deploy.
+
+You can run the unit tests like so:
+
+Command lines
+```sh
+npm run test
+```
+
+UI Mode
+```sh
+npm run test:ui 
+```
+
+When writing new tests, please follow the [Testing Library Guiding Principles](https://testing-library.com/docs/guiding-principles)
+
+
+### End-to-end (E2E) tests ↔️
+
+We will use [Playwright](https://playwright.dev/) (to be installed after #4) for testing. 
