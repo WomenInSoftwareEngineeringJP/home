@@ -10,28 +10,24 @@ const Home: FC = () => {
 
     return <Container style={{ padding: 32 }}>
         <Stack spacing={2}>
-            <Typography variant="h1">{t('helloWorld')}</Typography>
+            <Typography variant="h1">{t('home.helloWorld')}</Typography>
             <Typography variant="body1">
-                Many of us were saddened to hear of the sudden closure of Women Who Code.
-                There is a need for an organization to empower diverse women in technology careers in Tokyo and across Japan.
+                {t('home.paragraph1')}
             </Typography>
             <Typography>
-                We are not giving up on this mission.
-                Please join us in rebuilding community so that we can empower women in Japan in Software Engineering careers.
+                {t('home.paragraph2')}
             </Typography>
 
             <Typography>
-                Our events target professional women in software careers with 2+ years of experience. Beginners to seasoned professionals are welcome to participate.
-                While this organization focuses on women, all genders are welcome at our events.
-                Software-adjacent roles like Data Science, Product, UI/UX, Machine Learning, etc., are welcome, too.
+                {t('home.paragraph3')}
             </Typography>
 
             <Button
                 variant='contained'
-                href='https://join.slack.com/t/womencodersjapan/shared_invite/zt-2h79966bm-dE7SyiGvv2CXBxbz_0JzKw'
+                href='https://join.slack.com/t/wise-japan/shared_invite/zt-2h79966bm-dE7SyiGvv2CXBxbz_0JzKw'
                 target='_blank'
             >
-                {t('joinUs')}
+                {t('home.joinUs')}
             </Button>
         </Stack>
     </Container>
