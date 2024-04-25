@@ -8,7 +8,7 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:react/jsx-runtime'
     ],
-    ignorePatterns: ['dist', '.eslintrc.cjs', '*.html'],
+    ignorePatterns: ['dist', '.eslintrc.cjs', 'lighthouserc.cjs', '*.html'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         project: ["tsconfig.json", "tsconfig.node.json"]
