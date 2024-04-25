@@ -24,7 +24,7 @@ const Home: FC = () => {
 
             <Button
                 variant='contained'
-                href='https://join.slack.com/t/womencodersjapan/shared_invite/zt-2h79966bm-dE7SyiGvv2CXBxbz_0JzKw'
+                href='https://join.slack.com/t/wise-japan/shared_invite/zt-2h79966bm-dE7SyiGvv2CXBxbz_0JzKw'
                 target='_blank'
             >
                 {t('home.joinUs')}
