@@ -12,18 +12,14 @@ const Home: FC = () => {
         <Stack spacing={2}>
             <Typography variant="h1">{t('home.helloWorld')}</Typography>
             <Typography variant="body1">
-                Many of us were saddened to hear of the sudden closure of Women Who Code.
-                There is a need for an organization to empower diverse women in technology careers in Tokyo and across Japan.
+                {t('home.paragraph1')}
             </Typography>
             <Typography>
-                We are not giving up on this mission.
-                Please join us in rebuilding community so that we can empower women in Japan in Software Engineering careers.
+                {t('home.paragraph2')}
             </Typography>
 
             <Typography>
-                Our events target professional women in software careers with 2+ years of experience. Beginners to seasoned professionals are welcome to participate.
-                While this organization focuses on women, all genders are welcome at our events.
-                Software-adjacent roles like Data Science, Product, UI/UX, Machine Learning, etc., are welcome, too.
+                {t('home.paragraph3')}
             </Typography>
 
             <Button
