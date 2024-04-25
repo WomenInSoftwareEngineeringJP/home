@@ -1,15 +1,16 @@
-name: CI
-on: [push]
+name: Audit live site
+on: push
+
 jobs:
-  lighthouseci:
+  audit:
     runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Lighthouse Audit
-        uses: jakejarvis/lighthouse-action@master
-        with:
-          url: 'https://womeninsoftware.jp/'
-      - uses: actions/upload-artifact@master
-        with:
-          name: report
-          path: './report'
+    - name: Audit live URL
+      uses: jakejarvis/lighthouse-action@master
+      with:
+        url: 'https://womeninsoftware.jp/'
+    - name: Upload results as an artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: report
+        path: './report'
