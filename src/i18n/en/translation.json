@@ -1,5 +1,8 @@
 {
-    "codeOfConduct": "Code of Conduct",
+    "header": {
+        "codeOfConduct": "Code of Conduct",
+        "subtitle": "Women in Software Engineering Japan"
+    },
     "home": {
         "helloWorld": "✨ Hello World ✨",
         "joinUs": "✨ Join us on Slack ✨",

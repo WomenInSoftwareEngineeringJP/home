@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import SideDrawer from '../SideDrawer/SideDrawer';
 import StyledNavLink from '@/components/StyledNavLink/StyledNavLink'
+import { useTranslation } from 'react-i18next';
 
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -22,16 +23,18 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 
 
 const DesktopHeader: FC = () => {
+    const { t } = useTranslation();
+
     return <StyledToolbar aria-label="desktop-toolbar">
         <Stack direction='row' spacing={2} sx={{ alignItems: 'center' }}>
             <SideDrawer />
             <StyledNavLink to="/" style={{ textDecoration: 'none', color: 'white' }}>
                 <Typography variant="h1">WiSE Japan</Typography>
-                <Typography variant="caption">Women in Software Engineering Japan</Typography>
+                <Typography variant="caption">{t('header.subtitle')}</Typography>
             </StyledNavLink>
 
             <StyledNavLink to="/codeofconduct" style={{ textDecoration: 'none', color: 'white' }}>
-                <Typography variant="overline">Code of Conduct</Typography>
+                <Typography variant="overline">{t('header.codeOfConduct')}</Typography>
             </StyledNavLink>
         </Stack>
     </StyledToolbar>

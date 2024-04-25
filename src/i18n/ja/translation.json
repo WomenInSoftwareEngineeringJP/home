@@ -1,5 +1,8 @@
 {
-    "codeOfConduct": "行動規範",
+    "header": {
+        "codeOfConduct": "行動規範",
+        "subtitle": "ウーマン・イン・ソフトウェアエンジニアリング"
+    },
     "home": {
         "helloWorld": "✨ Hello 世界 ✨",
         "joinUs": "✨ スラックに参加する ✨",
