@@ -1,5 +1,7 @@
 {
     "codeOfConduct": "行動規範",
-    "helloWorld": "✨ Hello 世界 ✨",
-    "joinUs": "✨ スラックに参加する ✨"
+    "home": {
+        "helloWorld": "✨ Hello 世界 ✨",
+        "joinUs": "✨ スラックに参加する ✨"
+    }
 }

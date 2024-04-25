@@ -10,7 +10,7 @@ const Home: FC = () => {
 
     return <Container style={{ padding: 32 }}>
         <Stack spacing={2}>
-            <Typography variant="h1">{t('helloWorld')}</Typography>
+            <Typography variant="h1">{t('home.helloWorld')}</Typography>
             <Typography variant="body1">
                 Many of us were saddened to hear of the sudden closure of Women Who Code.
                 There is a need for an organization to empower diverse women in technology careers in Tokyo and across Japan.
@@ -31,7 +31,7 @@ const Home: FC = () => {
                 href='https://join.slack.com/t/womencodersjapan/shared_invite/zt-2h79966bm-dE7SyiGvv2CXBxbz_0JzKw'
                 target='_blank'
             >
-                {t('joinUs')}
+                {t('home.joinUs')}
             </Button>
         </Stack>
     </Container>
