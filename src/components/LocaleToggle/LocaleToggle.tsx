@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC, useEffect, useState, useCallback } from 'react'
 import ToggleButton from '@mui/material/ToggleButton'
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup'
 import { useTranslation } from 'react-i18next';
@@ -8,12 +8,12 @@ const LocaleToggle: FC = () => {
     const [locale, setLocale] = useState(Locale.EN);
     const { i18n } = useTranslation();
 
-    const changeLanguage = async (nextLocale: Locale) => {
+    const changeLanguage = useCallback(async (nextLocale: Locale) => {
         await i18n.changeLanguage(nextLocale).then(() => {
             setLocale(nextLocale);
             localStorage.setItem('locale', nextLocale);
         });
-    }
+    }, [i18n]);
 
     useEffect(() => {
         const savedLocale = localStorage.getItem('locale');
@@ -22,7 +22,7 @@ const LocaleToggle: FC = () => {
                 console.error(e)
             })
         }
-    }, []);
+    }, [changeLanguage]);
 
     const handleChange = (_: React.MouseEvent<HTMLElement>, nextLocale: Locale) => {
         changeLanguage(nextLocale).catch((e: Error) => {

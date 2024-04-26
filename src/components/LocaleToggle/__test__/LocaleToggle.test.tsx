@@ -2,18 +2,22 @@ import { describe, expect, it } from 'vitest'
 import { render } from '@/tests/customRender'
 import LocaleToggle from '../LocaleToggle';
 import userEvent from '@testing-library/user-event'
+import { screen } from '@testing-library/react'
 
 describe('LocaleToggle', () => {
-    it('renders correctly', () => {
-        const { getByText } = render(<LocaleToggle />);
-        expect(getByText('English')).toBeInTheDocument();
-        expect(getByText('日本語')).toBeInTheDocument();
+    it('renders correctly', async () => {
+        render(<LocaleToggle />)
+
+        const english = await screen.findByText('English');
+        const japanese = await screen.findByText('日本語');
+        expect(english).toBeInTheDocument();
+        expect(japanese).toBeInTheDocument();
     });
 })
 
 it('changes locale when toggling', async () => {
-    const { getByText } = render(<LocaleToggle />);
-    const japaneseButton = getByText('日本語');
+    render(<LocaleToggle />);
+    const japaneseButton = screen.getByText('日本語');
 
     const user = userEvent.setup()
     await user.click(japaneseButton)
