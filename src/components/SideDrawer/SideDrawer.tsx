@@ -2,7 +2,7 @@ import { FC, useState } from 'react'
 import SwipeableDrawer from '@mui/material/SwipeableDrawer'
 import IconButton from '@mui/material/IconButton'
 import DrawerContents from './DrawerContents'
-import StarIcon from '@mui/icons-material/Star'
+import MenuIcon from '@mui/icons-material/Menu'
 
 
 const SideDrawer: FC = () => {
@@ -29,7 +29,7 @@ const SideDrawer: FC = () => {
             onClick={() => { setOpen(true) }}
             aria-label="drawer-toggle-button"
         >
-            <StarIcon />
+            <MenuIcon />
         </IconButton>
         <SwipeableDrawer
             open={open}
