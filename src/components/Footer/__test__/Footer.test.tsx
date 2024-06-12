@@ -6,6 +6,9 @@ import Footer from '../Footer'
 describe('Footer', () => {
     it('should display the Footer with relevant links', async () => {
         render(<Footer />)
+        const events = await screen.findByLabelText('Events')
+        expect(events).toBeVisible()
+        expect(events).toHaveAttribute('href', 'https://womeninsoftware-japan.connpass.com/')
         const instagram = await screen.findByLabelText('Instagram')
         expect(instagram).toBeVisible()
         expect(instagram).toHaveAttribute('href', 'https://www.instagram.com/womeninsoftwarejp/')
