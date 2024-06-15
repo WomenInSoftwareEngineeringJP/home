@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import {
-    createBrowserRouter,
+    createHashRouter,
     RouterProvider,
 } from 'react-router-dom'
 import ThemePreview from './ThemePreview/ThemePreview'
@@ -9,7 +9,7 @@ import BaseLayout from './BaseLayout'
 import NotFound from './NotFound/NotFound'
 import CodeOfConduct from './CodeOfConduct/CodeOfConduct'
 
-const browserRouter = createBrowserRouter([{
+const browserRouter = createHashRouter([{
     element: <BaseLayout />,
     children: [
         {
