@@ -8,13 +8,14 @@
         "strict": true,
         "paths": {
             "@/*": [
-                "./src/*"
+                "./src/*",
             ]
         },
     },
     "include": [
         "vite.config.ts",
         "vite-env.d.ts",
-        "vitest.config.ts"
+        "vitest.config.ts",
+        "playwright.config.ts"
     ]
 }
