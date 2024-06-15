@@ -10,7 +10,9 @@
         "preview": "vite preview",
         "prepare": "husky",
         "test": "vitest",
-        "test:ui": "vitest --ui"
+        "test:ui": "vitest --ui",
+        "test:e2e": "npx playwright test",
+        "test:e2e:ui": "npx playwright test --ui"
     },
     "lint-staged": {
         "*.{ts,tsx,js,cjs}": "eslint"
@@ -30,6 +32,7 @@
         "styled-components": "6.1.8"
     },
     "devDependencies": {
+        "@playwright/test": "1.44.1",
         "@stylistic/eslint-plugin-ts": "1.7.2",
         "@testing-library/jest-dom": "6.4.2",
         "@testing-library/react": "15.0.2",
