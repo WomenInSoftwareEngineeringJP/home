@@ -1,13 +1,31 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography';
-import { useTranslation } from 'react-i18next';
+import Grid from '@mui/material/Grid'
+import Stack from '@mui/material/Stack'
+import Typography from '@mui/material/Typography'
+import { useTranslation } from 'react-i18next'
+import TeamMember from '@/types/TeamMember'
+import TeamMemberCard from './TeamMemberCard'
+import team from './team.json'
+
 
 const Team: FC = () => {
     const { t } = useTranslation();
 
+    const teamGrid: ReactNode[] = []
+    team.forEach((member: TeamMember) => {
+        teamGrid.push(<Grid item>
+            <TeamMemberCard member={member} />
+        </Grid>)
+    })
+
     return <Container style={{ padding: 32 }}>
-        <Typography variant="h1">{t('team.title')}</Typography>
+        <Stack spacing={2}>
+            <Typography variant="h1">{t('team.title')}</Typography>
+            <Grid container spacing={2}>
+                {teamGrid}
+            </Grid>
+        </Stack>
     </Container>
 }
 
