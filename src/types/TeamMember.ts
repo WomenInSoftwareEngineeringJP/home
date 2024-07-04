@@ -1,8 +1,8 @@
 type TeamMember = {
     nameEN: string
-    nameJA?: string
+    nameJA: string
     titleEN: string
-    titleJA?: string
+    titleJA: string
     image: string
 }
 

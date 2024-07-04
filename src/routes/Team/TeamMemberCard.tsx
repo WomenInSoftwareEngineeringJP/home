@@ -1,15 +1,46 @@
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import TeamMember from '@/types/TeamMember';
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Typography from '@mui/material/Typography'
+import TeamMember from '@/types/TeamMember'
+import i18next from 'i18next'
 
 interface TeamMemberCardProps {
     member: TeamMember
 }
 
 const TeamMemberCard: FC<TeamMemberCardProps> = ({ member }) => {
-    return <Card>
-        <CardContent>{member.nameEN}</CardContent>
+    const [name, setName] = useState(member.nameEN)
+    const [title, setTitle] = useState(member.titleEN)
+
+    useEffect(() => {
+        console.log(i18next.resolvedLanguage)
+        if (i18next.resolvedLanguage === 'en') {
+            setName(member.nameEN)
+            setTitle(member.titleEN)
+        } else if (i18next.resolvedLanguage === 'ja') {
+            setName(member.nameJA)
+            setTitle(member.titleJA)
+        }
+    }, [member])
+
+
+    return <Card sx={{ height: 420 }}>
+        <CardMedia
+            sx={{ height: 300, width: 300 }}
+            image={member.image}
+            title="green iguana"
+        />
+        <CardContent>
+            <Typography variant='h6'>
+                {name}
+            </Typography>
+            <Typography variant="subtitle1">
+                {title}
+            </Typography>
+
+        </CardContent>
     </Card>
 }
 
