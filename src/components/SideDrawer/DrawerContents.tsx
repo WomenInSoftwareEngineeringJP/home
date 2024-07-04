@@ -7,9 +7,11 @@ import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import StyledNavLink from '../StyledNavLink/StyledNavLink'
 import LocaleToggle from '../LocaleToggle/LocaleToggle'
+import { useTranslation } from 'react-i18next'
 
 const DrawerContents: FC = () => {
     const theme = useTheme()
+    const { t } = useTranslation();
     let navList = <></>
     if (useMediaQuery(theme.breakpoints.down('sm'))) {
         navList = (<>
@@ -17,7 +19,10 @@ const DrawerContents: FC = () => {
                 <StyledNavLink to='/'>Home</StyledNavLink>
             </ListItem>
             <ListItem>
-                <StyledNavLink to='/codeofconduct'>Code of Conduct</StyledNavLink>
+                <StyledNavLink to='/team'>{t('sidebar.team')}</StyledNavLink>
+            </ListItem>
+            <ListItem>
+                <StyledNavLink to='/codeofconduct'>{t('sidebar.codeOfConduct')}</StyledNavLink>
             </ListItem>
             <Divider />
         </>)
