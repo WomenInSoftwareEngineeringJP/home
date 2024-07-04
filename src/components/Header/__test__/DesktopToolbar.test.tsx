@@ -12,9 +12,9 @@ describe('Header', () => {
 
     it('should show navigation links', async () => {
         render(<DesktopHeader />)
-        const team = await screen.findByText('TEAM')
+        const team = await screen.findByText('Team')
         expect(team).toBeVisible()
-        const codeOfConduct = await screen.findByText('CODE OF CONDUCT')
+        const codeOfConduct = await screen.findByText('Code of Conduct')
         expect(codeOfConduct).toBeVisible()
     })
 })
