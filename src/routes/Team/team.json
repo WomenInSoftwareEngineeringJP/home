@@ -4,48 +4,55 @@
         "nameJA": "キルザー·杏",
         "titleEN": "Director",
         "titleJA": "ディレクター",
-        "image": "Ann.png"
+        "image": "Ann.png",
+        "url": "https://annkilzer.net"
     },
     {
         "nameEN": "Paty Cortez",
         "nameJA": "",
         "titleEN": "",
         "titleJA": "",
-        "image": ""
+        "image": "",
+        "url": ""
     },
     {
         "nameEN": "Maria Tenorio",
         "nameJA": "",
         "titleEN": "",
         "titleJA": "",
-        "image": "todo"
+        "image": "todo",
+        "url": ""
     },
     {
         "nameEN": "Krizza Bullecer",
         "nameJA": "",
         "titleEN": "",
         "titleJA": "",
-        "image": "todo"
+        "image": "todo",
+        "url": ""
     },
     {
         "nameEN": "Daria Vazhenina",
         "nameJA": "",
         "titleEN": "",
         "titleJA": "",
-        "image": "todo"
+        "image": "todo",
+        "url": ""
     },
     {
         "nameEN": "Anna Nakayama",
         "nameJA": "",
         "titleEN": "",
         "titleJA": "",
-        "image": "todo"
+        "image": "todo",
+        "url": ""
     },
     {
         "nameEN": "Aidan Fournier",
         "nameJA": "",
         "titleEN": "",
         "titleJA": "",
-        "image": "todo"
+        "image": "todo",
+        "url": ""
     }
 ]

@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import { useTranslation } from 'react-i18next'
 import TeamMember from '@/types/TeamMember'
-import TeamMemberCard from './TeamMemberCard'
+import TeamMemberCard from '@/components/TeamMemberCard/TeamMemberCard'
 import team from './team.json'
 
 

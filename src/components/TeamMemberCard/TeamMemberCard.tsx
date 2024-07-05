@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import TeamMember from '@/types/TeamMember'
 import i18next from 'i18next'
+import OptionalLinkWrapper from '../OptionalLinkWrapper/OptionalLinkWrapper';
 
 interface TeamMemberCardProps {
     member: TeamMember
@@ -25,23 +26,24 @@ const TeamMemberCard: FC<TeamMemberCardProps> = ({ member }) => {
         }
     }, [member])
 
+    return <OptionalLinkWrapper url={member.url}>
+        <Card sx={{ height: 420 }}>
+            <CardMedia
+                sx={{ height: 300, width: 300 }}
+                image={member.image}
+                title={name}
+            />
+            <CardContent>
+                <Typography variant='h6'>
+                    {name}
+                </Typography>
+                <Typography variant="subtitle1">
+                    {title}
+                </Typography>
 
-    return <Card sx={{ height: 420 }}>
-        <CardMedia
-            sx={{ height: 300, width: 300 }}
-            image={member.image}
-            title="green iguana"
-        />
-        <CardContent>
-            <Typography variant='h6'>
-                {name}
-            </Typography>
-            <Typography variant="subtitle1">
-                {title}
-            </Typography>
-
-        </CardContent>
-    </Card>
+            </CardContent>
+        </Card>
+    </OptionalLinkWrapper>
 }
 
 export default TeamMemberCard
