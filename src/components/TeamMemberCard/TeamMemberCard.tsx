@@ -27,11 +27,12 @@ const TeamMemberCard: FC<TeamMemberCardProps> = ({ member }) => {
     }, [member])
 
     return <OptionalLinkWrapper url={member.url}>
-        <Card sx={{ height: 420 }}>
+        <Card sx={{ height: 420 }} aria-label="team-member-card">
             <CardMedia
                 sx={{ height: 300, width: 300 }}
-                image={member.image}
+                image={member.image || 'Placeholder.png'}
                 title={name}
+                alt-text={`${name} photo`}
             />
             <CardContent>
                 <Typography variant='h6'>

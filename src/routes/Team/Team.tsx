@@ -14,12 +14,12 @@ const Team: FC = () => {
 
     const teamGrid: ReactNode[] = []
     team.forEach((member: TeamMember) => {
-        teamGrid.push(<Grid item>
+        teamGrid.push(<Grid item key={member.nameEN}>
             <TeamMemberCard member={member} />
         </Grid>)
     })
 
-    return <Container style={{ padding: 32 }}>
+    return <Container style={{ padding: 32 }} aria-label="team-container">
         <Stack spacing={2}>
             <Typography variant="h1">{t('team.title')}</Typography>
             <Grid container spacing={2}>

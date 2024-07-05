@@ -10,7 +10,7 @@ interface OptionalLinkWrapperProps {
  */
 const OptionalLinkWrapper: FC<OptionalLinkWrapperProps> = ({ url, children }) => {
     if (url) {
-        return <a href={url} target='_blank' rel="noreferrer">
+        return <a href={url} target='_blank' rel="noreferrer" aria-label='link-wrapper'>
             {children}
         </a>
     }
