@@ -1,11 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen } from '@testing-library/react'
-import TeamMemberCard from '../TeamMemberCard';
-import TeamMember from '@/types/TeamMember';
-import '@/i18n/config';
-import i18next from 'i18next';
-import { I18nextProvider } from 'react-i18next';
+import TeamMemberCard from '../TeamMemberCard'
+import TeamMember from '@/types/TeamMember'
+import '@/i18n/config'
+import i18next from 'i18next'
 
 
 describe('TeamMemberCard', () => {
@@ -32,9 +31,7 @@ describe('TeamMemberCard', () => {
 
     it('should render a TeamMemberCard in Japanese', async () => {
         await i18next.changeLanguage('ja')
-        render(<I18nextProvider i18n={i18next}>
-            <TeamMemberCard member={member} />
-        </I18nextProvider>)
+        render(<TeamMemberCard member={member} />)
 
         const name = await screen.findByText(member.nameJA)
         expect(name).toBeVisible()
@@ -45,4 +42,4 @@ describe('TeamMemberCard', () => {
         const image = await screen.findByRole('img')
         expect(image).toBeVisible()
     })
-});
+})

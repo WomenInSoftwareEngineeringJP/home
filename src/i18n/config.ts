@@ -21,3 +21,5 @@ i18next.use(initReactI18next).init({
     // set returnNull to false (and also in the i18next.d.ts options)
     // returnNull: false,
 });
+
+export default i18next

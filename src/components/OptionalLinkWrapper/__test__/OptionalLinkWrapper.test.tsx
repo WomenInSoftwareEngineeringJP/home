@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen } from '@testing-library/react'
-import OptionalLinkWrapper from '../OptionalLinkWrapper';
+import OptionalLinkWrapper from '../OptionalLinkWrapper'
 
 
 describe('OptionalLinkWrapper', () => {
@@ -30,4 +30,4 @@ describe('OptionalLinkWrapper', () => {
         const link = screen.queryByRole('link')
         expect(link).toBeNull()
     })
-});
+})

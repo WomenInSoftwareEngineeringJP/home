@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import TeamMember from '@/types/TeamMember'
 import { getI18n } from 'react-i18next'
-import OptionalLinkWrapper from '../OptionalLinkWrapper/OptionalLinkWrapper';
+import OptionalLinkWrapper from '../OptionalLinkWrapper/OptionalLinkWrapper'
 
 interface TeamMemberCardProps {
     member: TeamMember
