@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
-import CssBaseline from '@mui/material/CssBaseline';
-import CustomThemeProvider from '@/theme/CustomThemeProvider';
-import { MemoryRouter } from 'react-router-dom';
-import '@/i18n/config';
+import CssBaseline from '@mui/material/CssBaseline'
+import CustomThemeProvider from '@/theme/CustomThemeProvider'
+import { MemoryRouter } from 'react-router-dom'
+import '@/i18n/config'
 
 // eslint-disable-next-line react-refresh/only-export-components
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {

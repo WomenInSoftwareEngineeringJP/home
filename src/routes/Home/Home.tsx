@@ -1,12 +1,12 @@
-import { FC } from 'react';
+import { FC } from 'react'
 import Stack from '@mui/material/Stack'
 import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography';
+import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 const Home: FC = () => {
-    const { t } = useTranslation();
+    const { t } = useTranslation()
 
     return <Container style={{ padding: 32 }}>
         <Stack spacing={2}>

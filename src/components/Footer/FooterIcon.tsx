@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from 'react'
 import BottomNavigationAction from '@mui/material/BottomNavigationAction'
 
 interface FooterIconProps {

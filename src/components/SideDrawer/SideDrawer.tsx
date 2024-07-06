@@ -17,11 +17,11 @@ const SideDrawer: FC = () => {
                     ((event as React.KeyboardEvent).key === 'Tab' ||
                         (event as React.KeyboardEvent).key === 'Shift')
                 ) {
-                    return;
+                    return
                 }
 
                 setOpen(open)
-            };
+            }
 
     return <>
         <IconButton

@@ -2,10 +2,10 @@ import { FC } from 'react'
 import Container from '@mui/material/Container'
 import Stack from '@mui/material/Stack'
 import { Typography } from '@mui/material'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 const CodeOfConduct: FC = () => {
-    const { t } = useTranslation();
+    const { t } = useTranslation()
 
     return <Container style={{ padding: 32 }}>
         <Stack spacing={2}>

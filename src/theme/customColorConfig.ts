@@ -2,7 +2,7 @@
 Custom Colors in Typescript requires module augmentation
 Read more: https://mui.com/material-ui/customization/palette/#typescript
 */
-import '@mui/material';
+import '@mui/material'
 
 
 declare module '@mui/material/styles' {
