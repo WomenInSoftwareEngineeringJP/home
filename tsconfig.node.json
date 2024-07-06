@@ -11,6 +11,7 @@
                 "./src/*",
             ]
         },
+        "types": ["vite/client", "vitest/globals"]
     },
     "include": [
         "vite.config.ts",

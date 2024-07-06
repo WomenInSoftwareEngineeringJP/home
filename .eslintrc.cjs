@@ -28,6 +28,17 @@ module.exports = {
         '@typescript-eslint/no-unsafe-call': ['off'],
         '@stylistic/ts/indent': ['error', 4],
     },
+    overrides: [
+        {
+            // disable `any` checks in tests
+            files: ['src/**/*.test.{ts,tsx}'],
+            rules: {
+                '@typescript-eslint/no-unsafe-member-access': 'off',
+                '@typescript-eslint/no-unsafe-assignment': 'off',
+                '@typescript-eslint/no-unsafe-return': 'off',
+            },
+        },
+    ],
     settings: {
         react: {
             version: 'detect'
