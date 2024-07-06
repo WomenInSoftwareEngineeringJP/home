@@ -1,4 +1,3 @@
-import { describe, expect, it } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen } from '@testing-library/react'
 import DesktopHeader from '../DesktopHeader'

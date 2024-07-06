@@ -1,6 +1,6 @@
-import { useTranslation } from 'react-i18next';
 import { screen } from '@testing-library/react';
 import { Mock } from 'vitest';
+import { useTranslation } from 'react-i18next';
 
 import { render } from '@/tests/customRender';
 import LocaleToggle from '../LocaleToggle';

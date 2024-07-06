@@ -1,4 +1,4 @@
-import { describe, expect, it, Mock } from 'vitest';
+import { Mock } from 'vitest';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { screen } from '@testing-library/react';
 import { render } from '@/tests/customRender';
