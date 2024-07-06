@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import TeamMember from '@/types/TeamMember'
-import i18next from 'i18next'
+import { getI18n } from 'react-i18next'
 import OptionalLinkWrapper from '../OptionalLinkWrapper/OptionalLinkWrapper';
 
 interface TeamMemberCardProps {
@@ -15,16 +15,17 @@ const TeamMemberCard: FC<TeamMemberCardProps> = ({ member }) => {
     const [name, setName] = useState(member.nameEN)
     const [title, setTitle] = useState(member.titleEN)
 
+    const i18n = getI18n()
+
     useEffect(() => {
-        console.log(i18next.resolvedLanguage)
-        if (i18next.resolvedLanguage === 'en') {
+        if (i18n.language === 'en') {
             setName(member.nameEN)
             setTitle(member.titleEN)
-        } else if (i18next.resolvedLanguage === 'ja') {
+        } else if (i18n.language === 'ja') {
             setName(member.nameJA)
             setTitle(member.titleJA)
         }
-    }, [member])
+    }, [member, i18n.language])
 
     return <OptionalLinkWrapper url={member.url}>
         <Card sx={{ height: 420 }} aria-label="team-member-card">
