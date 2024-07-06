@@ -4,11 +4,13 @@ import { test, expect, Locator } from '@playwright/test';
  * 
  * @param card The Locator for the TeamMember Card
  * @param name The name to find
- * @param title The title to find
+ * @param title The title to find, if defined
  */
-async function verifyTeamMemberCard(card: Locator, name: string, title: string) {
+async function verifyTeamMemberCard(card: Locator, name: string, title?: string) {
     await expect(card.getByText(name)).toBeVisible()
-    await expect(card.getByText(title)).toBeVisible()
+    if (title) {
+        await expect(card.getByText(title)).toBeVisible()
+    }
     const photo = card.getByRole('img').first()
     await expect(photo).toBeVisible()
     await expect(photo).toHaveAttribute('alt-text', `${name} photo`)
@@ -31,7 +33,7 @@ test('shows the team', async ({ page }) => {
     await verifyTeamMemberCard(cards[3], 'Daria Vazhenina', 'ML & Data Science Lead')
     await verifyTeamMemberCard(cards[4], 'Krizza Bullecer', 'Lead')
     await verifyTeamMemberCard(cards[5], 'Anna Nakayama', '')
-    await verifyTeamMemberCard(cards[5], 'Aidan Fournier', '')
+    await verifyTeamMemberCard(cards[6], 'Aidan Fournier', '')
 
     // verify link
     const links = await page.getByLabel('link-wrapper').all()
