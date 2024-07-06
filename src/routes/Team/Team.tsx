@@ -10,7 +10,7 @@ import team from './team.json'
 
 
 const Team: FC = () => {
-    const { t } = useTranslation();
+    const { t } = useTranslation()
 
     const teamGrid: ReactNode[] = []
     team.forEach((member: TeamMember) => {
