@@ -22,8 +22,8 @@ const TeamMemberCard: FC<TeamMemberCardProps> = ({ member }) => {
             setName(member.nameEN)
             setTitle(member.titleEN)
         } else if (i18n.language === 'ja') {
-            setName(member.nameJA)
-            setTitle(member.titleJA)
+            setName(member.nameJA || member.nameEN)
+            setTitle(member.titleJA || member.titleEN)
         }
     }, [member, i18n.language])
 

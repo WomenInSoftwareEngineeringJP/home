@@ -1,4 +1,18 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, Locator } from '@playwright/test';
+
+/** Verifies visibility of the name, title, and photo
+ * 
+ * @param card The Locator for the TeamMember Card
+ * @param name The name to find
+ * @param title The title to find
+ */
+async function verifyTeamMemberCard(card: Locator, name: string, title: string) {
+    await expect(card.getByText(name)).toBeVisible()
+    await expect(card.getByText(title)).toBeVisible()
+    const photo = card.getByRole('img').first()
+    await expect(photo).toBeVisible()
+    await expect(photo).toHaveAttribute('alt-text', `${name} photo`)
+}
 
 test('shows the team', async ({ page }) => {
     await page.goto('/#/team')
@@ -10,14 +24,16 @@ test('shows the team', async ({ page }) => {
 
     const cards = await teamContainer.getByLabel('team-member-card').all()
     expect(cards).toHaveLength(7)
-    const ann = cards[0]
-    await expect(ann.getByText('Ann Kilzer')).toBeVisible()
-    await expect(ann.getByText('Director')).toBeVisible()
-    const annPhoto = ann.getByRole('img').first()
-    await expect(annPhoto).toBeVisible()
-    await expect(annPhoto).toHaveAttribute('alt-text', 'Ann Kilzer photo')
 
-    // verify links
+    await verifyTeamMemberCard(cards[0], 'Ann Kilzer', 'Director')
+    await verifyTeamMemberCard(cards[1], 'Paty Cortez', '')
+    await verifyTeamMemberCard(cards[2], 'Maria Tenorio', '')
+    await verifyTeamMemberCard(cards[3], 'Daria Vazhenina', 'ML & Data Science Lead')
+    await verifyTeamMemberCard(cards[4], 'Krizza Bullecer', 'Lead')
+    await verifyTeamMemberCard(cards[5], 'Anna Nakayama', '')
+    await verifyTeamMemberCard(cards[5], 'Aidan Fournier', '')
+
+    // verify link
     const links = await page.getByLabel('link-wrapper').all()
     expect(links).toHaveLength(1)
     const annLink = links[0]
