@@ -42,4 +42,27 @@ describe('TeamMemberCard', () => {
         const image = await screen.findByRole('img')
         expect(image).toBeVisible()
     })
+
+    const partialMember = {
+        nameEN: 'Alice',
+        nameJA: '',
+        titleEN: 'Lead',
+        titleJA: '',
+        image: 'example.png',
+        url: 'https://example.com'
+    } as TeamMember
+
+    it('should render a TeamMemberCard in Japanese and fall back to English when fields are unset', async () => {
+        await i18next.changeLanguage('ja')
+        render(<TeamMemberCard member={partialMember} />)
+
+        const name = await screen.findByText(partialMember.nameEN)
+        expect(name).toBeVisible()
+        const title = await screen.findByText(partialMember.titleEN)
+        expect(title).toBeVisible()
+        const link = await screen.findByRole('link')
+        expect(link).toHaveAttribute('href', member.url)
+        const image = await screen.findByRole('img')
+        expect(image).toBeVisible()
+    })
 })
