@@ -28,7 +28,7 @@ test('shows the team in English', async ({ page }) => {
     expect(cards).toHaveLength(7)
 
     await verifyTeamMemberCard(cards[0], 'Ann Kilzer', 'Director')
-    await verifyTeamMemberCard(cards[1], 'Paty Cortez', '')
+    await verifyTeamMemberCard(cards[1], 'Paty Cortez', 'Director')
     await verifyTeamMemberCard(cards[2], 'Maria Tenorio', '')
     await verifyTeamMemberCard(cards[3], 'Daria Vazhenina', 'ML & Data Science Lead')
     await verifyTeamMemberCard(cards[4], 'Krizza Bullecer', 'Lead')
@@ -66,7 +66,7 @@ test('shows the team in Japanese', async ({ page }) => {
     expect(cards).toHaveLength(7)
 
     await verifyTeamMemberCard(cards[0], 'キルザー·杏', 'ディレクター')
-    await verifyTeamMemberCard(cards[1], 'Paty Cortez', '')
+    await verifyTeamMemberCard(cards[1], 'Paty Cortez', 'ディレクター')
     await verifyTeamMemberCard(cards[2], 'Maria Tenorio', '')
     await verifyTeamMemberCard(cards[3], 'バジェニナ・ダリヤ', 'ML＆データサイエンス・リード')
     await verifyTeamMemberCard(cards[4], 'ブレサー　クリザ', 'リード')
