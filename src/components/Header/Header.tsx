@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import AppBar from '@mui/material/AppBar'
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import MobileHeader from './MobileHeader';
-import DesktopHeader from './DesktopHeader';
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import MobileHeader from './MobileHeader'
+import DesktopHeader from './DesktopHeader'
 
 
 

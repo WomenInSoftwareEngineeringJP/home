@@ -1,11 +1,11 @@
-import { FC } from 'react';
-import Button from '@mui/material/Button';
+import { FC } from 'react'
+import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
+import Grid from '@mui/material/Grid'
+import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import Divider from '@mui/material/Divider'
-import ColorSwatch from './ColorSwatch';
+import ColorSwatch from './ColorSwatch'
 import StarIcon from '@mui/icons-material/Star'
 
 

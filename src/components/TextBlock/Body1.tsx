@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react'
-import Typography from '@mui/material/Typography';
+import Typography from '@mui/material/Typography'
 
 interface Body1Props {
     children: ReactNode
