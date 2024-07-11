@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next'
 
 const DrawerContents: FC = () => {
     const theme = useTheme()
-    const { t } = useTranslation();
+    const { t } = useTranslation()
     let navList = <></>
     if (useMediaQuery(theme.breakpoints.down('sm'))) {
         navList = (<>

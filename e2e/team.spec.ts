@@ -1,4 +1,4 @@
-import { test, expect, Locator } from '@playwright/test';
+import { test, expect, Locator } from '@playwright/test'
 
 /** Verifies visibility of the name, title, and photo
  * 
@@ -43,7 +43,7 @@ test('shows the team in English', async ({ page }) => {
     await expect(annLink).toHaveRole('link')
     await expect(annLink).toHaveAttribute('href', 'https://annkilzer.net')
     await expect(annLink).toHaveAttribute('target', '_blank')
-});
+})
 
 test('shows the team in Japanese', async ({ page }) => {
     await page.goto('/#/team')
@@ -57,7 +57,7 @@ test('shows the team in Japanese', async ({ page }) => {
     const teamContainer = page.getByLabel('team-container')
 
     // click off to close sidebar
-    await teamContainer.click({ force: true });
+    await teamContainer.click({ force: true })
 
     const heading = teamContainer.getByText('✨ リーダーシップ・チーム ✨')
     await expect(heading).toBeVisible()
