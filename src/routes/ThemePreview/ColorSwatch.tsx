@@ -1,5 +1,5 @@
 import Paper from '@mui/material/Paper'
-import { Theme, styled } from '@mui/material/styles';
+import { Theme, styled } from '@mui/material/styles'
 
 interface SwatchProps {
     color: string
@@ -23,6 +23,6 @@ const ColorSwatch = styled(Paper)<SwatchProps>(({ theme, color }) => ({
     padding: theme.spacing(4),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-}));
+}))
 
 export default ColorSwatch

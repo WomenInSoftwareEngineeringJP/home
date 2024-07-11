@@ -12,7 +12,8 @@
         "test": "vitest",
         "test:ui": "vitest --ui",
         "test:e2e": "npx playwright test",
-        "test:e2e:ui": "npx playwright test --ui"
+        "test:e2e:ui": "npx playwright test --ui",
+        "visualize": "vite-bundle-visualizer --port 5000"
     },
     "lint-staged": {
         "*.{ts,tsx,js,cjs}": "eslint"
@@ -53,6 +54,7 @@
         "lint-staged": "15.2.2",
         "typescript": "5.2.2",
         "vite": "5.2.6",
+        "vite-bundle-visualizer": "1.2.1",
         "vitest": "1.5.0"
     }
 }

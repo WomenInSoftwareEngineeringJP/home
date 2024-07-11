@@ -1,6 +1,6 @@
 import createTheme from '@mui/material/styles/createTheme'
-import typography from './typography/default';
-import { teal, lightBlue, deepPurple, purple, grey } from '@mui/material/colors';
+import typography from './typography/default'
+import { teal, lightBlue, deepPurple, purple, grey } from '@mui/material/colors'
 
 const theme = createTheme({
     palette: {
@@ -38,6 +38,6 @@ const theme = createTheme({
       
     },
     typography
-});
+})
 
 export default theme

@@ -27,6 +27,7 @@ module.exports = {
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/no-unsafe-call': ['off'],
         '@stylistic/ts/indent': ['error', 4],
+        '@stylistic/ts/semi': ['error', 'never'],
     },
     settings: {
         react: {

@@ -1,12 +1,12 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
 import Stack from '@mui/material/Stack'
 import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography';
-import { styled } from '@mui/material/styles';
-import SideDrawer from '../SideDrawer/SideDrawer';
+import Typography from '@mui/material/Typography'
+import { styled } from '@mui/material/styles'
+import SideDrawer from '../SideDrawer/SideDrawer'
 import StyledNavLink from '@/components/StyledNavLink/StyledNavLink'
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -23,7 +23,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 
 
 const DesktopHeader: FC = () => {
-    const { t } = useTranslation();
+    const { t } = useTranslation()
 
     return <StyledToolbar aria-label="desktop-toolbar">
         <Stack direction='row' spacing={2} sx={{ alignItems: 'center' }}>

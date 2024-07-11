@@ -10,7 +10,7 @@ const Loader = () => (
     <div>
         <div>Loading...</div>
     </div>
-);
+)
 
 const BaseLayout: FC = () => {
     return <Suspense fallback={<Loader />}>
