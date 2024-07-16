@@ -29,11 +29,11 @@ test('shows the team in English', async ({ page }) => {
 
     await verifyTeamMemberCard(cards[0], 'Ann Kilzer', 'Director')
     await verifyTeamMemberCard(cards[1], 'Paty Cortez', 'Director')
-    await verifyTeamMemberCard(cards[2], 'Maria Tenorio', '')
+    await verifyTeamMemberCard(cards[2], 'Maria Tenorio', 'Lead')
     await verifyTeamMemberCard(cards[3], 'Daria Vazhenina', 'ML & Data Science Lead')
     await verifyTeamMemberCard(cards[4], 'Krizza Bullecer', 'Lead')
-    await verifyTeamMemberCard(cards[5], 'Ania Nakayama', '')
-    await verifyTeamMemberCard(cards[6], 'Aidan Fournier', '')
+    await verifyTeamMemberCard(cards[5], 'Ania Nakayama', 'Lead')
+    await verifyTeamMemberCard(cards[6], 'Aidan Fournier', 'Lead')
 
     // verify link
     const links = await page.getByLabel('link-wrapper').all()
@@ -67,9 +67,9 @@ test('shows the team in Japanese', async ({ page }) => {
 
     await verifyTeamMemberCard(cards[0], 'キルザー·杏', 'ディレクター')
     await verifyTeamMemberCard(cards[1], 'Paty Cortez', 'ディレクター')
-    await verifyTeamMemberCard(cards[2], 'Maria Tenorio', '')
+    await verifyTeamMemberCard(cards[2], 'Maria Tenorio', 'リード')
     await verifyTeamMemberCard(cards[3], 'バジェニナ・ダリヤ', 'ML＆データサイエンス・リード')
     await verifyTeamMemberCard(cards[4], 'ブレサー　クリザ', 'リード')
-    await verifyTeamMemberCard(cards[5], 'Ania Nakayama', '')
-    await verifyTeamMemberCard(cards[6], 'Aidan Fournier', '')
+    await verifyTeamMemberCard(cards[5], 'Ania Nakayama', 'リード')
+    await verifyTeamMemberCard(cards[6], 'エイデン・フォニエ', 'リード')
 })

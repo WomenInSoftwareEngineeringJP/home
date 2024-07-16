@@ -18,9 +18,9 @@
     {
         "nameEN": "Maria Tenorio",
         "nameJA": "",
-        "titleEN": "",
-        "titleJA": "",
-        "image": "",
+        "titleEN": "Lead",
+        "titleJA": "リード",
+        "image": "Maria.jpg",
         "url": ""
     },
     {
@@ -49,10 +49,10 @@
     },
     {
         "nameEN": "Aidan Fournier",
-        "nameJA": "",
-        "titleEN": "",
-        "titleJA": "",
-        "image": "",
+        "nameJA": "エイデン・フォニエ",
+        "titleEN": "Lead",
+        "titleJA": "リード",
+        "image": "Aidan.jpg",
         "url": ""
     }
 ]
