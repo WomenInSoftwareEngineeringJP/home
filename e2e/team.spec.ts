@@ -32,7 +32,7 @@ test('shows the team in English', async ({ page }) => {
     await verifyTeamMemberCard(cards[2], 'Maria Tenorio', '')
     await verifyTeamMemberCard(cards[3], 'Daria Vazhenina', 'ML & Data Science Lead')
     await verifyTeamMemberCard(cards[4], 'Krizza Bullecer', 'Lead')
-    await verifyTeamMemberCard(cards[5], 'Anna Nakayama', '')
+    await verifyTeamMemberCard(cards[5], 'Ania Nakayama', '')
     await verifyTeamMemberCard(cards[6], 'Aidan Fournier', '')
 
     // verify link
@@ -70,6 +70,6 @@ test('shows the team in Japanese', async ({ page }) => {
     await verifyTeamMemberCard(cards[2], 'Maria Tenorio', '')
     await verifyTeamMemberCard(cards[3], 'バジェニナ・ダリヤ', 'ML＆データサイエンス・リード')
     await verifyTeamMemberCard(cards[4], 'ブレサー　クリザ', 'リード')
-    await verifyTeamMemberCard(cards[5], 'Anna Nakayama', '')
+    await verifyTeamMemberCard(cards[5], 'Ania Nakayama', '')
     await verifyTeamMemberCard(cards[6], 'Aidan Fournier', '')
 })
