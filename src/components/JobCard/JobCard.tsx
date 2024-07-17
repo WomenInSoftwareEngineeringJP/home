@@ -19,7 +19,7 @@ interface JobCardProps {
 const JobCard: FC<JobCardProps> = ({ title, company, logoUrl, jobPostingUrl, location, salary, tags }) => {
     const handleReadMoreClick = () => {
         if (jobPostingUrl) {
-            window.open(jobPostingUrl, '_blank')
+            window.open(jobPostingUrl, '_blank', 'noopener,noreferrer')
         } else {
             console.error('No URL provided')
         }
