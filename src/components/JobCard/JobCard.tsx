@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Grid, Avatar, Typography, Link, Chip, Card, CardContent, Stack } from '@mui/material'
+import { Grid, Avatar, Typography, Button, Chip, Card, CardContent, Stack } from '@mui/material'
 import BusinessIcon from '@mui/icons-material/Business'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet'
@@ -17,23 +17,29 @@ interface JobCardProps {
 }
 
 const JobCard: FC<JobCardProps> = ({ title, company, logoUrl, jobPostingUrl, location, salary, tags }) => {
+    const handleReadMoreClick = () => {
+        if (jobPostingUrl) {
+            window.open(jobPostingUrl, '_blank')
+        } else {
+            console.error('No URL provided')
+        }
+    }
+
     return (
         <Stack spacing={1} alignItems="center">
-            <Card sx={{ bgcolor: '#512DA8', color: 'white', p: 1, width: '100%' }}>
+            <Card sx={{ bgcolor: '#512DA8', color: 'white', width: '100%' }}>
                 <CardContent>
                     <Grid container spacing={1} alignItems="center">
-                        <Grid item xs={12} sm={2} display="flex" justifyContent="center">
+                        <Grid item xs={12} sm={12} md={2} display="flex" justifyContent="center">
                             <Avatar
                                 sx={{ bgcolor: 'grey', width: 80, height: 80, borderRadius: 2 }}
                                 alt={`${company} logo`}
                                 src={logoUrl}
                             />
                         </Grid>
-                        <Grid item xs={12} sm={8}>
+                        <Grid item xs={12} sm={12} md={8}>
                             <Typography variant="h6" component="div" sx={{ textAlign: 'left' }}>
-                                <Link href={jobPostingUrl} underline="hover" color="inherit" target="_blank" rel="noopener noreferrer" sx={{ cursor: 'pointer' }}>
-                                    {title}
-                                </Link>
+                                {title}
                             </Typography>
                             <Grid container spacing={2}>
                                 <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: { xs: 'flex-start', sm: 'center' }, alignItems: 'center' }}>
@@ -49,7 +55,7 @@ const JobCard: FC<JobCardProps> = ({ title, company, logoUrl, jobPostingUrl, loc
                                     <Typography fontSize="medium" sx={{ ml: 1 }}>{salary}</Typography>
                                 </Grid>
                             </Grid>
-                            <Grid container spacing={1} mt={0.5} justifyContent="left">
+                            <Grid container spacing={1} mt={0.5} justifyContent="flex-start">
                                 {tags.map((tag, index) => (
                                     <Grid item key={index}>
                                         <Chip label={tag} sx={{ bgcolor: '#6A1B9A', color: 'white', height: 32, borderRadius: '8px' }} />
@@ -57,8 +63,8 @@ const JobCard: FC<JobCardProps> = ({ title, company, logoUrl, jobPostingUrl, loc
                                 ))}
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} sm={2} sx={{ order: { xs: -1, sm: 0 }, alignSelf: { sm: 'flex-start' } }} display="flex">
-                            <Grid container spacing={1} sx={{ justifyContent: { xs: 'flex-end', sm: 'center' } }}>
+                        <Grid item xs={12} sm={12} md={2} sx={{ order: { xs: -1, sm: -1, md:0 }, alignSelf: { sm: 'flex-start' } }} display="flex">
+                            <Grid container spacing={1} justifyContent="right">
                                 <Grid item>
                                     <AccessTimeIcon fontSize="small" />
                                 </Grid>
@@ -71,6 +77,27 @@ const JobCard: FC<JobCardProps> = ({ title, company, logoUrl, jobPostingUrl, loc
                                         })}
                                     </Typography>
                                 </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid container spacing={1} justifyContent="right">
+                            <Grid item>
+                                <Button
+                                    variant="contained"
+                                    color="secondary"
+                                    onClick={handleReadMoreClick}
+                                    sx={{
+                                        mt: 1,
+                                        bgcolor: '#6A1B9A',
+                                        color: 'white',
+                                        fontSize: 'small',
+                                        padding: '4px 8px',
+                                        '&:hover': {
+                                            bgcolor: '#512DA8'
+                                        }
+                                    }}
+                                >
+                                    Read More
+                                </Button>
                             </Grid>
                         </Grid>
                     </Grid>
