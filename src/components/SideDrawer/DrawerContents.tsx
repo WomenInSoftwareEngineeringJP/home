@@ -19,6 +19,11 @@ interface DrawerContentsProps {
 const DrawerContents: FC<DrawerContentsProps> = ({ closeDrawer }) => {
     const theme = useTheme()
     const { t } = useTranslation()
+
+    const closeButton = <IconButton onClick={closeDrawer} aria-label='close-button'>
+        <CloseIcon />
+    </IconButton>
+
     let navList = <></>
     if (useMediaQuery(theme.breakpoints.down('sm'))) {
         navList = (<>
@@ -26,9 +31,7 @@ const DrawerContents: FC<DrawerContentsProps> = ({ closeDrawer }) => {
                 <Stack direction='row' sx={{ width: '100%', m: 0, p: 0 }}>
                     <StyledNavLink to='/'>Home</StyledNavLink>
                     <Box sx={{ display: 'flex-grow', width: '100%' }} />
-                    <IconButton onClick={closeDrawer} aria-label='close-button'>
-                        <CloseIcon />
-                    </IconButton>
+                    {closeButton}
                 </Stack>
             </ListItem>
             <ListItem>
