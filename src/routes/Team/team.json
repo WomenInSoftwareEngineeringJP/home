@@ -1,0 +1,58 @@
+[
+    {
+        "nameEN": "Ann Kilzer",
+        "nameJA": "キルザー·杏",
+        "titleEN": "Director",
+        "titleJA": "ディレクター",
+        "image": "Ann.jpg",
+        "url": "https://annkilzer.net"
+    },
+    {
+        "nameEN": "Paty Cortez",
+        "nameJA": "",
+        "titleEN": "Director",
+        "titleJA": "ディレクター",
+        "image": "Paty.jpg",
+        "url": ""
+    },
+    {
+        "nameEN": "Maria Tenorio",
+        "nameJA": "",
+        "titleEN": "Lead",
+        "titleJA": "リード",
+        "image": "Maria.jpg",
+        "url": ""
+    },
+    {
+        "nameEN": "Daria Vazhenina",
+        "nameJA": "バジェニナ・ダリヤ",
+        "titleEN": "ML & Data Science Lead",
+        "titleJA": "ML＆データサイエンス・リード",
+        "image": "Daria.jpg",
+        "url": ""
+    },
+    {
+        "nameEN": "Krizza Bullecer",
+        "nameJA": "ブレサー　クリザ",
+        "titleEN": "Lead",
+        "titleJA": "リード",
+        "image": "Krizza.jpg",
+        "url": ""
+    },
+    {
+        "nameEN": "Ania Nakayama",
+        "nameJA": "",
+        "titleEN": "Lead",
+        "titleJA": "リード",
+        "image": "",
+        "url": ""
+    },
+    {
+        "nameEN": "Aidan Fournier",
+        "nameJA": "エイデン・フォニエ",
+        "titleEN": "Lead",
+        "titleJA": "リード",
+        "image": "Aidan.jpg",
+        "url": ""
+    }
+]

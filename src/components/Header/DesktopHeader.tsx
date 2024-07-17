@@ -32,7 +32,9 @@ const DesktopHeader: FC = () => {
                 <Typography variant="h1">WiSE Japan</Typography>
                 <Typography variant="caption">{t('header.subtitle')}</Typography>
             </StyledNavLink>
-
+            <StyledNavLink to="/team" style={{ textDecoration: 'none', color: 'white' }}>
+                <Typography variant="overline">{t('header.team')}</Typography>
+            </StyledNavLink>
             <StyledNavLink to="/codeofconduct" style={{ textDecoration: 'none', color: 'white' }}>
                 <Typography variant="overline">{t('header.codeOfConduct')}</Typography>
             </StyledNavLink>
