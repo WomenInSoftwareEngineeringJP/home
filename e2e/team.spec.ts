@@ -45,7 +45,7 @@ test('shows the team in English', async ({ page }) => {
     await expect(annLink).toHaveAttribute('target', '_blank')
 })
 
-test('shows the team in Japanese', async ({ page }) => {
+test('shows the team in Japanese', async ({ page, viewport }) => {
     await page.goto('/#/team')
 
     // switch locale to Japanese
@@ -56,8 +56,13 @@ test('shows the team in Japanese', async ({ page }) => {
 
     const teamContainer = page.getByLabel('team-container')
 
-    // click off to close sidebar
-    await teamContainer.click({ force: true })
+    // close the sidebar
+    if (viewport && viewport.width < 600) {
+        const closeButton = page.getByLabel('close-button')
+        await closeButton.click()
+    } else {
+        await teamContainer.click({ force: true })
+    }
 
     const heading = teamContainer.getByText('✨ リーダーシップ・チーム ✨')
     await expect(heading).toBeVisible()

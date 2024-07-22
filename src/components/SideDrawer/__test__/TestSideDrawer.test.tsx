@@ -1,10 +1,21 @@
-import { describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen, waitFor } from '@testing-library/react'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import SideDrawer from '../SideDrawer'
 import userEvent from '@testing-library/user-event'
+import useMediaQuery from '@mui/material/useMediaQuery'
+
+vi.mock('@mui/material/useMediaQuery', () => {
+    return {
+        default: vi.fn()
+    }
+})
+
+beforeEach(() => {
+    vi.resetAllMocks()
+})
 
 describe('SideDrawer', () => {
     it('should initially render the Drawer closed', async () => {
@@ -59,6 +70,26 @@ describe('SideDrawer', () => {
 
         await waitFor(() => {
             expect(drawer).not.toBeVisible()
+        })
+    })
+
+    it('should close the Drawer when clicking the close icon on mobile view', async () => {
+        const user = userEvent.setup()
+        vi.mocked(useMediaQuery).mockReturnValue(true)
+
+        render(<SideDrawer />)
+
+        const button = await screen.findByLabelText('drawer-toggle-button')
+        await user.click(button)
+
+        const drawerContents = await screen.findByLabelText('drawer-contents')
+        expect(drawerContents).toBeVisible()
+
+        const closeButton = await screen.findByLabelText('close-button')
+        await user.click(closeButton)
+
+        await waitFor(() => {
+            expect(drawerContents).not.toBeVisible()
         })
     })
 })
