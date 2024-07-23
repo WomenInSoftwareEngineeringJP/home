@@ -30,9 +30,9 @@ npm run build
 ```
 
 
-## Quality Strategy
+# Quality Strategy
 
-### Unit tests 📦️
+## Unit tests 📦️
 We are using [Vitest](https://vitest.dev/guide/) 
 and [Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for our unit tests.
 
@@ -55,6 +55,33 @@ npm run test:ui
 When writing new tests, please follow the [Testing Library Guiding Principles](https://testing-library.com/docs/guiding-principles)
 
 
-### End-to-end (E2E) tests ↔️
+## End-to-end (E2E) tests ↔️
 
-We will use [Playwright](https://playwright.dev/) (to be installed after #4) for testing. 
+We use [Playwright](https://playwright.dev/) for end-to-end testing. 
+
+You can run it in terminal mode with:
+```sh
+npm run test:e2e
+```
+
+or in UI mode with:
+```sh
+npm run test:e2e:ui
+```
+
+### Playwright & CI/CD
+
+Playwright runs against the main branch automatically via GitHub Actions. Since we only have a production environment, it does not run on branches. 
+If you notice a failed run, here's how to troubleshoot it:
+
+
+1. Go to the "Actions" tab and select the failing run
+2. Examine the logs, and download the artifact
+<img width="1587" alt="Screenshot 2024-07-22 at 11 34 57 PM" src="https://github.com/user-attachments/assets/7eb09a4f-8581-4968-84fb-e1c3e765b17a">
+
+3. Unzip the artifact to find one or more folders with the name of the test. Each folder should contain a file called `trace.zip`.
+4. Open up the [Trace Viewer](http://trace.playwright.dev), which is a Progressive Web App (basically a special site that runs locally on your machine, not on a server).
+5. Drag the `trace.zip` file into the Trace Viewer and you can see the screenshots from the test run
+
+<img width="1587" alt="Screenshot 2024-07-22 at 11 35 14 PM" src="https://github.com/user-attachments/assets/0273ff9e-67a1-48ef-984a-5d7d5554d190">
+
