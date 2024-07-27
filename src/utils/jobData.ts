@@ -7,6 +7,7 @@ const jobData = [
         location: 'Tokyo, Japan',
         jobPostingUrl: '#',
         salary: '¥9M ~ ¥11M annually',
+        publicationDate: '2024/07/27',
         tags: ['Full Time', 'Senior Level', 'Remote', 'English']
     }
 ]

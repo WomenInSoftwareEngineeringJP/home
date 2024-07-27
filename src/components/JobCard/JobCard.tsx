@@ -13,10 +13,11 @@ interface JobCardProps {
     jobPostingUrl: string;
     location:string,
     salary: string;
+    publicationDate:string;
     tags: string[];
 }
 
-const JobCard: FC<JobCardProps> = ({ title, company, logoUrl, jobPostingUrl, location, salary, tags }) => {
+const JobCard: FC<JobCardProps> = ({ title, company, logoUrl, jobPostingUrl, location, salary, publicationDate, tags }) => {
     const handleReadMoreClick = () => {
         if (jobPostingUrl) {
             window.open(jobPostingUrl, '_blank', 'noopener,noreferrer')
@@ -70,11 +71,7 @@ const JobCard: FC<JobCardProps> = ({ title, company, logoUrl, jobPostingUrl, loc
                                 </Grid>
                                 <Grid item>
                                     <Typography fontSize="medium">
-                                        {new Date().toLocaleDateString('ja-JP', {
-                                            year: 'numeric',
-                                            month: '2-digit',
-                                            day: '2-digit'
-                                        })}
+                                        { publicationDate }
                                     </Typography>
                                 </Grid>
                             </Grid>

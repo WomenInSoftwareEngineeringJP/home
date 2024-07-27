@@ -15,6 +15,7 @@ const JobBoard:FC = () => {
                     location={job.location}
                     jobPostingUrl={job.jobPostingUrl}
                     salary={job.salary}
+                    publicationDate={job.publicationDate}
                     tags={job.tags}
                 />
             ))}
