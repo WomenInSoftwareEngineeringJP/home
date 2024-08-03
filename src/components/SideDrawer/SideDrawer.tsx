@@ -37,7 +37,7 @@ const SideDrawer: FC = () => {
             onClose={toggleDrawer(false)}
             aria-label="drawer"
         >
-            <DrawerContents />
+            <DrawerContents closeDrawer={() => { setOpen(false) }} />
         </SwipeableDrawer>
     </>
 }
