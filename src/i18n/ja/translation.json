@@ -2,7 +2,8 @@
     "header": {
         "codeOfConduct": "行動規範",
         "subtitle": "ウーマン・イン・ソフトウェアエンジニアリング",
-        "team": "チーム"
+        "team": "チーム",
+        "job": "求人掲示板"
     },
     "home": {
         "helloWorld": "✨ Hello 世界 ✨",
@@ -17,5 +18,8 @@
     },
     "team": {
         "title": "✨ リーダーシップ・チーム ✨"
+    },
+    "job": {
+        "title": "✨ 求人掲示板 ✨"
     }
 }

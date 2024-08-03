@@ -1,26 +1,24 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import JobCard from '@/components/JobCard/JobCard'
-import { Container } from '@mui/material'
-import { jobData } from '@/utils/jobData'
+import { Container, Stack, Typography } from '@mui/material'
+import { useTranslation } from 'react-i18next'
+import  job from '@/routes/JobBoard/jobs.json'
+import JobData from '@/types/JobListing'
 
 const JobBoard:FC = () => {
-    return (
-        <Container style={{ padding: 25 }}>
-            {jobData.map((job, index) => (
-                <JobCard
-                    key={index}
-                    title={job.title}
-                    company={job.company}
-                    logoUrl={job.logoUrl}
-                    location={job.location}
-                    jobPostingUrl={job.jobPostingUrl}
-                    salary={job.salary}
-                    publicationDate={job.publicationDate}
-                    tags={job.tags}
-                />
-            ))}
-        </Container>
-    )
+    const { t } = useTranslation()
+
+    const jobGrid: ReactNode[] = []
+    job.forEach((jobDescription: JobData) => {
+        jobGrid.push(<JobCard job={jobDescription}/>)
+    })
+
+    return <Container style={{ padding: 32 }} aria-label="job-board-container">
+        <Stack spacing={4}>
+            <Typography variant="h1">{t('job.title')}</Typography>
+            {jobGrid}
+        </Stack>
+    </Container>
 }
 
 export default JobBoard
