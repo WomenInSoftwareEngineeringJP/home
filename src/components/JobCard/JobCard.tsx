@@ -51,17 +51,11 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                         ))}
                     </Stack>
                 </Grid>
-                <Grid item xs={12} sm={12} md={2} sx={{ order: { xs: -1, sm: -1, md:0 }, alignSelf: { sm: 'flex-start' } }} display="flex">
-                    <Grid container spacing={1} justifyContent="right">
-                        <Grid item>
-                            <AccessTimeIcon />
-                        </Grid>
-                        <Grid item>
-                            <Typography fontSize="body2">
-                                { job.publicationDate }
-                            </Typography>
-                        </Grid>
-                    </Grid>
+                <Grid item xs={12} sm={12} md={2} paddingRight={2} sx={{ order: { xs: -1, sm: -1, md: 0 }, alignSelf: { sm: 'flex-start' } }} display="flex" alignItems="center" justifyContent="right">
+                    <AccessTimeIcon sx={{ marginRight: 2 }} />
+                    <Typography fontSize="body2">
+                        { job.publicationDate }
+                    </Typography>
                 </Grid>
                 <Grid container spacing={1} justifyContent="right">
                     <Grid item>
