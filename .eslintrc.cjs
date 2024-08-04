@@ -15,7 +15,7 @@ module.exports = {
     },
     plugins: [
         'react-refresh',
-        '@stylistic/ts'
+        '@stylistic'
     ],
     rules: {
         'react-refresh/only-export-components': [
@@ -26,8 +26,12 @@ module.exports = {
         'quotes': ['error', 'single'],
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/no-unsafe-call': ['off'],
-        '@stylistic/ts/indent': ['error', 4],
-        '@stylistic/ts/semi': ['error', 'never'],
+        '@stylistic/indent': ['error', 4],
+        '@stylistic/semi': ['error', 'never'],
+        '@stylistic/no-multi-spaces': 'error',
+        '@stylistic/no-trailing-spaces': 'error',
+        '@stylistic/no-mixed-spaces-and-tabs': 'error',
+        '@typescript-eslint/no-explicit-any': 'error',
     },
     settings: {
         react: {
