@@ -7,7 +7,6 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import JobData from '@/types/JobListing'
 
 
-
 interface JobCardProps {
     job: JobData
 }
@@ -17,7 +16,7 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
         window.open(job.jobPostingUrl, '_blank', 'noopener,noreferrer')
     }
 
-    return <Card sx={{ bgcolor: ' theme.palette.primary.light', width: '100%' }}>
+    return <Card sx={{ bgcolor: 'primary.dark', width: '100%' }}>
         <CardContent>
             <Grid container spacing={1} alignItems="center">
                 <Grid item xs={12} sm={12} md={2} display="flex" justifyContent="center">
@@ -47,7 +46,7 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                     </Grid>
                     <Stack direction='row' spacing={1} mt={2} justifyContent="flex-start">
                         {job.tags.map((tag, index) => (
-                            <Chip key={index} label={tag} sx={{ bgcolor: '#6A1B9A', height: 32, borderRadius: '8px' }} />
+                            <Chip key={index} label={tag} sx={{ bgcolor: 'secondary.dark', height: 32, borderRadius: '8px' }} />
                         ))}
                     </Stack>
                 </Grid>
@@ -61,6 +60,7 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                     <Grid item>
                         <Button
                             variant="contained"
+                            color='tertiary'
                             onClick={handleReadMoreClick}
                             sx={{
                                 mt: 1,
