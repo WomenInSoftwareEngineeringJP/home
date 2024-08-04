@@ -35,7 +35,7 @@ const theme = createTheme({
             paper: deepPurple[900]
         },
         divider: lightBlue[300]
-      
+
     },
     typography
 })
