@@ -17,7 +17,7 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
         window.open(job.jobPostingUrl, '_blank', 'noopener,noreferrer')
     }
 
-    return <Card sx={{ bgcolor: '#512da8', color: 'white', width: '100%' }}>
+    return <Card sx={{ bgcolor: ' theme.palette.primary.light', width: '100%' }}>
         <CardContent>
             <Grid container spacing={1} alignItems="center">
                 <Grid item xs={12} sm={12} md={2} display="flex" justifyContent="center">
@@ -47,7 +47,7 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                     </Grid>
                     <Stack direction='row' spacing={1} mt={2} justifyContent="flex-start">
                         {job.tags.map((tag, index) => (
-                            <Chip key={index} label={tag} sx={{ bgcolor: '#6A1B9A', color: 'white', height: 32, borderRadius: '8px' }} />
+                            <Chip key={index} label={tag} sx={{ bgcolor: '#6A1B9A', height: 32, borderRadius: '8px' }} />
                         ))}
                     </Stack>
                 </Grid>
