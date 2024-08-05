@@ -22,7 +22,7 @@ describe('ColorSwatch', () => {
     it('should display a tertiary color swatch', async () => {
         render(<ColorSwatch color='tertiary' data-testid="swatch" />)
         const swatch = await screen.findByTestId('swatch')
-        expect(swatch).toHaveStyle('background-color: rgb(0, 105, 92);')
+        expect(swatch).toHaveStyle('background-color: rgb(40,53,147);')
     })
 
     it('should gracefully handle an unknown color', async () => {
