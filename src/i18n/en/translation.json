@@ -2,7 +2,8 @@
     "header": {
         "codeOfConduct": "Code of Conduct",
         "subtitle": "Women in Software Engineering Japan",
-        "team": "Team"
+        "team": "Team",
+        "job": "Jobs"
     },
     "home": {
         "helloWorld": "✨ Hello World ✨",
@@ -13,9 +14,14 @@
     },
     "sidebar": {
         "codeOfConduct": "Code of Conduct",
-        "team": "Team"
+        "team": "Team",
+        "job": "Job Board"
     },
     "team": {
         "title": "✨ Leadership Team ✨"
+    }
+    ,
+    "job": {
+        "title": "✨ Job Board ✨"
     }
 }
