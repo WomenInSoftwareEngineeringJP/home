@@ -1,31 +1,31 @@
 [
     {
         "title": "Sr. Software Development Engineer, Japan Pricing and Promotions",
-        "company": "Amazon Web Services",
+        "company": "Amazon Japan",
         "logoUrl": "/Amazon-logo.png",
         "location": "Tokyo, Japan",
         "jobPostingUrl": "https://www.amazon.jobs/en/jobs/2719073/sr-software-development-engineer-japan-pricing-and-promotions",
-        "salary": "-",
+        "salary": "",
         "publicationDate": "2024/08/25",
         "tags": ["Full Time", "Senior Level", "English"]
     },
     {
         "title": "Software Development Engineer, Amazon Points, JP Points CX",
-        "company": "Amazon Web Services",
+        "company": "Amazon Japan",
         "logoUrl": "/Amazon-logo.png",
         "location": "Tokyo, Japan",
         "jobPostingUrl": "https://www.amazon.jobs/en/jobs/2725444/software-development-engineer-amazon-points-jp-points-cx",
-        "salary": "-",
+        "salary": "",
         "publicationDate": "2024/08/25",
         "tags": ["Full Time", "English"]
     },
     {
         "title": "Senior Business Intelligence Engineer, JP Retail Science",
-        "company": "Amazon Web Services",
+        "company": "Amazon Japan",
         "logoUrl": "/Amazon-logo.png",
         "location": "Tokyo, Japan",
         "jobPostingUrl": "https://www.amazon.jobs/en/jobs/2560382/senior-business-intelligence-engineer-jp-retail-science",
-        "salary": "-",
+        "salary": "",
         "publicationDate": "2024/08/25",
         "tags": ["Full Time", "Senior Level", "SQL skills", "English"]
     }

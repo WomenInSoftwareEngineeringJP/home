@@ -18,17 +18,23 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
 
     return <Card sx={{ bgcolor: 'primary.dark', width: '100%' }}>
         <CardContent>
-            <Grid container spacing={1} alignItems="center">
+            <Grid item xs={12} md={2} display={{ xs: 'flex', sm: 'flex', md: 'none' }} alignItems="center" justifyContent="right"  sx={{ marginBottom: { xs: 4, sm: 4 }, marginRight: 2 }}>
+                <AccessTimeIcon sx={{ marginRight: 1 }} />
+                <Typography fontSize="body2">
+                    {job.publicationDate}
+                </Typography>
+            </Grid>
+            <Grid container alignItems="center">
                 <Grid item xs={12} sm={12} md={2} display="flex" justifyContent="center">
                     <Avatar
-                        sx={{ bgcolor: 'white', width: 100, height: 100, borderRadius: 2,  img: {objectFit: 'contain', width: '90%', height: '100%'}
+                        sx={{ bgcolor: 'white', width: 135, height: 135, borderRadius: 2,  img: {objectFit: 'contain', width: '90%', height: '100%'}
                         }}
                         alt={`${job.company} logo`}
                         src={job.logoUrl}
                     />
                 </Grid>
                 <Grid item xs={12} sm={12} md={8} mt={2}>
-                    <Typography variant="h5" mb={2} component="div" sx={{ textAlign: 'left' }}>
+                    <Typography variant="h5" mb={2} mt={2} component="div" sx={{ textAlign: 'left' }}>
                         {job.title}
                     </Typography>
                     <Grid container spacing={2}>
@@ -40,10 +46,12 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                             <LocationOnIcon />
                             <Typography fontSize="body2" sx={{ ml: 1 }}>{job.location}</Typography>
                         </Grid>
-                        <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: { xs: 'flex-start', sm: 'center' }, alignItems: 'center' }}>
-                            <AccountBalanceWalletIcon />
-                            <Typography fontSize="body2" sx={{ ml: 1 }}>{job.salary}</Typography>
-                        </Grid>
+                        {job.salary != '' &&
+                            <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: { xs: 'flex-start', sm: 'center' }, alignItems: 'center' }}>
+                                <AccountBalanceWalletIcon />
+                                <Typography fontSize="body2" sx={{ ml: 1 }}>{job.salary}</Typography>
+                            </Grid>
+                        }
                     </Grid>
                     <Grid direction='row' spacing={1} mt={2} justifyContent="flex-start" flexWrap="wrap">
                         {job.tags.map((tag, index) => (
@@ -51,21 +59,21 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                         ))}
                     </Grid>
                 </Grid>
-                <Grid item xs={12} sm={12} md={2} paddingRight={2} sx={{ order: { xs: -1, sm: -1, md: 0 }, alignSelf: { sm: 'flex-start' } }} display="flex" alignItems="center" justifyContent="right">
-                    <AccessTimeIcon sx={{ marginRight: 2 }} />
-                    <Typography fontSize="body2">
-                        { job.publicationDate }
-                    </Typography>
-                </Grid>
-                <Grid container spacing={1} justifyContent="right">
-                    <Grid item>
+                <Grid container xs={12} sm={12} md={2} paddingRight={2} sx={{ alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
+                    <Grid item display={{ xs: 'none', sm: 'none', md: 'flex' }}  alignItems="center" justifyContent="right" paddingBottom={3}>
+                        <AccessTimeIcon sx={{ marginRight: 2 }} />
+                        <Typography fontSize="body2">
+                            {job.publicationDate}
+                        </Typography>
+                    </Grid>
+                    <Grid item display="flex-end" sx={{ marginTop:{xs: 3}, paddingLeft: {md: 3} }}>
                         <Button
                             variant="contained"
-                            color='tertiary'
+                            color="tertiary"
                             onClick={handleReadMoreClick}
                             sx={{
-                                mt: 1,
                                 padding: '4px 8px',
+                                transform: { md:'translateY(40px)' } ,
                             }}
                         >
                             Read More
