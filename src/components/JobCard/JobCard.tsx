@@ -18,7 +18,7 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
 
     return <Card sx={{ bgcolor: 'primary.dark', width: '100%' }}>
         <CardContent>
-            <Grid item xs={12} md={2} display={{ xs: 'flex', sm: 'flex', md: 'none' }} alignItems="center" justifyContent="right"  sx={{ marginBottom: { xs: 4, sm: 4 }, marginRight: 2 }}>
+            <Grid item xs={12} md={2} display={{ xs: 'flex', sm: 'flex', md: 'none' }} alignItems="center" justifyContent="right" sx={{ marginBottom: { xs: 4, sm: 4 }, marginRight: 2 }}>
                 <AccessTimeIcon sx={{ marginRight: 1 }} />
                 <Typography fontSize="body2">
                     {job.publicationDate}
