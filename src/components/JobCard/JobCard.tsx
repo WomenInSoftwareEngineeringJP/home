@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Grid, Avatar, Typography, Button, Chip, Card, CardContent } from '@mui/material'
+import { Grid, Avatar, Typography, Button, Chip, Card, CardContent, Stack } from '@mui/material'
 import BusinessIcon from '@mui/icons-material/Business'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet'
@@ -38,26 +38,26 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                         {job.title}
                     </Typography>
                     <Grid container spacing={2}>
-                        <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: { xs: 'flex-start', sm: 'center' }, alignItems: 'center' }}>
+                        <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
                             <BusinessIcon />
                             <Typography fontSize="body2" sx={{ ml: 1 }}>{job.company}</Typography>
                         </Grid>
-                        <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: { xs: 'flex-start', sm: 'center' }, alignItems: 'center' }}>
+                        <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
                             <LocationOnIcon />
                             <Typography fontSize="body2" sx={{ ml: 1 }}>{job.location}</Typography>
                         </Grid>
                         {job.salary != '' &&
-                            <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: { xs: 'flex-start', sm: 'center' }, alignItems: 'center' }}>
+                            <Grid item xs={12} sm={4} sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
                                 <AccountBalanceWalletIcon />
                                 <Typography fontSize="body2" sx={{ ml: 1 }}>{job.salary}</Typography>
                             </Grid>
                         }
                     </Grid>
-                    <Grid direction='row' spacing={1} mt={2} justifyContent="flex-start" flexWrap="wrap">
+                    <Stack direction='row' mt={2} justifyContent="flex-start" flexWrap="wrap" sx={{ gap: 2, spacing:{sx:0, md:1} }}>
                         {job.tags.map((tag, index) => (
-                            <Chip key={index} label={tag} sx={{ bgcolor: 'secondary.dark', height: 32, borderRadius: '8px', mt: { xs: 2, sm: 0 }, ml: { xs: 1, sm: 1 }, flexShrink: 0 }} />
+                            <Chip key={index}  label={tag} sx={{ bgcolor: 'secondary.dark', color: 'white', height: 32, borderRadius: '8px' }} />
                         ))}
-                    </Grid>
+                    </Stack>
                 </Grid>
                 <Grid container xs={12} sm={12} md={2} paddingRight={2} sx={{ alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
                     <Grid item display={{ xs: 'none', sm: 'none', md: 'flex' }}  alignItems="center" justifyContent="right" paddingBottom={3}>
