@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react'
 import JobCard from '@/components/JobCard/JobCard'
 import { Container, Stack, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import  job from '@/routes/JobBoard/jobs.json'
+import job from '@/routes/JobBoard/jobs.json'
 import JobData from '@/types/JobListing'
 
 const JobBoard:FC = () => {
