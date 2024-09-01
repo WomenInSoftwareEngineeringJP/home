@@ -27,7 +27,7 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
             <Grid container alignItems="center">
                 <Grid item xs={12} sm={12} md={2} display="flex" justifyContent="center">
                     <Avatar
-                        sx={{ bgcolor: 'white', width: 135, height: 135, borderRadius: 2,  img: {objectFit: 'contain', width: '90%', height: '100%'}
+                        sx={{ bgcolor: 'white', width: 135, height: 135, borderRadius: 2, img: {objectFit: 'contain', width: '90%', height: '100%'}
                         }}
                         alt={`${job.company} logo`}
                         src={job.logoUrl}
@@ -55,12 +55,12 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                     </Grid>
                     <Stack direction='row' mt={2} justifyContent="flex-start" flexWrap="wrap" sx={{ gap: 2, spacing:{sx:0, md:1} }}>
                         {job.tags.map((tag, index) => (
-                            <Chip key={index}  label={tag} sx={{ bgcolor: 'secondary.dark', color: 'white', height: 32, borderRadius: '8px' }} />
+                            <Chip key={index} label={tag} sx={{ bgcolor: 'secondary.dark', color: 'white', height: 32, borderRadius: '8px' }} />
                         ))}
                     </Stack>
                 </Grid>
                 <Grid container xs={12} sm={12} md={2} paddingRight={2} sx={{ alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
-                    <Grid item display={{ xs: 'none', sm: 'none', md: 'flex' }}  alignItems="center" justifyContent="right" paddingBottom={3}>
+                    <Grid item display={{ xs: 'none', sm: 'none', md: 'flex' }} alignItems="center" justifyContent="right" paddingBottom={3}>
                         <AccessTimeIcon sx={{ marginRight: 2 }} />
                         <Typography fontSize="body2">
                             {job.publicationDate}
