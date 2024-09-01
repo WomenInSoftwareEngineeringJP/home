@@ -1,14 +1,14 @@
 import createTheme from '@mui/material/styles/createTheme'
 import typography from './typography/default'
-import { teal, lightBlue, deepPurple, purple, grey } from '@mui/material/colors'
+import { lightBlue, deepPurple, purple, grey, indigo } from '@mui/material/colors'
 
 const theme = createTheme({
     palette: {
         mode: 'dark',
         primary: {
-            light: purple[200],
+            light: purple[700],
             main: purple[800],
-            dark: purple[700],
+            dark: purple[900],
             contrastText: '#FFF'
         },
         secondary: {
@@ -18,9 +18,9 @@ const theme = createTheme({
             contrastText: '#000',
         },
         tertiary: {
-            light: teal[400],
-            main: teal[800],
-            dark: teal[900],
+            light: indigo[500],
+            main: indigo[800],
+            dark: indigo[900],
             contrastText: '#fff',
         },
         action: {
@@ -35,7 +35,6 @@ const theme = createTheme({
             paper: deepPurple[900]
         },
         divider: lightBlue[300]
-
     },
     typography
 })

@@ -9,6 +9,7 @@ import BaseLayout from './BaseLayout'
 import NotFound from './NotFound/NotFound'
 import CodeOfConduct from './CodeOfConduct/CodeOfConduct'
 import Team from './Team/Team'
+import JobBoard from './JobBoard/JobBoard'
 
 const browserRouter = createHashRouter([{
     element: <BaseLayout />,
@@ -24,6 +25,10 @@ const browserRouter = createHashRouter([{
         {
             path: 'team',
             element: <Team />
+        },
+        {
+            path: 'jobs',
+            element: <JobBoard />
         },
         {
             path: 'theme',
