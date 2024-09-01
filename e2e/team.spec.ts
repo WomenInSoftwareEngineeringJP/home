@@ -1,7 +1,7 @@
 import { test, expect, Locator } from '@playwright/test'
 
 /** Verifies visibility of the name, title, and photo
- * 
+ *
  * @param card The Locator for the TeamMember Card
  * @param name The name to find
  * @param title The title to find, if defined
