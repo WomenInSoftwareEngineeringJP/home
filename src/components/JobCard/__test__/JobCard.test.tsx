@@ -1,6 +1,7 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import JobCard from '../JobCard'
 
 // Mock data for the job
@@ -66,5 +67,35 @@ describe('JobCard Component', () => {
             expect(chip).toHaveStyle('background-color: rgb(2, 119, 189)')
             expect(chip).toHaveStyle('color:rgb(255, 255, 255)')
         })
+    })
+
+    it('should render the JobCard and handle the Read More button click', async () => {
+        // Backup original window.open
+        const originalOpen = window.open
+
+        // Override window.open with a mock function
+        window.open = vi.fn()
+
+        render(<JobCard job={mockJob} />)
+
+        // Find the button by its role and name
+        const readMoreButton = await screen.findByRole('button', { name: 'Read More' })
+
+        // Ensure the button is visible and enabled
+        expect(readMoreButton).toBeVisible()
+        expect(readMoreButton).toBeEnabled()
+
+        // Simulate button click
+        await userEvent.click(readMoreButton)
+
+        // Ensure window.open was called with the correct arguments
+        expect(window.open).toHaveBeenCalledWith(
+            mockJob.jobPostingUrl,
+            '_blank',
+            'noopener,noreferrer'
+        )
+
+        // Restore the original window.open after the test
+        window.open = originalOpen
     })
 })
