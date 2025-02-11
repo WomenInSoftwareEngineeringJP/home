@@ -7,7 +7,7 @@ import Locale from './locales'
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
 i18next.use(initReactI18next).init({
     lng: Locale.EN, // if you're using a language detector, do not define the lng option
-    debug: true,
+    debug: false,
     resources: {
         en: {
             translation: english
