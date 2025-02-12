@@ -30,5 +30,16 @@ describe('DrawerContents', () => {
         expect(mock).toHaveBeenCalled()
     })
 
-    it.todo('should show the NavLinks on mobile screens')
+    it('should show the NavLinks on mobile screens', async () => {
+        render(<DrawerContents closeDrawer={() => { }} />)
+
+        const links = await screen.findAllByRole('link')
+        expect(links.length).toEqual(4)
+        const baseURL = window.location.toString()
+        expect(links[0]).toHaveProperty('href', baseURL)
+        expect(links[1]).toHaveProperty('href', baseURL + 'team')
+        expect(links[2]).toHaveProperty('href', baseURL + 'jobs')
+        expect(links[3]).toHaveProperty('href', baseURL + 'codeofconduct')
+
+    })
 })
