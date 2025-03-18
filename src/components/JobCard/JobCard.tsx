@@ -16,11 +16,11 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
         window.open(job.jobPostingUrl, '_blank', 'noopener,noreferrer')
     }
 
-    return <Card sx={{ bgcolor: 'primary.dark', width: '100%' }}>
+    return <Card sx={{ bgcolor: 'primary.dark', width: '100%' }} data-testid="job-card">
         <CardContent>
             <Grid item xs={12} md={2} display={{ xs: 'flex', sm: 'flex', md: 'none' }} alignItems="center" justifyContent="right" sx={{ marginBottom: { xs: 4, sm: 4 }, marginRight: 2 }}>
                 <AccessTimeIcon sx={{ marginRight: 1 }} />
-                <Typography fontSize="body2">
+                <Typography fontSize="body2" data-testid="publication-date-movil">
                     {job.publicationDate}
                 </Typography>
             </Grid>
@@ -55,14 +55,14 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                     </Grid>
                     <Stack direction='row' mt={2} justifyContent="flex-start" flexWrap="wrap" sx={{ gap: 2, spacing:{sx:0, md:1} }}>
                         {job.tags.map((tag, index) => (
-                            <Chip key={index} label={tag} sx={{ bgcolor: 'secondary.dark', color: 'white', height: 32, borderRadius: '8px' }} />
+                            <Chip aria-label="chip" key={index} label={tag} sx={{ bgcolor: 'secondary.dark', color: 'white', height: 32, borderRadius: '8px' }} />
                         ))}
                     </Stack>
                 </Grid>
                 <Grid container xs={12} sm={12} md={2} paddingRight={2} sx={{ alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
                     <Grid item display={{ xs: 'none', sm: 'none', md: 'flex' }} alignItems="center" justifyContent="right" paddingBottom={3}>
                         <AccessTimeIcon sx={{ marginRight: 2 }} />
-                        <Typography fontSize="body2">
+                        <Typography fontSize="body2" data-testid="publication-date-pc">
                             {job.publicationDate}
                         </Typography>
                     </Grid>
