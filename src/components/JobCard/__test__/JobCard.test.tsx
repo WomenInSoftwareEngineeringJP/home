@@ -4,7 +4,6 @@ import { screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import JobCard from '../JobCard'
 
-// Mock data for the job
 const mockJob = {
     title: 'Software Engineer',
     company: 'Tech Corp',
@@ -12,35 +11,36 @@ const mockJob = {
     salary: '600,000 - 12,000,000',
     tags: ['React', 'JavaScript', 'Frontend'],
     logoUrl: 'https://via.placeholder.com/150',
-    publicationDate: '31/01/2025',
+    publicationDate: '2025/03/31',
     jobPostingUrl: 'https://jobpostingurl.com',
 }
 
 describe('JobCard Component', () => {
-    it('should render the job details correctly', () => {
+    it('should render the job details correctly', async () => {
         render(<JobCard job={mockJob} />)
 
-        // Check the job title
-        expect(screen.getByText(mockJob.title)).toBeInTheDocument()
+        const title = await screen.findByText(mockJob.title)
+        expect(title).toBeVisible()
 
-        // Check the company name
-        expect(screen.getByText(mockJob.company)).toBeInTheDocument()
+        const company = await screen.findByText(mockJob.company)
+        expect(company).toBeVisible()
 
-        // Check the location
-        expect(screen.getByText(mockJob.location)).toBeInTheDocument()
+        const location = await screen.findByText(mockJob.location)
+        expect(location).toBeVisible()
 
-        // Check the salary
-        expect(screen.getByText(mockJob.salary)).toBeInTheDocument()
+        const salary = await screen.findByText(mockJob.salary)
+        expect(salary).toBeVisible()
 
-        // Check the tags
         mockJob.tags.forEach((tag) => {
             expect(screen.getByText(tag)).toBeInTheDocument()
         })
 
-        // Check the publication date
-        expect(screen.getAllByText(mockJob.publicationDate).length).toBeGreaterThan(0)
+        const publicationDatePC = await screen.findByTestId('publication-date-pc')
+        expect(publicationDatePC).toBeVisible()
 
-        // Check the logo
+        const publicationDateMovil = await screen.findByTestId('publication-date-movil')
+        expect(publicationDateMovil).toBeVisible()
+
         const logo = screen.getByAltText(`${mockJob.company} logo`)
         expect(logo).toBeInTheDocument()
         expect(logo).toHaveAttribute('src', mockJob.logoUrl)
@@ -50,17 +50,12 @@ describe('JobCard Component', () => {
         const jobWithoutSalary = { ...mockJob, salary: '' }
         render(<JobCard job={jobWithoutSalary} />)
 
-        // Ensure the salary is not rendered
         expect(screen.queryByText(mockJob.salary)).not.toBeInTheDocument()
     })
 
-    it('should renders tags with correct styles', () => {
-        const { container } = render(<JobCard job={mockJob} />)
-
-        // Select all Chip elements (MUI typically applies .MuiChip-root class)
-        const chips = container.querySelectorAll('.MuiChip-root')
-
-        expect(chips.length).toBe(mockJob.tags.length)
+    it('should renders tags with correct styles', async () => {
+        render(<JobCard job={mockJob} />)
+        const chips = await screen.findAllByLabelText('chip')
 
         chips.forEach((chip, index) => {
             expect(chip).toHaveTextContent(mockJob.tags[index])
@@ -70,32 +65,25 @@ describe('JobCard Component', () => {
     })
 
     it('should render the JobCard and handle the Read More button click', async () => {
-        // Backup original window.open
         const originalOpen = window.open
 
-        // Override window.open with a mock function
         window.open = vi.fn()
 
         render(<JobCard job={mockJob} />)
 
-        // Find the button by its role and name
         const readMoreButton = await screen.findByRole('button', { name: 'Read More' })
 
-        // Ensure the button is visible and enabled
         expect(readMoreButton).toBeVisible()
         expect(readMoreButton).toBeEnabled()
 
-        // Simulate button click
         await userEvent.click(readMoreButton)
 
-        // Ensure window.open was called with the correct arguments
         expect(window.open).toHaveBeenCalledWith(
             mockJob.jobPostingUrl,
             '_blank',
             'noopener,noreferrer'
         )
 
-        // Restore the original window.open after the test
         window.open = originalOpen
     })
 })
