@@ -37,10 +37,10 @@ const typography: TypographyOptions = {
         fontSize: '1.3rem'
     },
     body1: {
-        fontSize: '1.25rem'
+        fontSize: '1rem'
     },
     body2: {
-        fontSize: '1.25rem'
+        fontSize: '.75rem'
     },
     button: {
         fontSize: '1.25rem'
