@@ -51,7 +51,7 @@
         "eslint-plugin-react-refresh": "0.4.6",
         "husky": "9.0.11",
         "jsdom": "24.0.0",
-        "lint-staged": "15.2.9",
+        "lint-staged": "15.5.1",
         "typescript": "5.2.2",
         "vite": "6.2.6",
         "vite-bundle-visualizer": "1.2.1",
