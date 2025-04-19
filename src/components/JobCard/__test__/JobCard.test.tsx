@@ -1,7 +1,6 @@
-import { describe, expect, it, page, vi } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import JobCard from '../JobCard'
 
 const mockJob = {
@@ -72,6 +71,6 @@ describe('JobCard Component', () => {
         expect(readMoreButton).toBeVisible()
         expect(readMoreButton).toBeEnabled()
 
-        await userEvent.click(readMoreButton)
+        readMoreButton.click()
     })
 })
