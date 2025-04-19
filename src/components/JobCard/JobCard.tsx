@@ -62,7 +62,7 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                 <Grid container xs={12} sm={12} md={2} paddingRight={2} sx={{ alignItems: 'flex-end', justifyContent: 'flex-start', flexDirection: 'column' }}>
                     <Grid item display={{ xs: 'none', sm: 'none', md: 'flex' }} alignItems="center" justifyContent="right" paddingBottom={3}>
                         <AccessTimeIcon sx={{ marginRight: 2 }} />
-                        <Typography fontSize="body2" data-testid="publication-date-pc">
+                        <Typography fontSize="body2" data-testid="publication-date-desktop">
                             {job.publicationDate}
                         </Typography>
                     </Grid>
