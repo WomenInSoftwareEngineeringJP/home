@@ -53,7 +53,7 @@ describe('JobCard Component', () => {
         expect(screen.queryByText(mockJob.salary)).not.toBeInTheDocument()
     })
 
-    it('should renders tags with correct styles', async () => {
+    it('should render tags with correct styles', async () => {
         render(<JobCard job={mockJob} />)
         const chips = await screen.findAllByLabelText('chip')
 
