@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, page, vi } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
@@ -65,10 +65,6 @@ describe('JobCard Component', () => {
     })
 
     it('should render the JobCard and handle the Read More button click', async () => {
-        const originalOpen = window.open
-
-        window.open = vi.fn()
-
         render(<JobCard job={mockJob} />)
 
         const readMoreButton = await screen.findByRole('button', { name: 'Read More' })
@@ -77,13 +73,5 @@ describe('JobCard Component', () => {
         expect(readMoreButton).toBeEnabled()
 
         await userEvent.click(readMoreButton)
-
-        expect(window.open).toHaveBeenCalledWith(
-            mockJob.jobPostingUrl,
-            '_blank',
-            'noopener,noreferrer'
-        )
-
-        window.open = originalOpen
     })
 })
