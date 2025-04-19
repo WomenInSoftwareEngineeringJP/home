@@ -35,11 +35,11 @@ describe('JobCard Component', () => {
             expect(screen.getByText(tag)).toBeInTheDocument()
         })
 
-        const publicationDatePC = await screen.findByTestId('publication-date-pc')
-        expect(publicationDatePC).toBeVisible()
+        const publicationDateDesktop = await screen.findByTestId('publication-date-desktop')
+        expect(publicationDateDesktop).toBeVisible()
 
-        const publicationDateMovil = await screen.findByTestId('publication-date-movil')
-        expect(publicationDateMovil).toBeVisible()
+        const publicationDateMobile = await screen.findByTestId('publication-date-mobile')
+        expect(publicationDateMobile.toBeVisible()
 
         const logo = screen.getByAltText(`${mockJob.company} logo`)
         expect(logo).toBeInTheDocument()
