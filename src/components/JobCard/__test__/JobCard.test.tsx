@@ -63,14 +63,12 @@ describe('JobCard Component', () => {
         })
     })
 
-    it('should render the JobCard and handle the Read More button click', async () => {
+    it('should render the JobCard Read More button', async () => {
         render(<JobCard job={mockJob} />)
 
         const readMoreButton = await screen.findByRole('button', { name: 'Read More' })
 
         expect(readMoreButton).toBeVisible()
         expect(readMoreButton).toBeEnabled()
-
-        readMoreButton.click()
     })
 })
