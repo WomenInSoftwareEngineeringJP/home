@@ -1,5 +1,31 @@
 [
     {
+        "title": "ソフトウェアエンジニアインストラクター",
+        "company": "Code Chrysalis",
+        "logoUrl": "/code-chrysalis.png",
+        "location": "Tokyo, Japan",
+        "jobPostingUrl": "https://codechrysalis.notion.site/a852b6bc208746ccaa8c7b3f6a4a60dc",
+        "salary": "4.5-11 Million Yen",
+        "publicationDate": "2025/04/22",
+        "tags": [
+            "Full Time",
+            "Japanese"
+        ]
+    },
+    {
+        "title": "シニアプロダクトインストラクター",
+        "company": "Code Chrysalis",
+        "logoUrl": "/code-chrysalis.png",
+        "location": "Tokyo, Japan",
+        "jobPostingUrl": "https://codechrysalis.notion.site/Senior-Product-Instructor-Japanese-Language-1a7cfeb6cd5080239704c9267b6423ae",
+        "salary": "5-11 Million Yen",
+        "publicationDate": "2025/04/22",
+        "tags": [
+            "Full Time",
+            "Japanese"
+        ]
+    },
+    {
         "title": "Sr. Software Development Engineer, Japan Pricing and Promotions",
         "company": "Amazon Japan",
         "logoUrl": "/Amazon-logo.png",
@@ -7,7 +33,11 @@
         "jobPostingUrl": "https://www.amazon.jobs/en/jobs/2719073/sr-software-development-engineer-japan-pricing-and-promotions",
         "salary": "",
         "publicationDate": "2024/08/25",
-        "tags": ["Full Time", "Senior Level", "English"]
+        "tags": [
+            "Full Time",
+            "Senior Level",
+            "English"
+        ]
     },
     {
         "title": "Software Development Engineer, Amazon Points, JP Points CX",
@@ -17,7 +47,10 @@
         "jobPostingUrl": "https://www.amazon.jobs/en/jobs/2725444/software-development-engineer-amazon-points-jp-points-cx",
         "salary": "",
         "publicationDate": "2024/08/25",
-        "tags": ["Full Time", "English"]
+        "tags": [
+            "Full Time",
+            "English"
+        ]
     },
     {
         "title": "Senior Business Intelligence Engineer, JP Retail Science",
@@ -27,6 +60,11 @@
         "jobPostingUrl": "https://www.amazon.jobs/en/jobs/2560382/senior-business-intelligence-engineer-jp-retail-science",
         "salary": "",
         "publicationDate": "2024/08/25",
-        "tags": ["Full Time", "Senior Level", "SQL skills", "English"]
+        "tags": [
+            "Full Time",
+            "Senior Level",
+            "SQL skills",
+            "English"
+        ]
     }
 ]
