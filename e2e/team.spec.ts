@@ -64,7 +64,7 @@ test('shows the team in Japanese', async ({ page, viewport }) => {
         await teamContainer.click({ force: true })
     }
 
-    const heading = teamContainer.getByText('✨ リーダーシップ・チーム ✨')
+    const heading = teamContainer.getByText('✨ リーダーシップチーム ✨')
     await expect(heading).toBeVisible()
 
     const cards = await teamContainer.getByLabel('team-member-card').all()
