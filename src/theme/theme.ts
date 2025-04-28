@@ -1,4 +1,4 @@
-import createTheme from '@mui/material/styles/createTheme'
+import { createTheme } from '@mui/material/styles'
 import typography from './typography/default'
 import { lightBlue, deepPurple, purple, grey, indigo } from '@mui/material/colors'
 
@@ -36,6 +36,7 @@ const theme = createTheme({
         },
         divider: lightBlue[300]
     },
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     typography
 })
 
