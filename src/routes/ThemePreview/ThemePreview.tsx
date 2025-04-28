@@ -32,9 +32,9 @@ const ThemePreview: FC = () => {
 
                 <Typography variant="h4">Colors</Typography>
                 <Grid container spacing={2}>
-                    <Grid item xs={4}><ColorSwatch color="primary">Primary</ColorSwatch></Grid>
-                    <Grid item xs={4}><ColorSwatch color="secondary">Secondary</ColorSwatch></Grid>
-                    <Grid item xs={4}><ColorSwatch color="tertiary">Tertiary</ColorSwatch></Grid>
+                    <Grid size={{ xs: 4 }}><ColorSwatch color="primary">Primary</ColorSwatch></Grid>
+                    <Grid size={{ xs: 4 }}><ColorSwatch color="secondary">Secondary</ColorSwatch></Grid>
+                    <Grid size={{ xs: 4 }}><ColorSwatch color="tertiary">Tertiary</ColorSwatch></Grid>
                 </Grid>
 
                 <Divider />
