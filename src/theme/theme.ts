@@ -36,7 +36,6 @@ const theme = createTheme({
         },
         divider: lightBlue[300]
     },
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     typography
 })
 
