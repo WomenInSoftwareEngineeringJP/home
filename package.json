@@ -19,9 +19,9 @@
         "*.{ts,tsx,js,cjs}": "eslint"
     },
     "dependencies": {
-        "@emotion/react": "11.11.4",
+        "@emotion/react": "11.14.0",
         "@emotion/styled": "11.14.0",
-        "@fontsource/noto-sans-jp": "5.0.19",
+        "@fontsource/noto-sans-jp": "5.2.5",
         "@mui/icons-material": "7.0.2",
         "@mui/material": "7.0.2",
         "@vitest/coverage-istanbul": "3.1.1",
@@ -43,7 +43,7 @@
         "@types/react-dom": "19.1.2",
         "@typescript-eslint/eslint-plugin": "8.31.0",
         "@typescript-eslint/parser": "8.31.0",
-        "@vitejs/plugin-react": "4.4.0",
+        "@vitejs/plugin-react": "4.4.1",
         "@vitest/ui": "3.1.1",
         "eslint": "8.57.0",
         "eslint-plugin-react": "7.37.5",
