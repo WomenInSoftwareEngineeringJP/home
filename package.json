@@ -21,7 +21,7 @@
     "dependencies": {
         "@emotion/react": "11.14.0",
         "@emotion/styled": "11.14.0",
-        "@fontsource/noto-sans-jp": "5.0.19",
+        "@fontsource/noto-sans-jp": "5.2.5",
         "@mui/icons-material": "5.15.15",
         "@mui/material": "5.15.15",
         "@vitest/coverage-istanbul": "3.1.1",
