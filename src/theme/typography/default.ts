@@ -1,6 +1,6 @@
-import { TypographyOptions } from '@mui/material/styles/createTypography'
+import { TypographyVariantsOptions } from '@mui/material/styles'
 
-const typography: TypographyOptions = {
+const typography: TypographyVariantsOptions = {
     fontFamily: ['Noto Sans JP', 'serif'].join(','),
     h1: {
         fontWeight: 700,
