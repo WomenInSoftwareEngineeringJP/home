@@ -14,7 +14,7 @@ const Team: FC = () => {
 
     const teamGrid: ReactNode[] = []
     team.forEach((member: TeamMember) => {
-        teamGrid.push(<Grid item key={member.nameEN}>
+        teamGrid.push(<Grid key={member.nameEN}>
             <TeamMemberCard member={member} />
         </Grid>)
     })

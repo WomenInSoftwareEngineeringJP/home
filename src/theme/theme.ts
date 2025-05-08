@@ -1,4 +1,4 @@
-import createTheme from '@mui/material/styles/createTheme'
+import { createTheme } from '@mui/material/styles'
 import typography from './typography/default'
 import { lightBlue, deepPurple, purple, grey, indigo } from '@mui/material/colors'
 
