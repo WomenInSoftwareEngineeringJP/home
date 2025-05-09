@@ -57,9 +57,9 @@ When writing new tests, please follow the [Testing Library Guiding Principles](h
 
 ## End-to-end (E2E) tests ↔️
 
-We use [Playwright](https://playwright.dev/) for end-to-end testing. 
+We use [Playwright](https://playwright.dev/) for end-to-end (E2E) tests. Whereas unit tests take a narrow focus, E2E should be written to capture user journeys throughout the site, such as complex interactions.
 
-You can run it in terminal mode with:
+On localhost, you must have the dev server running before running the following commands. You can run it in terminal mode with:
 ```sh
 npm run test:e2e
 ```
@@ -71,8 +71,7 @@ npm run test:e2e:ui
 
 ### Playwright & CI/CD
 
-Playwright runs against the main branch automatically via GitHub Actions. Since we only have a production environment, it does not run on branches. 
-If you notice a failed run, here's how to troubleshoot it:
+Playwright runs against the main branch automatically via GitHub Actions. Currently, it runs inside a container via the action rather than production. If you see a failure in CI/CD, here's how to inspect it: 
 
 
 1. Go to the "Actions" tab and select the failing run
