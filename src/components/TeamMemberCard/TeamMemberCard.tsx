@@ -8,7 +8,7 @@ import { getI18n } from 'react-i18next'
 import OptionalLinkWrapper from '../OptionalLinkWrapper/OptionalLinkWrapper'
 
 interface TeamMemberCardProps {
-    member: TeamMember
+    member: TeamMember;
 }
 
 const TeamMemberCard: FC<TeamMemberCardProps> = ({ member }) => {
@@ -27,25 +27,25 @@ const TeamMemberCard: FC<TeamMemberCardProps> = ({ member }) => {
         }
     }, [member, i18n.language])
 
-    return <OptionalLinkWrapper url={member.url}>
-        <Card sx={{ height: 420 }} aria-label="team-member-card">
-            <CardMedia
-                sx={{ height: 300, width: 300 }}
-                image={member.image || 'Placeholder.png'}
-                title={name}
-                alt-text={`${name} photo`}
-            />
-            <CardContent>
-                <Typography variant='h6'>
-                    {name}
-                </Typography>
-                <Typography variant="subtitle1">
-                    {title}
-                </Typography>
-
-            </CardContent>
-        </Card>
-    </OptionalLinkWrapper>
+    return (
+        <OptionalLinkWrapper url={member.url}>
+            <Card
+                sx={{ height: 420, width: '100%' }}
+                aria-label="team-member-card"
+            >
+                <CardMedia
+                    sx={{ height: 300, width: 345 }}
+                    image={member.image || 'Placeholder.png'}
+                    title={name}
+                    alt-text={`${name} photo`}
+                />
+                <CardContent>
+                    <Typography variant="h6">{name}</Typography>
+                    <Typography variant="subtitle1">{title}</Typography>
+                </CardContent>
+            </Card>
+        </OptionalLinkWrapper>
+    )
 }
 
 export default TeamMemberCard
