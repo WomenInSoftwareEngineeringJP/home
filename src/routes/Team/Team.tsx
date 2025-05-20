@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 import Container from '@mui/material/Container'
 import Grid from '@mui/material/Grid'
 import Stack from '@mui/material/Stack'
@@ -8,25 +8,23 @@ import TeamMember from '@/types/TeamMember'
 import TeamMemberCard from '@/components/TeamMemberCard/TeamMemberCard'
 import team from './team.json'
 
-
 const Team: FC = () => {
     const { t } = useTranslation()
 
-    const teamGrid: ReactNode[] = []
-    team.forEach((member: TeamMember) => {
-        teamGrid.push(<Grid key={member.nameEN}>
-            <TeamMemberCard member={member} />
-        </Grid>)
-    })
-
-    return <Container style={{ padding: 32 }} aria-label="team-container">
-        <Stack spacing={2}>
-            <Typography variant="h1">{t('team.title')}</Typography>
-            <Grid container spacing={2}>
-                {teamGrid}
-            </Grid>
-        </Stack>
-    </Container>
+    return (
+        <Container className="section-padding" aria-label="team-container">
+            <Stack spacing={2}>
+                <Typography variant="h1">{t('team.title')}</Typography>
+                <Grid container spacing={4}>
+                    {team.map((member: TeamMember) => (
+                        <Grid item xs={12} sm={6} md={4} key={member.nameEN}>
+                            <TeamMemberCard member={member} />
+                        </Grid>
+                    ))}
+                </Grid>
+            </Stack>
+        </Container>
+    )
 }
 
 export default Team
