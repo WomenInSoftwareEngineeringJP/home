@@ -4,7 +4,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup'
 import { useTranslation } from 'react-i18next'
 import Locale from '@/i18n/locales'
 
-const keyName = 'i18nextLng'
+export const keyName = 'i18nextLng'
 
 const LocaleToggle: FC = () => {
     const [locale, setLocale] = useState(Locale.EN)

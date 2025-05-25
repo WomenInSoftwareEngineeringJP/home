@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { render } from '@/tests/customRender'
-import LocaleToggle from '../LocaleToggle'
+import LocaleToggle, { keyName } from '../LocaleToggle'
 import userEvent from '@testing-library/user-event'
 import { screen } from '@testing-library/react'
 
@@ -21,7 +21,7 @@ it('changes locale when toggling', async () => {
 
     const user = userEvent.setup()
     await user.click(japaneseButton)
-    expect(localStorage.getItem('locale')).toBe('ja')
+    expect(localStorage.getItem(keyName)).toBe('ja')
 
-    localStorage.removeItem('locale')
+    localStorage.removeItem(keyName)
 })
