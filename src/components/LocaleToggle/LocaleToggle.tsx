@@ -4,6 +4,8 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup'
 import { useTranslation } from 'react-i18next'
 import Locale from '@/i18n/locales'
 
+export const keyName = 'i18nextLng'
+
 const LocaleToggle: FC = () => {
     const [locale, setLocale] = useState(Locale.EN)
     const { i18n } = useTranslation()
@@ -11,12 +13,12 @@ const LocaleToggle: FC = () => {
     const changeLanguage = useCallback(async (nextLocale: Locale) => {
         await i18n.changeLanguage(nextLocale).then(() => {
             setLocale(nextLocale)
-            localStorage.setItem('locale', nextLocale)
+            localStorage.setItem(keyName, nextLocale)
         })
     }, [i18n])
 
     useEffect(() => {
-        const savedLocale = localStorage.getItem('locale')
+        const savedLocale = localStorage.getItem(keyName)
         if (savedLocale) {
             changeLanguage(savedLocale as Locale).catch((e: Error) => {
                 console.error(e)
