@@ -9,3 +9,23 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    groups:
+      mui:
+        patterns:
+          - "@mui/*"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+      vitest:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+      emotion:
+        patterns:
+          - "@emotion/*"
+      typescript-eslint:
+        patterns:
+          - "@typescript-eslint/*"
