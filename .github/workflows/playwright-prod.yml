@@ -1,15 +1,14 @@
 name: Playwright Tests (Production)
 
 on:
-  workflow_run:
-    workflows: ["Deploy static content to Pages"]
-    types:
-      - completed
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-  # remove below two lines after issue is merged to main
   pull_request:
     branches: [ '118-playwright-prod-action' ] 
+  #workflow_run:
+  #  workflows: ["Deploy static content to Pages"]
+  #  types:
+  #    - completed
+  # Allows you to run this workflow manually from the Actions tab
+  #workflow_dispatch:
 
 jobs:
   test:
