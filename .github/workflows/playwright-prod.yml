@@ -1,7 +1,7 @@
 name: Playwright Tests (Production)
 
 on:
-  pull_request:
+  push:
     branches: [ '118-playwright-prod-action' ] 
   #workflow_run:
   #  workflows: ["Deploy static content to Pages"]
