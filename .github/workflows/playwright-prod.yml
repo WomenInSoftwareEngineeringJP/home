@@ -1,14 +1,15 @@
 name: Playwright Tests (Production)
 
 on:
+  # Okay to remove the push trigger after merge
   push:
     branches: [ '118-playwright-prod-action' ] 
-  #workflow_run:
-  #  workflows: ["Deploy static content to Pages"]
-  #  types:
-  #    - completed
+  workflow_run:
+    workflows: ["Deploy static content to Pages"]
+    types:
+      - completed
   # Allows you to run this workflow manually from the Actions tab
-  #workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   test:
