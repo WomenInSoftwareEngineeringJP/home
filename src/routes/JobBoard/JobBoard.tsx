@@ -5,12 +5,12 @@ import { useTranslation } from 'react-i18next'
 import job from '@/routes/JobBoard/jobs.json'
 import JobData from '@/types/JobListing'
 
-const JobBoard:FC = () => {
+const JobBoard: FC = () => {
     const { t } = useTranslation()
 
     const jobGrid: ReactNode[] = []
     job.forEach((jobDescription: JobData) => {
-        jobGrid.push(<JobCard job={jobDescription}/>)
+        jobGrid.push(<JobCard key={jobDescription.company + jobDescription.title} job={jobDescription} />)
     })
 
     return <Container style={{ padding: 32 }} aria-label="job-board-container">
