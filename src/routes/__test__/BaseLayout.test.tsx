@@ -14,14 +14,12 @@ vi.mock('@/components/Footer/Footer', () => ({
     default: () => <div data-testid="footer">Footer Component</div>,
 }))
 
-// Mock a child component for testing Outlet
 const MockChildComponent = () => {
     return <div data-testid="child-content">Child Content</div>
 }
 
-// Create a lazy component for testing loading state
 const MockLazyChildComponent = lazy(() =>
-    new Promise(() => {}) // Never resolves, so Suspense will show fallback
+    new Promise(() => {})
 )
 
 describe('BaseLayout', () => {
