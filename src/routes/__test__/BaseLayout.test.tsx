@@ -59,7 +59,6 @@ describe('BaseLayout', () => {
     })
 
     it('should show loading fallback when Suspense is triggered', () => {
-        // Test that the BaseLayout component properly shows the loading fallback
         render(
             <Routes>
                 <Route path="/" element={<BaseLayout />}>
