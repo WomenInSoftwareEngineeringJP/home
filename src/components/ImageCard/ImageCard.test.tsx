@@ -9,9 +9,9 @@ describe('ImageCard', () => {
             <ImageCard src="https://i.imgur.com/pEI5qWM.jpeg" alt="Cat 🐱" />
         )
         const image = await screen.findByRole('img')
-        expect(image).toBeVisible()
         expect(image).toHaveAttribute('src', 'https://i.imgur.com/pEI5qWM.jpeg')
         expect(image).toHaveAttribute('alt', 'Cat 🐱')
+        expect(image).toBeVisible()
     })
 
     it('should apply custom width and height when provided', () => {
@@ -30,6 +30,7 @@ describe('ImageCard', () => {
         const image = screen.getByRole('img')
         expect(image).toHaveAttribute('width', testWidth.toString())
         expect(image).toHaveAttribute('height', testHeight.toString())
+        expect(image).toBeVisible()
     })
 
     it('should handle string-based width and height', () => {
@@ -48,6 +49,7 @@ describe('ImageCard', () => {
         const image = screen.getByRole('img')
         expect(image).toHaveAttribute('width', testWidth)
         expect(image).toHaveAttribute('height', testHeight)
+        expect(image).toBeVisible()
     })
 
     it('should render even when width and height are not provided', () => {
@@ -56,5 +58,6 @@ describe('ImageCard', () => {
         const image = screen.getByRole('img')
         expect(image).not.toHaveAttribute('width')
         expect(image).not.toHaveAttribute('height')
+        expect(image).toBeVisible()
     })
 })
