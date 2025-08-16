@@ -25,7 +25,9 @@ jobs:
         stale-pr-label: 'no-pr-activity'
         close-pr-message: 'PR closed due to lack of activity'
         days-before-stale: 30
-        days-before-close: 14
+        days-before-close: 30
         # don't close dependabot cases
         exempt-pr-labels: 'dependencies'
-        debug-mode: true
+        # be very lenient on closing issues
+        days-before-issue-stale: 365
+        days-before-issue-close: 730
