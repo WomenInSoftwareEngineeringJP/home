@@ -32,19 +32,19 @@
         "url": ""
     },
     {
-        "nameEN": "Krizza Bullecer",
-        "nameJA": "ブレサー　クリザ",
-        "titleEN": "Lead",
-        "titleJA": "リード",
-        "image": "Krizza.jpg",
-        "url": ""
-    },
-    {
         "nameEN": "Ania Nakayama",
         "nameJA": "",
         "titleEN": "Lead",
         "titleJA": "リード",
         "image": "Ania.jpg",
+        "url": ""
+    },
+    {
+        "nameEN": "Krizza Bullecer",
+        "nameJA": "ブレサー　クリザ",
+        "titleEN": "Legacy Lead",
+        "titleJA": "レガシー・リード",
+        "image": "Krizza.jpg",
         "url": ""
     },
     {
