@@ -11,7 +11,7 @@ describe('Home Route', () => {
 
         const link = await screen.findByRole('link', { name: '✨ Join us on Slack ✨' })
         expect(link).toBeEnabled()
-        expect(link).toHaveAttribute('href', 'https://join.slack.com/t/wise-japan/shared_invite/zt-2h79966bm-dE7SyiGvv2CXBxbz_0JzKw')
+        expect(link).toHaveAttribute('href', 'https://join.slack.com/t/wise-japan/shared_invite/zt-3day0p55s-f7cx26Q3ZLw0XB34SjbKIg')
         expect(link).toHaveAttribute('target', '_blank')
     })
 
