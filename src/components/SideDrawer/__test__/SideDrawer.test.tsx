@@ -38,14 +38,20 @@ describe('SideDrawer', () => {
     it('should open and close the Drawer with the keyboard', async () => {
         render(<SideDrawer />)
         const user = userEvent.setup()
-        await user.tab()
-        await user.keyboard('[enter]')
-
         const drawer = await screen.findByLabelText('drawer')
+        await user.tab()
+
+        // open drawer with enter key
+        await user.keyboard('[enter]')
         expect(drawer).toBeVisible()
 
-        //await user.keyboard('[esc]')
-        //expect(drawer).not.toBeVisible()
+        // close drawer with escape key
+        await user.keyboard('[escape]')
+        await waitFor(() => expect(drawer).not.toBeVisible())
+
+        // open drawer with space key
+        await user.keyboard('[space]')
+        expect(drawer).toBeVisible()
     })
 
     it.todo('should close the Drawer when clicking away', async () => {
@@ -91,5 +97,24 @@ describe('SideDrawer', () => {
         await waitFor(() => {
             expect(drawerContents).not.toBeVisible()
         })
+    })
+
+    it('should not open when (tab/shift) keys are pressed', async () => {
+        render(<SideDrawer />)
+
+        const user = userEvent.setup()
+        const drawer = await screen.findByLabelText('drawer')
+
+        // drawer should not open with tab key
+        await user.keyboard('[tab]')
+        expect(drawer).not.toBeVisible()
+
+        // drawer should not open with shift key
+        await user.keyboard('[shift]')
+        expect(drawer).not.toBeVisible()
+
+        // drawer should open with enter key
+        await user.keyboard('[enter]')
+        expect(drawer).toBeVisible()
     })
 })
