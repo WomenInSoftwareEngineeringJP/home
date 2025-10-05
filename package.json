@@ -55,7 +55,7 @@
         "jsdom": "26.1.0",
         "lint-staged": "16.1.2",
         "typescript": "5.8.3",
-        "vite": "6.3.5",
+        "vite": "6.3.6",
         "vite-bundle-visualizer": "1.2.1",
         "vitest": "3.2.4"
     }
