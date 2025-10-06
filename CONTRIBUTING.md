@@ -24,12 +24,13 @@ I've set us up with a modern frontend tech stack so that we can practice togethe
 - Please assign yourself to any ticket you are working on. Please unassign yourself if you aren't able to move it forward. Feel free to ask for help if you get stuck.
 - Branch name should start with the ticket number, e.g. `11-dns-setup`
 - Please write unit and E2E tests for new enhancements 🧪
+- If there is no progress on an issue for two weeks, we may reassign it to someone else.
 
 ## PR Guidelines
-- All GH Actions should pass ☑️
+- Draft PRs are welcome, and a good way to get help from the team 🤠☑️
 - No force pushing to branches ❌
 - Avoid adding arbitrary whitespace ❌
-- Separate logical changes from style changes 🔪
+- Separate logical changes from style changes ✂️
 - Try to keep PRs under 500 lines of code 🤏 
 - Making multiple PRs to solve a single issue is okay! 🙆🏻‍♀️
 
@@ -41,5 +42,6 @@ I've set us up with a modern frontend tech stack so that we can practice togethe
 
 
 ## Merging
+- All GH Actions should pass before merging
 - Merging to main triggers a deploy to production. Please check that the site deploys correctly
 
