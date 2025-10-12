@@ -3,7 +3,8 @@
         "codeOfConduct": "Code of Conduct",
         "subtitle": "Women in Software Engineering Japan",
         "team": "Team",
-        "job": "Jobs"
+        "job": "Jobs",
+        "event": "Events"
     },
     "home": {
         "helloWorld": "✨ Hello World ✨",
@@ -13,10 +14,19 @@
         "paragraph3": "We believe in the strength of women, and envision a world where women thrive at every level of the technology industry. Come build the future with us.",
         "whoShouldJoin": "Who should join: Our average member has 2 or more years of career experience, and we welcome beginners to seasoned professionals. While we champion women's empowerment, all genders are welcome at our events. Software-adjacent roles like Data Science, Product, Platform, UI/UX, Machine Learning, and more are welcome."
     },
+    "event": {
+        "pageTitle": "Events",
+        "contactTitle": "How to contact us",
+        "paragraph1": "Lorem Ipsum 1",
+        "paragraph2": "Lorem Ipsum 2",
+        "paragraph3": "Lorem Ipsum 3",
+        "reviewEvent": "Upcoming events"
+    },
     "sidebar": {
         "codeOfConduct": "Code of Conduct",
         "team": "Team",
-        "job": "Job Board"
+        "job": "Job Board",
+        "event": "Events"
     },
     "team": {
         "title": "✨ Leadership Team ✨"

@@ -39,6 +39,9 @@ const DrawerContents: FC<DrawerContentsProps> = ({ closeDrawer }) => {
                 <StyledNavLink to='/jobs'>{t('sidebar.job')}</StyledNavLink>
             </ListItem>
             <ListItem>
+                <StyledNavLink to='/events'>{t('sidebar.event')}</StyledNavLink>
+            </ListItem>
+            <ListItem>
                 <StyledNavLink to='/codeofconduct'>{t('sidebar.codeOfConduct')}</StyledNavLink>
             </ListItem>
             <Divider />

@@ -6,6 +6,7 @@ import {
 import ThemePreview from './ThemePreview/ThemePreview'
 import Home from './Home/Home'
 import BaseLayout from './BaseLayout'
+import Event from './Event/Event'
 import NotFound from './NotFound/NotFound'
 import CodeOfConduct from './CodeOfConduct/CodeOfConduct'
 import Team from './Team/Team'
@@ -29,6 +30,10 @@ const browserRouter = createHashRouter([{
         {
             path: 'jobs',
             element: <JobBoard />
+        },
+        {
+            path: 'events',
+            element: <Event />
         },
         {
             path: 'theme',
