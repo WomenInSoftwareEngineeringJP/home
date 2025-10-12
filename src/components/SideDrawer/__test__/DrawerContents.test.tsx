@@ -34,12 +34,13 @@ describe('DrawerContents', () => {
         render(<DrawerContents closeDrawer={() => { }} />)
 
         const links = await screen.findAllByRole('link')
-        expect(links.length).toEqual(4)
+        expect(links.length).toEqual(5)
         const baseURL = window.location.toString()
         expect(links[0]).toHaveProperty('href', baseURL)
         expect(links[1]).toHaveProperty('href', baseURL + 'team')
         expect(links[2]).toHaveProperty('href', baseURL + 'jobs')
-        expect(links[3]).toHaveProperty('href', baseURL + 'codeofconduct')
+        expect(links[3]).toHaveProperty('href', baseURL + 'events')
+        expect(links[4]).toHaveProperty('href', baseURL + 'codeofconduct')
 
     })
 })
