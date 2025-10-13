@@ -16,11 +16,9 @@
     },
     "event": {
         "pageTitle": "Events",
-        "contactTitle": "How to contact us",
-        "paragraph1": "Lorem Ipsum 1",
-        "paragraph2": "Lorem Ipsum 2",
-        "paragraph3": "Lorem Ipsum 3",
-        "reviewEvent": "Upcoming events"
+        "sponsoringEventTitle": "Interested in sponsoring an event?",
+        "reviewEvent": "Upcoming events",
+        "intlDateTime": "{{val, datetime}}"
     },
     "sidebar": {
         "codeOfConduct": "Code of Conduct",

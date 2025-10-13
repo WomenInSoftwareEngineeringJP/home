@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import Stack from '@mui/material/Stack'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
@@ -6,6 +6,9 @@ import Button from '@mui/material/Button'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTranslation } from 'react-i18next'
 import theme from '@/theme/theme'
+import event from '@/routes/Event/events.json'
+import EventData from '@/types/EventData'
+import EventCard from '@/components/EventCard/EventCard'
 
 const Event: FC = () => {
     const { t } = useTranslation()
@@ -14,24 +17,20 @@ const Event: FC = () => {
         <Typography variant="h3" component="h1">{t('event.pageTitle')}</Typography> :
         <Typography variant="h1" >{t('event.pageTitle')}</Typography>
 
-    const howToContact = useMediaQuery(theme.breakpoints.down('sm')) ?
-        <Typography variant="h3" component="h1">{t('event.contactTitle')}</Typography> :
-        <Typography variant="h2" >{t('event.contactTitle')}</Typography>
+    const sponsorinEventTitle = useMediaQuery(theme.breakpoints.down('sm')) ?
+        <Typography variant="h3" component="h1">{t('event.sponsoringEventTitle')}</Typography> :
+        <Typography variant="h2">{t('event.sponsoringEventTitle')}</Typography>
 
-    return <Container style={{ padding: 32 }}>
-        <Stack spacing={2}>
+    const eventGrid: ReactNode[] = []
+    event.forEach((eventData: EventData) => {
+        eventGrid.push(<EventCard key={eventData.id} event={eventData} />)
+    })
 
+    return <Container style={{ padding: 32 }} aria-label="events-container">
+        <Stack spacing={2} marginBottom={4}>
             {title}
-            <Typography variant="body1">
-                {t('event.paragraph1')}
-            </Typography>
-            <Typography variant="body1">
-                {t('event.paragraph2')}
-            </Typography>
 
-            <Typography variant="body1">
-                {t('event.paragraph3')}
-            </Typography>
+            {eventGrid}
 
             <Button
                 variant='contained'
@@ -40,15 +39,15 @@ const Event: FC = () => {
             >
                 {t('event.reviewEvent')}
             </Button>
+        </Stack>
 
-            {howToContact}
+        <Stack spacing={2}>
+            {sponsorinEventTitle}
             <iframe
                 src="https://women-in-software.notion.site/ebd/61cb6a1a3b93470687ca1f6c2628da1b"
                 width="100%"
                 height="600"
             />
-
-
         </Stack>
     </Container>
 }

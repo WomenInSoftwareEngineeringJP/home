@@ -3,7 +3,8 @@
         "codeOfConduct": "行動規範",
         "subtitle": "ウーマン・イン・ソフトウェアエンジニアリング",
         "team": "私たちのチーム",
-        "job": "求人情報"
+        "job": "求人情報",
+        "event": "イベント"
     },
     "home": {
         "helloWorld": "✨ ハローワールド ✨",
@@ -15,11 +16,9 @@
     },
     "event": {
         "pageTitle": "イベント",
-        "contactTitle": "お問い合わせ方法",
-        "paragraph1": "Lorem Ipsum 1",
-        "paragraph2": "Lorem Ipsum 2",
-        "paragraph3": "Lorem Ipsum 3",
-        "reviewEvent": "今後のイベント"
+        "sponsoringEventTitle": "イベントのスポンサーに興味がありますか？",
+        "reviewEvent": "今後のイベント",
+        "intlDateTime": "{{val, datetime}}"
     },
     "sidebar": {
         "codeOfConduct": "行動規範",
