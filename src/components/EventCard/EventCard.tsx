@@ -72,7 +72,7 @@ const EventCard: FC<EventCardProps> = ({ event }) => {
                                         {eventDate}
                                     </Typography>
                                 </Box>
-                                {/* Chips row — hidden on desktop, stacked on mobile */}
+                                {/* Chips row — one row on desktop, stacked on mobile */}
                                 <Box
                                     sx={{
                                         display: { xs: 'flex', sm: 'flex' },
@@ -109,8 +109,8 @@ const EventCard: FC<EventCardProps> = ({ event }) => {
                                 </Box>
                             </Grid>
                             <Grid size={{ xs: 12, sm: 12 }} sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
-                                <PlaceIcon />
-                                <Typography fontSize="body2" sx={{ ml: 1 }}>
+                                <PlaceIcon sx={{ marginRight: 2 }} />
+                                <Typography fontSize="body2">
                                     {event.place}{event.address ? ` · ${event.address}` : ''}
                                 </Typography>
                             </Grid>
