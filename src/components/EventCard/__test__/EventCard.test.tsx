@@ -45,10 +45,10 @@ describe('EventCard Component', () => {
     })
 
     it('does not render waiting if it is zero', () => {
-        const eventNotFull = { ...mockEvent, waiting: '0' }
-        render(<EventCard event={eventNotFull} />)
+        const eventWithZeroWaiting = { ...mockEvent, waiting: '0' }
+        render(<EventCard event={eventWithZeroWaiting} />)
 
-        expect(screen.queryByText(eventNotFull.waiting)).not.toBeInTheDocument()
+        expect(screen.queryByText(eventWithZeroWaiting.waiting)).not.toBeInTheDocument()
     })
 
     it('does not render event capacity if limit is 0', () => {
