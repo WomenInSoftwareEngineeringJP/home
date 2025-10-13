@@ -1,5 +1,10 @@
 import { test, expect, Locator } from '@playwright/test'
 
+async function verifyNotionIframe(eventsContainer: Locator) {
+    const notionIframe: Locator = eventsContainer.locator('iframe')
+    await expect(notionIframe).toHaveAttribute('src', 'https://women-in-software.notion.site/ebd/61cb6a1a3b93470687ca1f6c2628da1b')
+}
+
 test('shows the events in English', async ({ page }) => {
     await page.goto('/#/events')
 
@@ -19,9 +24,7 @@ test('shows the events in English', async ({ page }) => {
     // verify the sponsoring part
     const sponsoringHeading = eventsContainer.getByText('Interested in sponsoring an event?')
     await expect(sponsoringHeading).toBeVisible()
-
-    const notionIframe: Locator = eventsContainer.locator('iframe')
-    await expect(notionIframe).toHaveAttribute('src', 'https://women-in-software.notion.site/ebd/61cb6a1a3b93470687ca1f6c2628da1b')
+    await verifyNotionIframe(eventsContainer)
 })
 
 test('shows the events in Japanese', async ({ page, viewport }) => {
@@ -43,7 +46,6 @@ test('shows the events in Japanese', async ({ page, viewport }) => {
         await eventsContainer.click({ force: true })
     }
 
-
     const heading = eventsContainer.getByRole('heading', { name: 'イベント', exact: true })
     await expect(heading).toBeVisible()
 
@@ -58,7 +60,5 @@ test('shows the events in Japanese', async ({ page, viewport }) => {
     // verify the sponsoring part
     const sponsoringHeading = eventsContainer.getByText('イベントのスポンサーに興味がありますか？')
     await expect(sponsoringHeading).toBeVisible()
-
-    const notionIframe: Locator = eventsContainer.locator('iframe')
-    await expect(notionIframe).toHaveAttribute('src', 'https://women-in-software.notion.site/ebd/61cb6a1a3b93470687ca1f6c2628da1b')
+    await verifyNotionIframe(eventsContainer)
 })
