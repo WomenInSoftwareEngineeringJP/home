@@ -38,6 +38,9 @@ const DesktopHeader: FC = () => {
             <StyledNavLink to="/jobs" style={{ textDecoration: 'none', color: 'white' }}>
                 <Typography variant="overline">{t('header.job')}</Typography>
             </StyledNavLink>
+            <StyledNavLink to="/events" style={{ textDecoration: 'none', color: 'white'}}>
+                <Typography variant="overline">{t('header.event')}</Typography>
+            </StyledNavLink>
             <StyledNavLink to="/codeofconduct" style={{ textDecoration: 'none', color: 'white' }}>
                 <Typography variant="overline">{t('header.codeOfConduct')}</Typography>
             </StyledNavLink>
