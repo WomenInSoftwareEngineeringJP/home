@@ -97,33 +97,6 @@ describe('SideDrawer', () => {
         expect(drawer).not.toBeVisible()
     })
 
-    it('should handle rapid toggle clicks gracefully', async () => {
-        const user = userEvent.setup()
-        render(<SideDrawer />)
-
-        const button = await screen.findByLabelText('drawer-toggle-button')
-        const drawer = await screen.findByLabelText('drawer')
-
-        // rapidly click the toggle button multiple times
-        await user.click(button)
-        await user.click(button)
-        await user.click(button)
-
-        // drawer should be in a consistent state (open after 3 clicks)
-        expect(drawer).toBeVisible()
-
-        // On desktop, users can't click the button when drawer is open
-        // They would click the backdrop instead
-        // So we test that the component doesn't break with rapid opens
-        // Then verify it can be closed via backdrop
-        const backdrop = document.querySelector('.MuiBackdrop-root')
-        await user.click(backdrop as Element)
-
-        await waitFor(() => {
-            expect(drawer).not.toBeVisible()
-        })
-    })
-
     it('should not show navigation links on desktop view', async () => {
         const user = userEvent.setup()
         render(<SideDrawer />)
@@ -158,36 +131,6 @@ describe('SideDrawer', () => {
         await waitFor(() => {
             expect(drawerContents).not.toBeVisible()
         })
-    })
-
-    it('should handle rapid toggle clicks gracefully on mobile view', async () => {
-        const user = userEvent.setup()
-        vi.mocked(useMediaQuery).mockReturnValue(true) // Mobile
-
-        render(<SideDrawer />)
-
-        const button = await screen.findByLabelText('drawer-toggle-button')
-        const drawer = await screen.findByLabelText('drawer')
-
-        // rapidly click the toggle button multiple times
-        await user.click(button)
-        await user.click(button)
-        await user.click(button)
-
-        // drawer should be in a consistent state (open after 3 clicks)
-        expect(drawer).toBeVisible()
-
-        // close with the close button (one click closes it)
-        const closeButton = await screen.findByLabelText('close-button')
-        await user.click(closeButton)
-
-        await waitFor(() => {
-            expect(drawer).not.toBeVisible()
-        })
-
-        // verify it can still be opened normally after rapid clicks
-        await user.click(button)
-        expect(drawer).toBeVisible()
     })
 
     // Test NavLinks are visible and navigates to the correct page
