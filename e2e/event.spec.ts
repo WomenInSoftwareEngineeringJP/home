@@ -53,12 +53,12 @@ test('shows the events in Japanese', async ({ page, viewport }) => {
     expect(cards.length).toBeGreaterThan(0)
 
     // verify link to connpass page
-    const connpassLink = eventsContainer.getByText('今後のイベント')
+    const connpassLink = eventsContainer.getByText('これからのイベント')
     await expect(connpassLink).toBeVisible()
     await expect(connpassLink).toHaveAttribute('href', 'https://womeninsoftware-japan.connpass.com/event/')
 
     // verify the sponsoring part
-    const sponsoringHeading = eventsContainer.getByText('イベントのスポンサーに興味がありますか？')
+    const sponsoringHeading = eventsContainer.getByText('スポンサー募集中です')
     await expect(sponsoringHeading).toBeVisible()
     await verifyNotionIframe(eventsContainer)
 })
