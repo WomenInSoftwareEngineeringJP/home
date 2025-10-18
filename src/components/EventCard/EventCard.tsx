@@ -108,7 +108,7 @@ const EventCard: FC<EventCardProps> = ({ event }) => {
                                     />}
                                 </Box>
                             </Grid>
-                            <Grid size={{ xs: 12, sm: 12 }} sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+                            <Grid size={12} sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
                                 <PlaceIcon sx={{ marginRight: 2 }} />
                                 <Typography fontSize="body2">
                                     {event.place}{event.address ? ` · ${event.address}` : ''}
