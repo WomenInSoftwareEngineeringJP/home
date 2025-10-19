@@ -65,6 +65,7 @@ describe('SideDrawer', () => {
         const drawer = await screen.findByLabelText('drawer')
         expect(drawer).toBeVisible()
 
+        // to simulate clicking outside the drawer, find the MUI backdrop
         const backdrop = document.querySelector('.MuiBackdrop-root')
         expect(backdrop).toBeInTheDocument()
 
