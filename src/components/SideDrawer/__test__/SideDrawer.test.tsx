@@ -36,23 +36,19 @@ describe('SideDrawer', () => {
     it('should open drawer with the keyboard and close with the keyboard', async () => {
         render(<SideDrawer />)
 
-        // Tab to move focus to the hamburger menu button
         const toggleButton = await screen.findByLabelText('drawer-toggle-button')
 
         const user = userEvent.setup()
         await user.tab()
 
-        // Verify the hamburger button is focused
         await waitFor(() => {
             expect(toggleButton).toHaveFocus()
         })
 
-        // open drawer with enter key
         const drawer = await screen.findByLabelText('drawer')
         await user.keyboard('{Enter}')
         expect(drawer).toBeVisible()
 
-        // close drawer with escape key
         await user.keyboard('{Escape}')
         await waitFor(() => expect(drawer).not.toBeVisible())
     })
@@ -63,18 +59,15 @@ describe('SideDrawer', () => {
         const user = userEvent.setup()
         render(<SideDrawer />)
 
-        // open the drawer
         const button = await screen.findByLabelText('drawer-toggle-button')
         await user.click(button)
 
         const drawer = await screen.findByLabelText('drawer')
         expect(drawer).toBeVisible()
 
-        // click on the MUI backdrop
         const backdrop = document.querySelector('.MuiBackdrop-root')
         expect(backdrop).toBeInTheDocument()
 
-        // click the backdrop to close the drawer
         await user.click(backdrop as Element)
 
         await waitFor(() => {
@@ -88,11 +81,9 @@ describe('SideDrawer', () => {
         const user = userEvent.setup()
         const drawer = await screen.findByLabelText('drawer')
 
-        // drawer should not open with tab key
         await user.keyboard('{Tab}')
         expect(drawer).not.toBeVisible()
 
-        // drawer should not open with shift key
         await user.keyboard('{Shift}')
         expect(drawer).not.toBeVisible()
     })
@@ -104,16 +95,21 @@ describe('SideDrawer', () => {
         const button = await screen.findByLabelText('drawer-toggle-button')
         await user.click(button)
 
-        // Should only have LocaleToggle links, not nav links
         const navLinks = screen.queryAllByRole('link')
-        expect(navLinks.length).toBeLessThan(4) // Only LocaleToggle
+        expect(navLinks.length).toEqual(0)
+
+        // should only have locale toggle btns on desktop nav
+        const englishButton = await screen.findByRole('button', { name: /english/i })
+        const japaneseButton = await screen.findByRole('button', { name: /日本語/ })
+
+        expect(englishButton).toBeVisible()
+        expect(japaneseButton).toBeVisible()
     })
 
     // --- Mobile viewport interactions ----
-    // Close icon is visible and closes drawer on mobile view
     it('should close the Drawer when clicking the close icon on mobile view', async () => {
         const user = userEvent.setup()
-        vi.mocked(useMediaQuery).mockReturnValue(true) // Mobile
+        vi.mocked(useMediaQuery).mockReturnValue(true)
 
         render(<SideDrawer />)
 
@@ -136,17 +132,15 @@ describe('SideDrawer', () => {
     // Test NavLinks are visible and navigates to the correct page
     it('should display navigation links on mobile view', async () => {
         const user = userEvent.setup()
-        vi.mocked(useMediaQuery).mockReturnValue(true) // Mobile
+        vi.mocked(useMediaQuery).mockReturnValue(true)
 
         render(<SideDrawer />)
         const button = await screen.findByLabelText('drawer-toggle-button')
         await user.click(button)
 
-        // Test that links are visible and have correct hrefs
         const navLinks = await screen.findAllByRole('link')
         expect(navLinks.length).toEqual(4)
 
-        // Verify each link has correct href
         expect(navLinks[0]).toHaveAttribute('href', '/')
         expect(navLinks[1]).toHaveAttribute('href', '/team')
         expect(navLinks[2]).toHaveAttribute('href', '/jobs')
