@@ -16,8 +16,8 @@
     },
     "event": {
         "pageTitle": "イベント",
-        "sponsoringEventTitle": "イベントのスポンサーに興味がありますか？",
-        "reviewEvent": "今後のイベント",
+        "sponsoringEventTitle": "スポンサー募集中です",
+        "reviewEvent": "これからのイベント",
         "intlDateTime": "{{val, datetime}}"
     },
     "sidebar": {
