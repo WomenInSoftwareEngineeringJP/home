@@ -88,7 +88,7 @@ describe('SideDrawer', () => {
         expect(drawer).not.toBeVisible()
     })
 
-    it('should not show navigation links on desktop view', async () => {
+    it('should only show locale toggle buttons on desktop', async () => {
         const user = userEvent.setup()
         render(<SideDrawer />)
 
@@ -98,7 +98,6 @@ describe('SideDrawer', () => {
         const navLinks = screen.queryAllByRole('link')
         expect(navLinks.length).toEqual(0)
 
-        // should only have locale toggle btns on desktop nav
         const englishButton = await screen.findByRole('button', { name: /english/i })
         const japaneseButton = await screen.findByRole('button', { name: /日本語/ })
 
