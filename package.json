@@ -34,7 +34,7 @@
         "styled-components": "6.1.19"
     },
     "devDependencies": {
-        "@playwright/test": "1.54.1",
+        "@playwright/test": "1.56.1",
         "@stylistic/eslint-plugin": "3.1.0",
         "@testing-library/jest-dom": "6.6.3",
         "@testing-library/react": "16.3.0",
