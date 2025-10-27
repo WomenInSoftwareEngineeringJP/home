@@ -33,5 +33,9 @@
     },
     "job": {
         "title": "✨ Job Board ✨"
+    },
+    "wiki": {
+        "title": "📚 Wiki",
+        "description": "Women in Software Engineering Japan Public Wiki on Notion"
     }
 }

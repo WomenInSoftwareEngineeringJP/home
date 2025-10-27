@@ -7,11 +7,10 @@ import { useTranslation } from 'react-i18next'
 const Wiki: FC = () => {
     const { t } = useTranslation()
 
-
     return <Container style={{ padding: 32 }}>
         <Stack spacing={2}>
             <Typography variant='h1'>
-                {t('header.wiki')} 📚
+                {t('wiki.title')}
             </Typography>
             <iframe
                 src="https://women-in-software.notion.site/ebd/d2c50cd1917c4771a1c80280e1736b19"
