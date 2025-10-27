@@ -13,6 +13,7 @@ const Wiki: FC = () => {
                 {t('wiki.title')}
             </Typography>
             <iframe
+                title={String(t('wiki.description') || '')}
                 src="https://women-in-software.notion.site/ebd/d2c50cd1917c4771a1c80280e1736b19"
                 width="100%"
                 height="600"
