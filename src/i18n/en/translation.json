@@ -4,7 +4,8 @@
         "subtitle": "Women in Software Engineering Japan",
         "team": "Team",
         "job": "Jobs",
-        "event": "Events"
+        "event": "Events",
+        "wiki": "Wiki"
     },
     "home": {
         "helloWorld": "✨ Hello World ✨",
@@ -24,12 +25,17 @@
         "codeOfConduct": "Code of Conduct",
         "team": "Team",
         "job": "Job Board",
-        "event": "Events"
+        "event": "Events",
+        "wiki": "Wiki"
     },
     "team": {
         "title": "✨ Leadership Team ✨"
     },
     "job": {
         "title": "✨ Job Board ✨"
+    },
+    "wiki": {
+        "title": "📚 Wiki",
+        "description": "Women in Software Engineering Japan Public Wiki on Notion"
     }
 }

@@ -16,5 +16,7 @@ describe('Header', () => {
         expect(team).toBeVisible()
         const codeOfConduct = await screen.findByText('Code of Conduct')
         expect(codeOfConduct).toBeVisible()
+        const wiki = await screen.findByText('Wiki')
+        expect(wiki).toBeVisible()
     })
 })

@@ -9,6 +9,7 @@ import BaseLayout from './BaseLayout'
 import Event from './Event/Event'
 import NotFound from './NotFound/NotFound'
 import CodeOfConduct from './CodeOfConduct/CodeOfConduct'
+import Wiki from './Wiki/Wiki'
 import Team from './Team/Team'
 import JobBoard from './JobBoard/JobBoard'
 
@@ -34,6 +35,10 @@ const browserRouter = createHashRouter([{
         {
             path: 'events',
             element: <Event />
+        },
+        {
+            path: 'wiki',
+            element: <Wiki />
         },
         {
             path: 'theme',
