@@ -5,7 +5,7 @@
         "team": "私たちのチーム",
         "job": "求人情報",
         "event": "イベント",
-        "wiki": "ウィキ"
+        "wiki": "Wiki"
     },
     "home": {
         "helloWorld": "✨ ハローワールド ✨",
@@ -26,7 +26,7 @@
         "team": "私たちのチーム",
         "job": "求人情報",
         "event": "イベント",
-        "wiki": "ウィキ"
+        "wiki": "Wiki"
     },
     "team": {
         "title": "✨ リーダーシップチーム ✨"
@@ -35,7 +35,7 @@
         "title": "✨ 求人情報 ✨"
     },
     "wiki": {
-        "title": "📚 ウィキ",
-        "description": "ウーマン・イン・ソフトウェアエンジニアリング日本のためのNotion公開Wiki"
+        "title": "📚 Wiki",
+        "description": "ウーマン・イン・ソフトウェアエンジニアリング日本の公開Notion Wiki"
     }
 }
