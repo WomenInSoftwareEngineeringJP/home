@@ -10,8 +10,6 @@ on:
 jobs:
   update-events:
     runs-on: ubuntu-latest
-    container:
-      image: dwdraju/alpine-curl-jq
     permissions:
       contents: write
       pull-requests: write
@@ -24,7 +22,7 @@ jobs:
       - name: Run update script and validate
         run: |
           chmod +x scripts/update-events.sh
-          ./scripts/update-events.sh
+          docker run -v $PWD:/target -e "CONNPASS_API_KEY=$CONNPASS_API_KEY" dwdraju/alpine-curl-jq bash /target/scripts/update-events.sh
           jq . src/routes/Event/events.json
 
       - name: Create Pull Request
