@@ -44,3 +44,4 @@ jobs:
             events
             automated pr
           draft: false
+          base: main
