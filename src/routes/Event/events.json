@@ -1,38 +1,62 @@
 [
-    {
-        "id": 370062,
-        "title": "The Next Move: WiSE JP Online Study Session",
-        "description": "Have you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\n\n This event is a great place to do so.\n We will share the link (Google Meet) on the day of the event.",
-        "url": "https://womeninsoftware-japan.connpass.com/event/370062/",
-        "limit": "20",
-        "accepted": "4",
-        "waiting": "0",
-        "eventDate": "2025-10-15T19:30:00+09:00",
-        "place": "Online",
-        "address": ""
-    },
-    {
-        "id": 369260,
-        "title": "The Next Move: WiSE JP Online Study Session",
-        "description": "We are excited to host our next in-person event at Code Chrysalis!\n\n WiSE JP is focused on empowering diverse women in Japan to succeed in technology careers. This event will focus on how to make technical accomplishments more visible, both inside your company and in the wider tech community. Expect a mix of insights, interactive activities, and peer learning.\n\n  Enjoy delicious food and drinks while networking with like-minded professionals. Connect with other women and allies who share your passion for technology.",
-        "url": "https://womeninsoftware-japan.connpass.com/event/369260/",
-        "limit": "38",
-        "accepted": "28",
-        "waiting": "0",
-        "eventDate": "2025-10-09T18:30:00+09:00",
-        "place": "Tokyo (Code Chrysalis)",
-        "address": "106-0046, Minato City, Motoazabu, 3-chōme−1−３５ Vort元麻布 B2F"
-    },
-    {
-        "id": 367765,
-        "title": "The Next Move: WiSE JP Online Study Session",
-        "description": "Have you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\n\n This event is a great place to do so.\n We will share the link (Google Meet) on the day of the event.",
-        "url": "https://womeninsoftware-japan.connpass.com/event/370062/",
-        "limit": "25",
-        "accepted": "9",
-        "waiting": "0",
-        "eventDate": "2025-09-15T19:30:00+09:00",
-        "place": "Online",
-        "address": ""
-    }
+  {
+    "id": 374298,
+    "title": "The Next Move: WiSE JP Online Study Session",
+    "description": "💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning? \nThis event is a great place to do so. \nWe will share the link (Google Meet) on the day of the event. \n📌 TIME:\nWednesday, 19:30 to 21:15 JST (GMT+9)\n👀 For the best experience for our members, please note that admission will close at 19:45.\n📌AGENDA:\n…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/374298/",
+    "limit": "20",
+    "accepted": "2",
+    "waiting": "0",
+    "eventDate": "2025-11-13T19:30:00+09:00",
+    "place": "Google Meet",
+    "address": "Online"
+  },
+  {
+    "id": 370062,
+    "title": "The Next Move: WiSE JP Online Study Session",
+    "description": "💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning? \nThis event is a great place to do so. \nWe will share the link (Google Meet) on the day of the event. \n📌 TIME:\nWednesday, 19:30 to 21:15 JST (GMT+9)\n👀 For the best experience for our members, please note that admission will close at 19:45.\n📌AGENDA:\n…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/370062/",
+    "limit": "20",
+    "accepted": "5",
+    "waiting": "0",
+    "eventDate": "2025-10-15T19:30:00+09:00",
+    "place": "Google Meet",
+    "address": "Online"
+  },
+  {
+    "id": 369260,
+    "title": "From Contribution to Impact: Workshop",
+    "description": "✨ From Contribution to Impact: Getting Recognition for Your Work\nWe are excited to host our next in-person event at Code Chrysalis!\nWiSE JP is focused on empowering diverse women in Japan to succeed in technology careers. This event will focus on how to make technical accomplishments more visible, both inside your company and in the wider tech community. Expect a mix of insights, interactive activities, and peer learning.\nEnjoy delicious food and drinks while networking with like-minded professi…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/369260/",
+    "limit": "38",
+    "accepted": "28",
+    "waiting": "0",
+    "eventDate": "2025-10-09T18:30:00+09:00",
+    "place": "Code Chrysalis",
+    "address": "106-0046, Minato City, Motoazabu, 3-chōme−1−３５ Vort元麻布 B2F · Tokyo (Code Chrysalis)"
+  },
+  {
+    "id": 367765,
+    "title": "The Next Move: WiSE JP Online Study Session",
+    "description": "💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning? \nThis event is a great place to do so. \nWe will share the link (Google Meet) on the day of the event. \n📌 TIME:\nMonday, 19:30 to 21:15 JST (GMT+9)\n👀 For the best experience for our members, please note that admission will close at 19:45.\n📌AGENDA:\n\n19…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/367765/",
+    "limit": "25",
+    "accepted": "9",
+    "waiting": "0",
+    "eventDate": "2025-09-15T19:30:00+09:00",
+    "place": "Google Meet",
+    "address": "Online"
+  },
+  {
+    "id": 364998,
+    "title": "The Next Move: WiSE JP Online Study Session",
+    "description": "💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning? \nThis event is a great place to do so. \nWe will share the link (Google Meet) on the day of the event. \n📌 TIME:\nThursday, 19:30 to 21:15 JST (GMT+9)\n👀 For the best experience for our members, please note that admission will close at 19:45.\n📌AGENDA:\n\n…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/364998/",
+    "limit": "25",
+    "accepted": "9",
+    "waiting": "0",
+    "eventDate": "2025-08-28T19:30:00+09:00",
+    "place": "Google Meet",
+    "address": "Online"
+  }
 ]
