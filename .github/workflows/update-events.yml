@@ -32,7 +32,7 @@ jobs:
         with:
           title: 'chore: update events [auto]'
           body: 'Automated update of events.json.'
-          branch: 'chore-update-events-''
+          branch: 'chore-update-events-'
           branch-suffix: timestamp
           base: main
           add-paths: 'src/routes/Event/events.json'
