@@ -25,7 +25,7 @@ test('shows the team in English', async ({ page }) => {
     await expect(heading).toBeVisible()
 
     const cards = await teamContainer.getByLabel('team-member-card').all()
-    expect(cards).toHaveLength(7)
+    expect(cards).toHaveLength(8)
 
     await verifyTeamMemberCard(cards[0], 'Ann Kilzer', 'Director')
     await verifyTeamMemberCard(cards[1], 'Paty Cortez', 'Director')
@@ -34,6 +34,7 @@ test('shows the team in English', async ({ page }) => {
     await verifyTeamMemberCard(cards[4], 'Ania Nakayama', 'Lead')
     await verifyTeamMemberCard(cards[5], 'Krizza Bullecer', 'Legacy Lead')
     await verifyTeamMemberCard(cards[6], 'Aidan Fournier', 'Legacy Lead')
+    await verifyTeamMemberCard(cards[7], 'Rossella Ferrandino', 'Lead')
 
     // verify link
     const links = await page.getByLabel('link-wrapper').all()
@@ -68,7 +69,7 @@ test('shows the team in Japanese', async ({ page, viewport }) => {
     await expect(heading).toBeVisible()
 
     const cards = await teamContainer.getByLabel('team-member-card').all()
-    expect(cards).toHaveLength(7)
+    expect(cards).toHaveLength(8)
 
     await verifyTeamMemberCard(cards[0], 'キルザー·杏', 'ディレクター')
     await verifyTeamMemberCard(cards[1], 'Paty Cortez', 'ディレクター')
@@ -77,4 +78,5 @@ test('shows the team in Japanese', async ({ page, viewport }) => {
     await verifyTeamMemberCard(cards[4], 'Ania Nakayama', 'リード')
     await verifyTeamMemberCard(cards[5], 'ブレサー　クリザ', 'レガシー・リード')
     await verifyTeamMemberCard(cards[6], 'エイデン・フォニエ', 'レガシー・リード')
+    await verifyTeamMemberCard(cards[7], 'Rossella Ferrandino', 'リード')
 })
