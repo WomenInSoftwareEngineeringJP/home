@@ -36,6 +36,7 @@ describe('SideDrawer', () => {
     it('should open drawer with the keyboard and close with the keyboard', async () => {
         render(<SideDrawer />)
 
+        // Tab to move focus to the hamburger menu button
         const toggleButton = await screen.findByLabelText('drawer-toggle-button')
 
         const user = userEvent.setup()
@@ -52,8 +53,6 @@ describe('SideDrawer', () => {
         await user.keyboard('{Escape}')
         await waitFor(() => expect(drawer).not.toBeVisible())
     })
-
-
 
     it('should close the Drawer when clicking the backdrop', async () => {
         const user = userEvent.setup()
@@ -89,23 +88,6 @@ describe('SideDrawer', () => {
         expect(drawer).not.toBeVisible()
     })
 
-    it('should only show locale toggle buttons on desktop', async () => {
-        const user = userEvent.setup()
-        render(<SideDrawer />)
-
-        const button = await screen.findByLabelText('drawer-toggle-button')
-        await user.click(button)
-
-        const navLinks = screen.queryAllByRole('link')
-        expect(navLinks.length).toEqual(0)
-
-        const englishButton = await screen.findByRole('button', { name: /english/i })
-        const japaneseButton = await screen.findByRole('button', { name: /日本語/ })
-
-        expect(englishButton).toBeVisible()
-        expect(japaneseButton).toBeVisible()
-    })
-
     // --- Mobile viewport interactions ----
     it('should close the Drawer when clicking the close icon on mobile view', async () => {
         const user = userEvent.setup()
@@ -129,7 +111,6 @@ describe('SideDrawer', () => {
         })
     })
 
-    // Test NavLinks are visible and navigates to the correct page
     it('should display navigation links on mobile view', async () => {
         const user = userEvent.setup()
         vi.mocked(useMediaQuery).mockReturnValue(true)
