@@ -1,15 +1,20 @@
 import { test, expect } from '@playwright/test'
 
-const pages = [
-    '/',
-    '/#/jobs'
-]
 
-for (const path of pages) {
-    test(`simple analytics script present on ${path}`, async ({ page }) => {
-        await page.goto(path)
+test('SA script stays single across SPA navigations', async ({ page }) => {
+    await page.goto('/', { waitUntil: 'domcontentloaded' })
 
-        const script = page.locator('body script[src*="simpleanalyticscdn.com"]')
-        await expect(script).toHaveCount(1)
-    })
-}
+    const pages = [
+        '/',
+        '/#/jobs',
+        '/#/team',
+        '/#/events',
+        '/#/wiki',
+        '/#/codeofconduct'
+    ]
+
+    for (const path of pages) {
+        await page.goto(path, { waitUntil: 'domcontentloaded' })
+        await expect(page.locator('body script[src*="simpleanalyticscdn.com"]')).toHaveCount(1)
+    }
+})
