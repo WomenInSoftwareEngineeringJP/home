@@ -61,6 +61,16 @@
         "test",
         "tool"
       ]
+    },
+    {
+      "login": "luane-aquino",
+      "name": "Luane",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10707843?v=4",
+      "profile": "https://www.linkedin.com/in/luane-aquino/",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,

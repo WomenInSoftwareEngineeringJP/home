@@ -3,7 +3,7 @@
 ![Languages](https://img.shields.io/github/languages/count/WomenInSoftwareEngineeringJP/home?style=for-the-badge)
 ![GitHub Org's stars](https://img.shields.io/github/stars/WomenInSoftwareEngineeringJP?style=for-the-badge)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # WiSE JP Homepage
@@ -21,6 +21,7 @@
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/MariaAmariya"><img src="https://avatars.githubusercontent.com/u/77953414?v=4?s=100" width="100px;" alt="Maria Tenorio"/><br /><sub><b>Maria Tenorio</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=MariaAmariya" title="Code">💻</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=MariaAmariya" title="Tests">⚠️</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.annkilzer.net/"><img src="https://avatars.githubusercontent.com/u/4602369?v=4?s=100" width="100px;" alt="Ann Kilzer キルザー杏"/><br /><sub><b>Ann Kilzer キルザー杏</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=ann-kilzer" title="Code">💻</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=ann-kilzer" title="Tests">⚠️</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/pulls?q=is%3Apr+reviewed-by%3Aann-kilzer" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-ann-kilzer" title="Maintenance">🚧</a> <a href="#tool-ann-kilzer" title="Tools">🔧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sirbully"><img src="https://avatars.githubusercontent.com/u/29673385?v=4?s=100" width="100px;" alt="Krizza B."/><br /><sub><b>Krizza B.</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=sirbully" title="Tests">⚠️</a> <a href="#tool-sirbully" title="Tools">🔧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/luane-aquino/"><img src="https://avatars.githubusercontent.com/u/10707843?v=4?s=100" width="100px;" alt="Luane"/><br /><sub><b>Luane</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=luane-aquino" title="Code">💻</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=luane-aquino" title="Tests">⚠️</a></td>
     </tr>
   </tbody>
 </table>
