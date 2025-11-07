@@ -3,7 +3,7 @@ name: Update Events JSON
 on:
   schedule:
     # 0:00 UTC is 9:00 JST, run every Saturday
-    - cron: '0 0 * * 6'
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 
