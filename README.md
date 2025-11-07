@@ -1,9 +1,8 @@
 ![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fwomeninsoftwareengineeringjp.github.io%2Fhome%2F&style=for-the-badge)
-
 ![Languages](https://img.shields.io/github/languages/count/WomenInSoftwareEngineeringJP/home?style=for-the-badge)
 ![GitHub Org's stars](https://img.shields.io/github/stars/WomenInSoftwareEngineeringJP?style=for-the-badge)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=for-the-badge)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # WiSE JP Homepage
@@ -35,6 +34,20 @@
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+### Updating Contributors:
+
+From the command-line:
+```sh
+npm run all-contributors:add [github-username]
+```
+
+Or make a comment on an issue or PR:
+
+```md
+@all-contributors please add [github-username] for [what]
+```
+
+For more on contribution types, please see [this page](https://allcontributors.org/docs/en/emoji-key)
 
 ## Prerequisites
 
