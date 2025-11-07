@@ -9,7 +9,17 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "gitmoji",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "Ania-chan",
+      "name": "Ania Nakayama",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37947642?v=4",
+      "profile": "https://github.com/Ania-chan",
+      "contributions": [
+        "translation"
+      ]
+    }
+  ],
   "contributorsPerLine": 7,
   "linkToUsage": false
 }
