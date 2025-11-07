@@ -38,7 +38,7 @@
 
 From the command-line:
 ```sh
-npm run all-contributors:add [github-username]
+npm run all-contributors:add [github-username] [what]
 ```
 
 Or make a comment on an issue or PR:
