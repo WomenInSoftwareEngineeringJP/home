@@ -18,6 +18,16 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "RossellaFer",
+      "name": "Rossella Ferrandino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39148794?v=4",
+      "profile": "https://www.rossellaferrandino.info/",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
