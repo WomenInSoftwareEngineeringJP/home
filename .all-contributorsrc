@@ -11,22 +11,17 @@
   "commitConvention": "gitmoji",
   "contributors": [
     {
-      "login": "Ania-chan",
-      "name": "Ania Nakayama",
-      "avatar_url": "https://avatars.githubusercontent.com/u/37947642?v=4",
-      "profile": "https://github.com/Ania-chan",
-      "contributions": [
-        "translation"
-      ]
-    },
-    {
-      "login": "RossellaFer",
-      "name": "Rossella Ferrandino",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39148794?v=4",
-      "profile": "https://www.rossellaferrandino.info/",
+      "login": "ann-kilzer",
+      "name": "Ann Kilzer キルザー杏",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4602369?v=4",
+      "profile": "http://www.annkilzer.net/",
       "contributions": [
         "code",
-        "review"
+        "infra",
+        "test",
+        "review",
+        "maintenance",
+        "tool"
       ]
     },
     {
@@ -40,16 +35,23 @@
       ]
     },
     {
-      "login": "ann-kilzer",
-      "name": "Ann Kilzer キルザー杏",
-      "avatar_url": "https://avatars.githubusercontent.com/u/4602369?v=4",
-      "profile": "http://www.annkilzer.net/",
+      "login": "RossellaFer",
+      "name": "Rossella Ferrandino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39148794?v=4",
+      "profile": "https://www.rossellaferrandino.info/",
       "contributions": [
         "code",
-        "test",
-        "review",
-        "maintenance",
-        "tool"
+        "review"
+      ]
+    },
+    {
+      "login": "RageZBla",
+      "name": "Olivier Lechevalier",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1196871?v=4",
+      "profile": "https://github.com/RageZBla",
+      "contributions": [
+        "code",
+        "infra"
       ]
     },
     {
@@ -60,6 +62,15 @@
       "contributions": [
         "test",
         "tool"
+      ]
+    },
+    {
+      "login": "Ania-chan",
+      "name": "Ania Nakayama",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37947642?v=4",
+      "profile": "https://github.com/Ania-chan",
+      "contributions": [
+        "translation"
       ]
     },
     {
@@ -79,16 +90,6 @@
       "profile": "https://github.com/keeysnc",
       "contributions": [
         "code"
-      ]
-    },
-    {
-      "login": "RageZBla",
-      "name": "Olivier Lechevalier",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1196871?v=4",
-      "profile": "https://github.com/RageZBla",
-      "contributions": [
-        "code",
-        "infra"
       ]
     }
   ],
