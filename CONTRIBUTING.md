@@ -45,3 +45,6 @@ I've set us up with a modern frontend tech stack so that we can practice togethe
 - All GH Actions should pass before merging
 - Merging to main triggers a deploy to production. Please check that the site deploys correctly
 
+## Praise 👏
+- We use [All Contributors](https://allcontributors.org/) to recognize efforts towards this project
+- You can learn more about the bot [here](https://allcontributors.org/docs/en/bot/usage)

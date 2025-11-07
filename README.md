@@ -1,10 +1,21 @@
 ![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fwomeninsoftwareengineeringjp.github.io%2Fhome%2F&style=for-the-badge)
 ![Languages](https://img.shields.io/github/languages/count/WomenInSoftwareEngineeringJP/home?style=for-the-badge)
 ![GitHub Org's stars](https://img.shields.io/github/stars/WomenInSoftwareEngineeringJP?style=for-the-badge)
-
+[![All Contributors](https://img.shields.io/github/all-contributors/WomenInSoftwareEngineeringJP/home?color=512DA8&style=for-the-badge)](#contributors)
 
 
 # WiSE JP Homepage
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
 ## Prerequisites
@@ -33,7 +44,7 @@ npm run build
 # Quality Strategy
 
 ## Unit tests 📦️
-We are using [Vitest](https://vitest.dev/guide/) 
+We are using [Vitest](https://vitest.dev/guide/)
 and [Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for our unit tests.
 
 Please aim for about 80% or greater test coverage. Perfection on metrics can often be the wrong target, so we aim for "good enough"
@@ -49,7 +60,7 @@ npm run test
 
 [UI Mode](https://vitest.dev/guide/ui)
 ```sh
-npm run test:ui 
+npm run test:ui
 ```
 
 When writing new tests, please follow the [Testing Library Guiding Principles](https://testing-library.com/docs/guiding-principles)
@@ -71,7 +82,7 @@ npm run test:e2e:ui
 
 ### Playwright & CI/CD
 
-Playwright runs against the main branch automatically via GitHub Actions. Currently, it runs inside a container via the action rather than production. If you see a failure in CI/CD, here's how to inspect it: 
+Playwright runs against the main branch automatically via GitHub Actions. Currently, it runs inside a container via the action rather than production. If you see a failure in CI/CD, here's how to inspect it:
 
 
 1. Go to the "Actions" tab and select the failing run
@@ -84,3 +95,42 @@ Playwright runs against the main branch automatically via GitHub Actions. Curren
 
 <img width="1587" alt="Screenshot 2024-07-22 at 11 35 14 PM" src="https://github.com/user-attachments/assets/0273ff9e-67a1-48ef-984a-5d7d5554d190">
 
+
+## Updating Event Data from Connpass
+
+To update the event list from the Connpass API, use the script at `scripts/update-events.sh`.
+
+### Requirements
+
+- `curl`
+- [`jq`](https://jqlang.org/download/)
+- `CONNPASS_API_KEY` environment variable set
+
+### Setup
+
+1. Copy `.envrc.sample` to `.envrc` and set your API key:
+	 ```sh
+	 cp .envrc.sample .envrc
+	 # Edit .envrc and set your CONNPASS_API_KEY
+	 ```
+2. Load the environment variable:
+	 - If you use [direnv](https://direnv.net/docs/installation.html) (recommended):
+		 ```sh
+		 direnv allow
+		 ```
+	 - Or, source manually:
+		 ```sh
+		 source .envrc
+		 ```
+
+### Run the script
+
+```sh
+./scripts/update-events.sh
+```
+
+### Alternative: Run with Docker (no need to install curl/jq locally)
+
+```sh
+docker run -v $PWD:/target -e "CONNPASS_API_KEY=$CONNPASS_API_KEY" dwdraju/alpine-curl-jq bash /target/scripts/update-events.sh
+```

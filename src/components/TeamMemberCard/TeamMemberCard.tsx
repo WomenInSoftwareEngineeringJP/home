@@ -28,7 +28,7 @@ const TeamMemberCard: FC<TeamMemberCardProps> = ({ member }) => {
     }, [member, i18n.language])
 
     return <OptionalLinkWrapper url={member.url}>
-        <Card sx={{ height: 420 }} aria-label="team-member-card">
+        <Card sx={{ height: 450, width: 300 }} aria-label="team-member-card">
             <CardMedia
                 sx={{ height: 300, width: 300 }}
                 image={member.image || 'Placeholder.png'}

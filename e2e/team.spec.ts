@@ -25,24 +25,30 @@ test('shows the team in English', async ({ page }) => {
     await expect(heading).toBeVisible()
 
     const cards = await teamContainer.getByLabel('team-member-card').all()
-    expect(cards).toHaveLength(7)
+    expect(cards).toHaveLength(8)
 
     await verifyTeamMemberCard(cards[0], 'Ann Kilzer', 'Director')
     await verifyTeamMemberCard(cards[1], 'Paty Cortez', 'Director')
     await verifyTeamMemberCard(cards[2], 'Maria Tenorio', 'Lead')
     await verifyTeamMemberCard(cards[3], 'Daria Vazhenina', 'ML & Data Science Lead')
     await verifyTeamMemberCard(cards[4], 'Ania Nakayama', 'Lead')
-    await verifyTeamMemberCard(cards[5], 'Krizza Bullecer', 'Legacy Lead')
-    await verifyTeamMemberCard(cards[6], 'Aidan Fournier', 'Legacy Lead')
+    await verifyTeamMemberCard(cards[5], 'Rossella Ferrandino', 'Lead')
+    await verifyTeamMemberCard(cards[6], 'Krizza Bullecer', 'Legacy Lead')
+    await verifyTeamMemberCard(cards[7], 'Aidan Fournier', 'Legacy Lead')
 
     // verify link
     const links = await page.getByLabel('link-wrapper').all()
-    expect(links).toHaveLength(1)
+    expect(links).toHaveLength(2)
     const annLink = links[0]
+    const rossLink = links[1]
     await expect(annLink).toBeVisible()
     await expect(annLink).toHaveRole('link')
     await expect(annLink).toHaveAttribute('href', 'https://annkilzer.net')
     await expect(annLink).toHaveAttribute('target', '_blank')
+    await expect(rossLink).toBeVisible()
+    await expect(rossLink).toHaveRole('link')
+    await expect(rossLink).toHaveAttribute('href', 'https://www.rossellaferrandino.info/')
+    await expect(rossLink).toHaveAttribute('target', '_blank')
 })
 
 test('shows the team in Japanese', async ({ page, viewport }) => {
@@ -68,13 +74,14 @@ test('shows the team in Japanese', async ({ page, viewport }) => {
     await expect(heading).toBeVisible()
 
     const cards = await teamContainer.getByLabel('team-member-card').all()
-    expect(cards).toHaveLength(7)
+    expect(cards).toHaveLength(8)
 
     await verifyTeamMemberCard(cards[0], 'キルザー·杏', 'ディレクター')
     await verifyTeamMemberCard(cards[1], 'Paty Cortez', 'ディレクター')
     await verifyTeamMemberCard(cards[2], 'Maria Tenorio', 'リード')
     await verifyTeamMemberCard(cards[3], 'バジェニナ・ダリヤ', 'ML＆データサイエンス・リード')
     await verifyTeamMemberCard(cards[4], 'Ania Nakayama', 'リード')
-    await verifyTeamMemberCard(cards[5], 'ブレサー　クリザ', 'レガシー・リード')
-    await verifyTeamMemberCard(cards[6], 'エイデン・フォニエ', 'レガシー・リード')
+    await verifyTeamMemberCard(cards[5], 'フェッランディノ・ロッセッラ', 'リード')
+    await verifyTeamMemberCard(cards[6], 'ブレサー　クリザ', 'レガシー・リード')
+    await verifyTeamMemberCard(cards[7], 'エイデン・フォニエ', 'レガシー・リード')
 })

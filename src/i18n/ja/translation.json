@@ -4,7 +4,8 @@
         "subtitle": "ウーマン・イン・ソフトウェアエンジニアリング",
         "team": "私たちのチーム",
         "job": "求人情報",
-        "event": "イベント"
+        "event": "イベント",
+        "wiki": "Wiki"
     },
     "home": {
         "helloWorld": "✨ ハローワールド ✨",
@@ -24,12 +25,17 @@
         "codeOfConduct": "行動規範",
         "team": "私たちのチーム",
         "job": "求人情報",
-        "event": "イベント"
+        "event": "イベント",
+        "wiki": "Wiki"
     },
     "team": {
         "title": "✨ リーダーシップチーム ✨"
     },
     "job": {
         "title": "✨ 求人情報 ✨"
+    },
+    "wiki": {
+        "title": "📚 Wiki",
+        "description": "ウーマン・イン・ソフトウェアエンジニアリング日本の公開Notion Wiki"
     }
 }
