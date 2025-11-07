@@ -3,7 +3,7 @@
 ![Languages](https://img.shields.io/github/languages/count/WomenInSoftwareEngineeringJP/home?style=for-the-badge)
 ![GitHub Org's stars](https://img.shields.io/github/stars/WomenInSoftwareEngineeringJP?style=for-the-badge)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # WiSE JP Homepage
@@ -23,6 +23,9 @@
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sirbully"><img src="https://avatars.githubusercontent.com/u/29673385?v=4?s=100" width="100px;" alt="Krizza B."/><br /><sub><b>Krizza B.</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=sirbully" title="Tests">⚠️</a> <a href="#tool-sirbully" title="Tools">🔧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/luane-aquino/"><img src="https://avatars.githubusercontent.com/u/10707843?v=4?s=100" width="100px;" alt="Luane"/><br /><sub><b>Luane</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=luane-aquino" title="Code">💻</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=luane-aquino" title="Tests">⚠️</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/keeysnc"><img src="https://avatars.githubusercontent.com/u/14514294?v=4?s=100" width="100px;" alt="Nathan K"/><br /><sub><b>Nathan K</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=keeysnc" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/RageZBla"><img src="https://avatars.githubusercontent.com/u/1196871?v=4?s=100" width="100px;" alt="Olivier Lechevalier"/><br /><sub><b>Olivier Lechevalier</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=RageZBla" title="Code">💻</a> <a href="#infra-RageZBla" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     </tr>
   </tbody>
 </table>
