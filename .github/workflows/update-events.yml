@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          branch: main
+          ref: main
 
       - name: Run update script and validate
         run: |
