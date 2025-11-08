@@ -30,6 +30,6 @@ jobs:
       - name: Commit and push events file changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git commit -m "Update events.json" src/routes/Event/events.json || echo "No changes to commit"
           git push
