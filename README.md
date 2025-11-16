@@ -1,8 +1,9 @@
 ![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fwomeninsoftwareengineeringjp.github.io%2Fhome%2F&style=for-the-badge)
 ![Languages](https://img.shields.io/github/languages/count/WomenInSoftwareEngineeringJP/home?style=for-the-badge)
 ![GitHub Org's stars](https://img.shields.io/github/stars/WomenInSoftwareEngineeringJP?style=for-the-badge)
-[![All Contributors](https://img.shields.io/github/all-contributors/WomenInSoftwareEngineeringJP/home?color=512DA8&style=for-the-badge)](#contributors)
-
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=for-the-badge)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # WiSE JP Homepage
 
@@ -11,12 +12,42 @@
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.annkilzer.net/"><img src="https://avatars.githubusercontent.com/u/4602369?v=4?s=100" width="100px;" alt="Ann Kilzer キルザー杏"/><br /><sub><b>Ann Kilzer キルザー杏</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=ann-kilzer" title="Code">💻</a> <a href="#infra-ann-kilzer" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=ann-kilzer" title="Tests">⚠️</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/pulls?q=is%3Apr+reviewed-by%3Aann-kilzer" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-ann-kilzer" title="Maintenance">🚧</a> <a href="#tool-ann-kilzer" title="Tools">🔧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/MariaAmariya"><img src="https://avatars.githubusercontent.com/u/77953414?v=4?s=100" width="100px;" alt="Maria Tenorio"/><br /><sub><b>Maria Tenorio</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=MariaAmariya" title="Code">💻</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=MariaAmariya" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.rossellaferrandino.info/"><img src="https://avatars.githubusercontent.com/u/39148794?v=4?s=100" width="100px;" alt="Rossella Ferrandino"/><br /><sub><b>Rossella Ferrandino</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=RossellaFer" title="Code">💻</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/pulls?q=is%3Apr+reviewed-by%3ARossellaFer" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/RageZBla"><img src="https://avatars.githubusercontent.com/u/1196871?v=4?s=100" width="100px;" alt="Olivier Lechevalier"/><br /><sub><b>Olivier Lechevalier</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=RageZBla" title="Code">💻</a> <a href="#infra-RageZBla" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/sirbully"><img src="https://avatars.githubusercontent.com/u/29673385?v=4?s=100" width="100px;" alt="Krizza B."/><br /><sub><b>Krizza B.</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=sirbully" title="Tests">⚠️</a> <a href="#tool-sirbully" title="Tools">🔧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Ania-chan"><img src="https://avatars.githubusercontent.com/u/37947642?v=4?s=100" width="100px;" alt="Ania Nakayama"/><br /><sub><b>Ania Nakayama</b></sub></a><br /><a href="#translation-Ania-chan" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/luane-aquino/"><img src="https://avatars.githubusercontent.com/u/10707843?v=4?s=100" width="100px;" alt="Luane"/><br /><sub><b>Luane</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=luane-aquino" title="Code">💻</a> <a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=luane-aquino" title="Tests">⚠️</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/keeysnc"><img src="https://avatars.githubusercontent.com/u/14514294?v=4?s=100" width="100px;" alt="Nathan K"/><br /><sub><b>Nathan K</b></sub></a><br /><a href="https://github.com/WomenInSoftwareEngineeringJP/home/commits?author=keeysnc" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+### Updating Contributors:
+
+From the command-line:
+```sh
+npm run contributors:add [github-username] [what]
+```
+
+Or make a comment on an issue or PR:
+
+```md
+@all-contributors please add [github-username] for [what]
+```
+
+For more on contribution types, please see [this page](https://allcontributors.org/docs/en/emoji-key)
 
 ## Prerequisites
 

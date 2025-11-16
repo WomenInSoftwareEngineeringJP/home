@@ -1,4 +1,98 @@
 {
   "projectName": "home",
-  "projectOwner": "WomenInSoftwareEngineeringJP"
+  "projectOwner": "WomenInSoftwareEngineeringJP",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "gitmoji",
+  "contributors": [
+    {
+      "login": "ann-kilzer",
+      "name": "Ann Kilzer キルザー杏",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4602369?v=4",
+      "profile": "http://www.annkilzer.net/",
+      "contributions": [
+        "code",
+        "infra",
+        "test",
+        "review",
+        "maintenance",
+        "tool"
+      ]
+    },
+    {
+      "login": "MariaAmariya",
+      "name": "Maria Tenorio",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77953414?v=4",
+      "profile": "https://github.com/MariaAmariya",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "RossellaFer",
+      "name": "Rossella Ferrandino",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39148794?v=4",
+      "profile": "https://www.rossellaferrandino.info/",
+      "contributions": [
+        "code",
+        "review"
+      ]
+    },
+    {
+      "login": "RageZBla",
+      "name": "Olivier Lechevalier",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1196871?v=4",
+      "profile": "https://github.com/RageZBla",
+      "contributions": [
+        "code",
+        "infra"
+      ]
+    },
+    {
+      "login": "sirbully",
+      "name": "Krizza B.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29673385?v=4",
+      "profile": "https://github.com/sirbully",
+      "contributions": [
+        "test",
+        "tool"
+      ]
+    },
+    {
+      "login": "Ania-chan",
+      "name": "Ania Nakayama",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37947642?v=4",
+      "profile": "https://github.com/Ania-chan",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "luane-aquino",
+      "name": "Luane",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10707843?v=4",
+      "profile": "https://www.linkedin.com/in/luane-aquino/",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "keeysnc",
+      "name": "Nathan K",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14514294?v=4",
+      "profile": "https://github.com/keeysnc",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": false
 }
