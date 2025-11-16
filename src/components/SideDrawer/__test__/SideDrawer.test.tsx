@@ -88,6 +88,16 @@ describe('SideDrawer', () => {
         expect(drawer).not.toBeVisible()
     })
 
+    it('should not show navigation links on desktop', async () => {
+        const user = userEvent.setup()
+        render(<SideDrawer />)
+
+        const toggle = await screen.findByLabelText('drawer-toggle-button')
+        await user.click(toggle)
+
+        expect(screen.queryAllByRole('link')).toHaveLength(0)
+    })
+
     // --- Mobile viewport interactions ----
     it('should close the Drawer when clicking the close icon on mobile view', async () => {
         const user = userEvent.setup()
