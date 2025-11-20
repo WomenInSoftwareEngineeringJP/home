@@ -130,12 +130,14 @@ describe('SideDrawer', () => {
         await user.click(button)
 
         const navLinks = await screen.findAllByRole('link')
-        expect(navLinks.length).toEqual(4)
+        expect(navLinks.length).toEqual(6)
 
         expect(navLinks[0]).toHaveAttribute('href', '/')
         expect(navLinks[1]).toHaveAttribute('href', '/team')
         expect(navLinks[2]).toHaveAttribute('href', '/jobs')
-        expect(navLinks[3]).toHaveAttribute('href', '/codeofconduct')
+        expect(navLinks[3]).toHaveAttribute('href', '/events')
+        expect(navLinks[4]).toHaveAttribute('href', '/wiki')
+        expect(navLinks[5]).toHaveAttribute('href', '/codeofconduct')
         // no need to test actual navigation as it's out of scope for this test
     })
 })
