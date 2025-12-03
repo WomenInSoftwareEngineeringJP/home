@@ -23,28 +23,28 @@ const DrawerContents: FC<DrawerContentsProps> = ({ closeDrawer }) => {
     let navList = <></>
     if (useMediaQuery(theme.breakpoints.down('sm'))) {
         navList = (<>
-            <ListItem>
+            <ListItem onClick={closeDrawer}>
                 <Stack direction='row' sx={{ width: '100%', m: 0, p: 0 }}>
                     <StyledNavLink to='/'>Home</StyledNavLink>
                     <Box sx={{ display: 'flex-grow', width: '100%' }} />
-                    <IconButton onClick={closeDrawer} aria-label='close-button'>
+                    <IconButton aria-label='close-button'>
                         <CloseIcon />
                     </IconButton>
                 </Stack>
             </ListItem>
-            <ListItem>
+            <ListItem onClick={closeDrawer}>
                 <StyledNavLink to='/team'>{t('sidebar.team')}</StyledNavLink>
             </ListItem>
-            <ListItem>
+            <ListItem onClick={closeDrawer}>
                 <StyledNavLink to='/jobs'>{t('sidebar.job')}</StyledNavLink>
             </ListItem>
-            <ListItem>
+            <ListItem onClick={closeDrawer}>
                 <StyledNavLink to='/events'>{t('sidebar.event')}</StyledNavLink>
             </ListItem>
-            <ListItem>
+            <ListItem onClick={closeDrawer}>
                 <StyledNavLink to='/wiki'>{t('sidebar.wiki')}</StyledNavLink>
             </ListItem>
-            <ListItem>
+            <ListItem onClick={closeDrawer}>
                 <StyledNavLink to='/codeofconduct'>{t('sidebar.codeOfConduct')}</StyledNavLink>
             </ListItem>
             <Divider />
