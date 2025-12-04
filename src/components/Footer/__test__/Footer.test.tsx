@@ -17,7 +17,7 @@ describe('Footer', () => {
         expect(linkedIn).toHaveAttribute('href', 'https://www.linkedin.com/company/womeninsoftwarejp/')
         const facebook = await screen.findByLabelText('Facebook')
         expect(facebook).toBeVisible()
-        expect(facebook).toHaveAttribute('href', 'https://www.facebook.com/womeninsoftwarejp/')
+        expect(facebook).toHaveAttribute('href', 'https://www.facebook.com/womeninsoftwarejapan')
         const github = await screen.findByLabelText('GitHub')
         expect(github).toBeVisible()
         expect(github).toHaveAttribute('href', 'https://github.com/WomenInSoftwareEngineeringJP')
