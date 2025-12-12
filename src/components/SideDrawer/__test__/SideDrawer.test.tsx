@@ -1,8 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen, waitFor } from '@testing-library/react'
-import Box from '@mui/material/Box'
-import Stack from '@mui/material/Stack'
 import SideDrawer from '../SideDrawer'
 import userEvent from '@testing-library/user-event'
 import useMediaQuery from '@mui/material/useMediaQuery'
@@ -35,44 +33,72 @@ describe('SideDrawer', () => {
         expect(drawer).toBeVisible()
     })
 
-    it('should open and close the Drawer with the keyboard', async () => {
+    it('should open drawer with the keyboard and close with the keyboard', async () => {
         render(<SideDrawer />)
+
+        // Tab to move focus to the hamburger menu button
+        const toggleButton = await screen.findByLabelText('drawer-toggle-button')
+
         const user = userEvent.setup()
         await user.tab()
-        await user.keyboard('[enter]')
+
+        await waitFor(() => {
+            expect(toggleButton).toHaveFocus()
+        })
 
         const drawer = await screen.findByLabelText('drawer')
+        await user.keyboard('{Enter}')
         expect(drawer).toBeVisible()
 
-        //await user.keyboard('[esc]')
-        //expect(drawer).not.toBeVisible()
+        await user.keyboard('{Escape}')
+        await waitFor(() => expect(drawer).not.toBeVisible())
     })
 
-    it.todo('should close the Drawer when clicking away', async () => {
+    it('should close the Drawer when clicking the backdrop', async () => {
         const user = userEvent.setup()
-
-        render(<Box sx={{ width: 700 }}>
-            <Stack direction="row">
-                <Box sx={{ width: 450 }}>
-                    <SideDrawer />
-                </Box>
-                <Box aria-label="off-drawer" sx={{ width: 250 }} />
-            </Stack >
-        </Box >)
+        render(<SideDrawer />)
 
         const button = await screen.findByLabelText('drawer-toggle-button')
         await user.click(button)
 
-        const offDrawer = await screen.findByLabelText('off-drawer')
-        offDrawer.click()
-
         const drawer = await screen.findByLabelText('drawer')
+        expect(drawer).toBeVisible()
+
+        // to simulate clicking outside the drawer, find the MUI backdrop
+        const backdrop = document.querySelector('.MuiBackdrop-root')
+        expect(backdrop).toBeInTheDocument()
+
+        await user.click(backdrop as Element)
 
         await waitFor(() => {
             expect(drawer).not.toBeVisible()
         })
     })
 
+    it('should not open when (tab/shift) keys are pressed', async () => {
+        render(<SideDrawer />)
+
+        const user = userEvent.setup()
+        const drawer = await screen.findByLabelText('drawer')
+
+        await user.keyboard('{Tab}')
+        expect(drawer).not.toBeVisible()
+
+        await user.keyboard('{Shift}')
+        expect(drawer).not.toBeVisible()
+    })
+
+    it('should not show navigation links on desktop', async () => {
+        const user = userEvent.setup()
+        render(<SideDrawer />)
+
+        const toggle = await screen.findByLabelText('drawer-toggle-button')
+        await user.click(toggle)
+
+        expect(screen.queryAllByRole('link')).toHaveLength(0)
+    })
+
+    // --- Mobile viewport interactions ----
     it('should close the Drawer when clicking the close icon on mobile view', async () => {
         const user = userEvent.setup()
         vi.mocked(useMediaQuery).mockReturnValue(true)
@@ -86,10 +112,32 @@ describe('SideDrawer', () => {
         expect(drawerContents).toBeVisible()
 
         const closeButton = await screen.findByLabelText('close-button')
+        expect(closeButton).toBeVisible()
+
         await user.click(closeButton)
 
         await waitFor(() => {
             expect(drawerContents).not.toBeVisible()
         })
+    })
+
+    it('should display navigation links on mobile view', async () => {
+        const user = userEvent.setup()
+        vi.mocked(useMediaQuery).mockReturnValue(true)
+
+        render(<SideDrawer />)
+        const button = await screen.findByLabelText('drawer-toggle-button')
+        await user.click(button)
+
+        const navLinks = await screen.findAllByRole('link')
+        expect(navLinks.length).toEqual(6)
+
+        expect(navLinks[0]).toHaveAttribute('href', '/')
+        expect(navLinks[1]).toHaveAttribute('href', '/team')
+        expect(navLinks[2]).toHaveAttribute('href', '/jobs')
+        expect(navLinks[3]).toHaveAttribute('href', '/events')
+        expect(navLinks[4]).toHaveAttribute('href', '/wiki')
+        expect(navLinks[5]).toHaveAttribute('href', '/codeofconduct')
+        // no need to test actual navigation as it's out of scope for this test
     })
 })
