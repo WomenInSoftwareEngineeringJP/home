@@ -4,7 +4,6 @@ import BottomNavigation from '@mui/material/BottomNavigation'
 import Paper from '@mui/material/Paper'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import FacebookIcon from '@mui/icons-material/Facebook'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import EventIcon from '@mui/icons-material/Event'
 import FooterIcon from './FooterIcon'
@@ -19,7 +18,6 @@ const Footer: FC = () => {
             <FooterIcon label="Events" icon={<EventIcon />} href="https://womeninsoftware-japan.connpass.com/" />
             <FooterIcon label="Instagram" icon={<InstagramIcon />} href="https://www.instagram.com/womeninsoftwarejp/" />
             <FooterIcon label="LinkedIn" icon={<LinkedInIcon />} href="https://www.linkedin.com/company/womeninsoftwarejp/" />
-            <FooterIcon label="Facebook" icon={<FacebookIcon />} href="https://www.facebook.com/womeninsoftwarejapan" />
             <FooterIcon label="GitHub" icon={<GitHubIcon />} href="https://github.com/WomenInSoftwareEngineeringJP" />
         </BottomNavigation>
     </Paper>
