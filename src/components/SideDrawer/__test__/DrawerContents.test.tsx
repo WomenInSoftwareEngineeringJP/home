@@ -44,4 +44,43 @@ describe('DrawerContents', () => {
         expect(links[5]).toHaveProperty('href', baseURL + 'codeofconduct')
 
     })
+
+    it('should call closeDrawer when link is clicked', async () => {
+        const closeDrawerFnMock = vi.fn(() => { })
+        const user = userEvent.setup()
+        vi.mocked(useMediaQuery).mockReturnValue(true)
+        render(<DrawerContents closeDrawer={closeDrawerFnMock} />)
+
+        const homeLink = screen.getByRole('link', {name: 'Home'})
+        const teamLink = screen.getByRole('link', {name: 'Team'})
+        const jobBoarbLink = screen.getByRole('link', {name: 'Job Board'})
+        const eventsLink = screen.getByRole('link', {name: 'Events'})
+        const wikiLink = screen.getByRole('link', {name: 'Wiki'})
+        const codeOfConductLink = screen.getByRole('link', {name: 'Code of Conduct'})
+
+        await user.click(homeLink)
+        await user.click(teamLink)
+        await user.click(jobBoarbLink)
+        await user.click(eventsLink)
+        await user.click(wikiLink)
+        await user.click(codeOfConductLink)
+
+        expect(closeDrawerFnMock).toHaveBeenCalledTimes(6)
+    })
+
+    it('should not call closeDrawer when language toggle is clicked', async () => {
+        const closeDrawerFnMock = vi.fn(() => { })
+        const user = userEvent.setup()
+        vi.mocked(useMediaQuery).mockReturnValue(true)
+
+        render(<DrawerContents closeDrawer={closeDrawerFnMock} />)
+
+        const enButton = screen.getByRole('button', {name: 'English'})
+        const jaButton = screen.getByRole('button', {name: '日本語'})
+
+        await user.click(enButton)
+        await user.click(jaButton)
+
+        expect(closeDrawerFnMock).not.toHaveBeenCalled()
+    })
 })
