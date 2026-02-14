@@ -44,7 +44,7 @@ const Event: FC = () => {
         <Stack spacing={2}>
             {sponsorinEventTitle}
             <iframe
-                src="https://women-in-software.notion.site/ebd/61cb6a1a3b93470687ca1f6c2628da1b"
+                src="https://women-in-software.notion.site/ebd/Community-Sponsorship-61cb6a1a3b93470687ca1f6c2628da1b"
                 width="100%"
                 height="600"
             />
