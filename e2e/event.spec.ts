@@ -2,7 +2,7 @@ import { test, expect, Locator } from '@playwright/test'
 
 async function verifyNotionIframe(eventsContainer: Locator) {
     const notionIframe: Locator = eventsContainer.locator('iframe')
-    await expect(notionIframe).toHaveAttribute('src', 'https://women-in-software.notion.site/ebd/61cb6a1a3b93470687ca1f6c2628da1b')
+    await expect(notionIframe).toHaveAttribute('src', 'https://women-in-software.notion.site/ebd/Community-Sponsorship-61cb6a1a3b93470687ca1f6c2628da1b')
 }
 
 test('shows the events in English', async ({ page }) => {

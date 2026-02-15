@@ -10,5 +10,6 @@ describe('Wiki', () => {
         expect(title).toBeVisible()
         const iframeElement = screen.getByTitle('Women in Software Engineering Japan Public Wiki on Notion')
         expect(iframeElement).toBeVisible()
+        expect(iframeElement).toHaveAttribute('src', 'https://women-in-software.notion.site/ebd/Women-in-Software-Engineering-JP-Public-Wiki-d2c50cd1917c4771a1c80280e1736b19')
     })
 })
