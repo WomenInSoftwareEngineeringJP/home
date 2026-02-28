@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
@@ -12,20 +12,10 @@ interface TeamMemberCardProps {
 }
 
 const TeamMemberCard: FC<TeamMemberCardProps> = ({ member }) => {
-    const [name, setName] = useState(member.nameEN)
-    const [title, setTitle] = useState(member.titleEN)
-
     const i18n = getI18n()
 
-    useEffect(() => {
-        if (i18n.language === 'en') {
-            setName(member.nameEN)
-            setTitle(member.titleEN)
-        } else if (i18n.language === 'ja') {
-            setName(member.nameJA || member.nameEN)
-            setTitle(member.titleJA || member.titleEN)
-        }
-    }, [member, i18n.language])
+    const name = i18n.language === 'ja' ? (member.nameJA || member.nameEN) : member.nameEN
+    const title = i18n.language === 'ja' ? (member.titleJA || member.titleEN) : member.titleEN
 
     return <OptionalLinkWrapper url={member.url}>
         <Card sx={{ height: 450, width: 300 }} aria-label="team-member-card">
