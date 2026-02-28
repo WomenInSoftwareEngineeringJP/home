@@ -83,7 +83,7 @@ test('shows the team in Japanese', async ({ page, viewport }) => {
     await verifyTeamMemberCard(cards[2], 'バジェニナ・ダリヤ', 'ML＆データサイエンス・リード')
     await verifyTeamMemberCard(cards[3], 'フェッランディノ・ロッセッラ', 'リード')
     await verifyTeamMemberCard(cards[4], 'ビーオゼール・イシカ', 'リード')
-    await verifyTeamMemberCard(cards[5], 'キルザー·杏', '共同創立者・レガシー・ディレクター')
+    await verifyTeamMemberCard(cards[5], 'キルザー・杏', '共同創立者・レガシー・ディレクター')
     await verifyTeamMemberCard(cards[6], '中山アンナ', 'レガシー・リード')
     await verifyTeamMemberCard(cards[7], 'ブレサー・クリザ', 'レガシー・リード')
     await verifyTeamMemberCard(cards[8], 'エイデン・フォニエ', 'レガシー・リード')
