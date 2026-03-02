@@ -45,7 +45,7 @@ const CodeOfConduct: FC = () => {
             </Typography>
             <Typography variant='body1' >
                 If you experience or notice harassment, discrimination, or any of the unacceptable behaviors outlined herein at a WiSE Japan event, or have any other concerns, please report the incident as soon as possible. To report an incident, take one of the following actions: inform the event organizer on site; inform another organizer in your network; report the incident to WiSE Japan Leadership by reaching out to
-                Ann Kilzer (Interim Director).
+                the Leadership Team.
                 We encourage you to report any incident of harassment, discrimination, or unacceptable behavior as soon as possible. WiSE Japan leadership will take all appropriate actions to mitigate risk factors moving forward and continue to provide a safe and secure environment for all WiSE Japan members. WiSE Japan leadership is happy to assist attendees in contacting venue security, local law enforcement, or otherwise aid those experiencing harassment so that they feel safe for the duration of the event. The WiSE Japan leadership team will take great care to ensure that the assistance provided meets the needs of attendees who were affected.
             </Typography>
 
