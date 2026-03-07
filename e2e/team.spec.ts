@@ -38,19 +38,19 @@ test('shows the team in English', async ({ page }) => {
     await verifyTeamMemberCard(cards[7], 'Krizza Bullecer', 'Legacy Lead')
     await verifyTeamMemberCard(cards[8], 'Aidan Fournier', 'Legacy Lead')
 
-    // verify link
-    const links = await page.getByLabel('link-wrapper').all()
-    expect(links).toHaveLength(2)
-    const rossLink = links[0]
-    const annLink = links[1]
-    await expect(annLink).toBeVisible()
-    await expect(annLink).toHaveRole('link')
-    await expect(annLink).toHaveAttribute('href', 'https://annkilzer.net')
-    await expect(annLink).toHaveAttribute('target', '_blank')
+    // verify links scoped to specific member cards
+    // Find link by locating the card with the member name, then getting the parent link wrapper
+    const rossLink = teamContainer.getByLabel('link-wrapper').filter({ has: page.getByText('Rossella Ferrandino') })
     await expect(rossLink).toBeVisible()
     await expect(rossLink).toHaveRole('link')
     await expect(rossLink).toHaveAttribute('href', 'https://www.rossellaferrandino.info/')
     await expect(rossLink).toHaveAttribute('target', '_blank')
+
+    const annLink = teamContainer.getByLabel('link-wrapper').filter({ has: page.getByText('Ann Kilzer') })
+    await expect(annLink).toBeVisible()
+    await expect(annLink).toHaveRole('link')
+    await expect(annLink).toHaveAttribute('href', 'https://annkilzer.net')
+    await expect(annLink).toHaveAttribute('target', '_blank')
 })
 
 test('shows the team in Japanese', async ({ page, viewport }) => {
