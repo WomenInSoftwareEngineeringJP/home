@@ -1,5 +1,17 @@
 [
   {
+    "id": 397680,
+    "title": "WiSE JP Online Study Session: Summer Edition",
+    "description": "Online Study Session: ☀️ Summer Edition ☀️\n💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\nLearning is a cycle: Starting something new, turning ideas into projects, reflecting and refining skills, and celebrating growth with the community.\nDuring this session, participants are encouraged to: Star…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/397680/",
+    "limit": "25",
+    "accepted": "0",
+    "waiting": "0",
+    "eventDate": "2026-08-05T19:30:00+09:00",
+    "place": "Online",
+    "address": "Google Meet"
+  },
+  {
     "id": 394040,
     "title": "XR Connections: Women in XR & Game Dev Night",
     "description": "✨ ᯅ XR Connections: Women in XR &amp; Game Dev Night 🎮✨\nA collaborative event by WiSE JP, XR Tokyo, TGB &amp; Le Wagon\nWe are thrilled to host an exciting event dedicated to XR (Augmented reality, Virtual reality, Mixed reality) technologies and Game development in collaboration with the XR Tokyo and Tokyo Game Bridge community at Le Wagon Tokyo!\nWiSE JP is focused on empowering diverse women in Japan to succeed in technology careers.\nAt this event, women working in XR and Video Games will share…",
@@ -46,17 +58,5 @@
     "eventDate": "2025-11-27T18:30:00+09:00",
     "place": "HENNGE株式会社",
     "address": "〒150-0036　東京都渋谷区南平台町16番28号Daiwa渋谷スクエア"
-  },
-  {
-    "id": 374298,
-    "title": "The Next Move: WiSE JP Online Study Session",
-    "description": "💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning? \nThis event is a great place to do so. \nWe will share the link (Google Meet) on the day of the event. \n📌 TIME:\nWednesday, 19:30 to 21:15 JST (GMT+9)\n👀 For the best experience for our members, please note that admission will close at 19:45.\n📌AGENDA:\n…",
-    "url": "https://womeninsoftware-japan.connpass.com/event/374298/",
-    "limit": "20",
-    "accepted": "6",
-    "waiting": "0",
-    "eventDate": "2025-11-13T19:30:00+09:00",
-    "place": "Google Meet",
-    "address": "Online"
   }
 ]
