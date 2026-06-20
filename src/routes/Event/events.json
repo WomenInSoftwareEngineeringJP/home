@@ -1,5 +1,41 @@
 [
   {
+    "id": 397680,
+    "title": "WiSE JP Online Study Session: Summer Edition",
+    "description": "Online Study Session: ☀️ Summer Edition ☀️\n💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\nLearning is a cycle: Starting something new, turning ideas into projects, reflecting and refining skills, and celebrating growth with the community.\nDuring this session, participants are encouraged to: Star…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/397680/",
+    "limit": "25",
+    "accepted": "0",
+    "waiting": "0",
+    "eventDate": "2026-08-05T19:30:00+09:00",
+    "place": "Online",
+    "address": "Google Meet"
+  },
+  {
+    "id": 394040,
+    "title": "XR Connections: Women in XR & Game Dev Night",
+    "description": "✨ ᯅ XR Connections: Women in XR &amp; Game Dev Night 🎮✨\nA collaborative event by WiSE JP, XR Tokyo, TGB &amp; Le Wagon\nWe are thrilled to host an exciting event dedicated to XR (Augmented reality, Virtual reality, Mixed reality) technologies and Game development in collaboration with the XR Tokyo and Tokyo Game Bridge community at Le Wagon Tokyo!\nWiSE JP is focused on empowering diverse women in Japan to succeed in technology careers.\nAt this event, women working in XR and Video Games will share…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/394040/",
+    "limit": "50",
+    "accepted": "50",
+    "waiting": "0",
+    "eventDate": "2026-06-12T19:00:00+09:00",
+    "place": "Le Wagon Tokyo",
+    "address": "〒153-0063 東京都目黒区目黒2丁目11-3"
+  },
+  {
+    "id": 386899,
+    "title": "WiSE JP Online Study Session:  Spring Edition",
+    "description": "Online Study Session: 🌸Spring Edition🌸\n💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\nLearning is a cycle: Starting something new, turning ideas into projects, reflecting and refining skills, and celebrating growth with the community.\nDuring this session, participants are encouraged to:\nStart ex…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/386899/",
+    "limit": "22",
+    "accepted": "10",
+    "waiting": "0",
+    "eventDate": "2026-04-15T19:30:00+09:00",
+    "place": "Google Meet",
+    "address": "Online"
+  },
+  {
     "id": 376828,
     "title": "The Next Move: WiSE JP Online Study Session",
     "description": "💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning? \nThis event is a great place to do so. \nWe will share the link (Google Meet) on the day of the event. \n📌 TIME:\nThursday, 19:30 to 21:15 JST (GMT+9)\n👀 For the best experience for our members, please note that admission will close at 19:45.\n📌AGENDA:\n\n…",
@@ -22,41 +58,5 @@
     "eventDate": "2025-11-27T18:30:00+09:00",
     "place": "HENNGE株式会社",
     "address": "〒150-0036　東京都渋谷区南平台町16番28号Daiwa渋谷スクエア"
-  },
-  {
-    "id": 374298,
-    "title": "The Next Move: WiSE JP Online Study Session",
-    "description": "💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning? \nThis event is a great place to do so. \nWe will share the link (Google Meet) on the day of the event. \n📌 TIME:\nWednesday, 19:30 to 21:15 JST (GMT+9)\n👀 For the best experience for our members, please note that admission will close at 19:45.\n📌AGENDA:\n…",
-    "url": "https://womeninsoftware-japan.connpass.com/event/374298/",
-    "limit": "20",
-    "accepted": "6",
-    "waiting": "0",
-    "eventDate": "2025-11-13T19:30:00+09:00",
-    "place": "Google Meet",
-    "address": "Online"
-  },
-  {
-    "id": 370062,
-    "title": "The Next Move: WiSE JP Online Study Session",
-    "description": "💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning? \nThis event is a great place to do so. \nWe will share the link (Google Meet) on the day of the event. \n📌 TIME:\nWednesday, 19:30 to 21:15 JST (GMT+9)\n👀 For the best experience for our members, please note that admission will close at 19:45.\n📌AGENDA:\n…",
-    "url": "https://womeninsoftware-japan.connpass.com/event/370062/",
-    "limit": "20",
-    "accepted": "5",
-    "waiting": "0",
-    "eventDate": "2025-10-15T19:30:00+09:00",
-    "place": "Google Meet",
-    "address": "Online"
-  },
-  {
-    "id": 369260,
-    "title": "From Contribution to Impact: Workshop",
-    "description": "✨ From Contribution to Impact: Getting Recognition for Your Work\nWe are excited to host our next in-person event at Code Chrysalis!\nWiSE JP is focused on empowering diverse women in Japan to succeed in technology careers. This event will focus on how to make technical accomplishments more visible, both inside your company and in the wider tech community. Expect a mix of insights, interactive activities, and peer learning.\nEnjoy delicious food and drinks while networking with like-minded professi…",
-    "url": "https://womeninsoftware-japan.connpass.com/event/369260/",
-    "limit": "38",
-    "accepted": "28",
-    "waiting": "0",
-    "eventDate": "2025-10-09T18:30:00+09:00",
-    "place": "Code Chrysalis",
-    "address": "106-0046, Minato City, Motoazabu, 3-chōme−1−３５ Vort元麻布 B2F · Tokyo (Code Chrysalis)"
   }
 ]
