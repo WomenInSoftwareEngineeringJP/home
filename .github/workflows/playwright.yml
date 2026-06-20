@@ -6,8 +6,11 @@ on:
     branches: [ main, master ]
 jobs:
   test:
-    timeout-minutes: 10
+    timeout-minutes: 20
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+      options: --user 1001
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v4
@@ -17,8 +20,6 @@ jobs:
       run: |
         npm ci
         npm install wait-on
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
     - name: Build the app
       run: npm run build
     - name: Start Vite server and run tests
