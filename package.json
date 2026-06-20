@@ -49,9 +49,9 @@
         "@types/react-dom": "19.2.1",
         "@typescript-eslint/eslint-plugin": "8.46.1",
         "@typescript-eslint/parser": "8.46.1",
-        "@vitejs/plugin-react": "5.1.0",
-        "@vitest/coverage-istanbul": "3.2.4",
-        "@vitest/ui": "3.2.4",
+        "@vitejs/plugin-react": "5.2.0",
+        "@vitest/coverage-istanbul": "4.1.9",
+        "@vitest/ui": "4.1.9",
         "all-contributors-cli": "6.26.1",
         "eslint": "9.37.0",
         "eslint-plugin-react": "7.37.5",
@@ -62,8 +62,8 @@
         "jsdom": "27.0.1",
         "lint-staged": "16.1.2",
         "typescript": "5.9.3",
-        "vite": "7.1.11",
+        "vite": "8.0.16",
         "vite-bundle-visualizer": "1.2.1",
-        "vitest": "3.2.4"
+        "vitest": "4.1.9"
     }
 }
