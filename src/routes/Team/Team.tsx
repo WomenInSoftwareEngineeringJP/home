@@ -30,24 +30,20 @@ const Team: FC = () => {
         }
     })
 
-    return <>
-        <Container style={{ padding: 32 }} aria-label="team-container">
-            <Stack spacing={2}>
-                <Typography variant="h1">{t('team.title')}</Typography>
-                <Grid container spacing={2}>
-                    {teamGrid}
-                </Grid>
-            </Stack>
-        </Container>
-        <Container style={{ padding: 32 }} aria-label="legacy-team-container">
-            <Stack spacing={2}>
-                <Typography variant="h1">{t('team.subtitle')}</Typography>
-                <Grid container spacing={2}>
-                    {legacyTeamGrid}
-                </Grid>
-            </Stack>
-        </Container>
-    </>
+    return <Container style={{ padding: 32 }} aria-label="team-container">
+        <Stack spacing={2}>
+            <Typography variant="h1">{t('team.title')}</Typography>
+            <Grid container spacing={2}>
+                {teamGrid}
+            </Grid>
+        </Stack>
+        <Stack spacing={2}>
+            <Typography variant="h1">{t('team.subtitle')}</Typography>
+            <Grid container spacing={2}>
+                {legacyTeamGrid}
+            </Grid>
+        </Stack>
+    </Container>
 }
 
 export default Team
