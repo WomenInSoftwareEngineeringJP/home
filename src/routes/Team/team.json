@@ -1,26 +1,29 @@
 [
     {
         "nameEN": "Paty Cortez",
-        "nameJA": "",
+        "nameJA": "コルテス・パティ",
         "titleEN": "Director",
         "titleJA": "ディレクター",
         "image": "Paty.jpg",
-        "url": ""
-    },
-    {
-        "nameEN": "Maria Tenorio",
-        "nameJA": "",
-        "titleEN": "Lead",
-        "titleJA": "リード",
-        "image": "Maria.jpg",
+        "status": "active",
         "url": ""
     },
     {
         "nameEN": "Daria Vazhenina",
         "nameJA": "バジェニナ・ダリヤ",
-        "titleEN": "ML & Data Science Lead",
-        "titleJA": "ML＆データサイエンス・リード",
+        "titleEN": "Director",
+        "titleJA": "ディレクター",
         "image": "Daria.jpg",
+        "status": "active",
+        "url": ""
+    },
+    {
+        "nameEN": "Maria Tenorio",
+        "nameJA": "マリア・テノリオ",
+        "titleEN": "Lead",
+        "titleJA": "リード",
+        "image": "Maria.jpg",
+        "status": "active",
         "url": ""
     },
     {
@@ -29,6 +32,7 @@
         "titleEN": "Lead",
         "titleJA": "リード",
         "image": "Rossella.jpg",
+        "status": "active",
         "url": "https://www.rossellaferrandino.info/"
     },
     {
@@ -37,6 +41,7 @@
         "titleEN": "Lead",
         "titleJA": "リード",
         "image": "Ishika.jpg",
+        "status": "active",
         "url": ""
     },
     {
@@ -45,6 +50,7 @@
         "titleEN": "Co-founder & Legacy Director",
         "titleJA": "共同創立者・レガシー・ディレクター",
         "image": "Ann.jpg",
+        "status": "legacy",
         "url": "https://annkilzer.net"
     },
     {
@@ -53,6 +59,7 @@
         "titleEN": "Legacy Lead",
         "titleJA": "レガシー・リード",
         "image": "Ania.jpg",
+        "status": "legacy",
         "url": ""
     },
     {
@@ -61,6 +68,7 @@
         "titleEN": "Legacy Lead",
         "titleJA": "レガシー・リード",
         "image": "Krizza.jpg",
+        "status": "legacy",
         "url": ""
     },
     {
@@ -69,6 +77,7 @@
         "titleEN": "Legacy Lead",
         "titleJA": "レガシー・リード",
         "image": "Aidan.jpg",
+        "status": "legacy",
         "url": ""
     }
 ]

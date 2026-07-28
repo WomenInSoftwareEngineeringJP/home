@@ -4,6 +4,7 @@ type TeamMember = {
     titleEN: string
     titleJA: string
     image: string
+    status: string
     url: string
 }
 
