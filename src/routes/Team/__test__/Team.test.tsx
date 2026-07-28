@@ -9,4 +9,10 @@ describe('Team', () => {
         const title = await screen.findByText('✨ Leadership Team ✨')
         expect(title).toBeVisible()
     })
+
+    it('should render the Team page', async () => {
+        render(<Team />)
+        const subtitle = await screen.findByText('✨ Legacy Leadership Team ✨')
+        expect(subtitle).toBeVisible()
+    })
 })

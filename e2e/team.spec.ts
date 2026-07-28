@@ -24,13 +24,16 @@ test('shows the team in English', async ({ page }) => {
     const heading = teamContainer.getByText('✨ Leadership Team ✨')
     await expect(heading).toBeVisible()
 
+    const legacyHeading = teamContainer.getByText('✨ Legacy Leadership Team ✨')
+    await expect(legacyHeading).toBeVisible()
+
     const cards = await teamContainer.getByLabel('team-member-card').all()
     expect(cards).toHaveLength(9)
 
 
     await verifyTeamMemberCard(cards[0], 'Paty Cortez', 'Director')
-    await verifyTeamMemberCard(cards[1], 'Maria Tenorio', 'Lead')
-    await verifyTeamMemberCard(cards[2], 'Daria Vazhenina', 'ML & Data Science Lead')
+    await verifyTeamMemberCard(cards[1], 'Daria Vazhenina', 'Director')
+    await verifyTeamMemberCard(cards[2], 'Maria Tenorio', 'Lead')
     await verifyTeamMemberCard(cards[3], 'Rossella Ferrandino', 'Lead')
     await verifyTeamMemberCard(cards[4], 'Ishika Bhosale', 'Lead')
     await verifyTeamMemberCard(cards[5], 'Ann Kilzer', 'Co-founder & Legacy Director')
@@ -75,12 +78,15 @@ test('shows the team in Japanese', async ({ page, viewport }) => {
     const heading = teamContainer.getByText('✨ リーダーシップチーム ✨')
     await expect(heading).toBeVisible()
 
+    const legacyHeading = teamContainer.getByText('✨ レガシー・リーダーシップチーム ✨')
+    await expect(legacyHeading).toBeVisible()
+
     const cards = await teamContainer.getByLabel('team-member-card').all()
     expect(cards).toHaveLength(9)
 
-    await verifyTeamMemberCard(cards[0], 'Paty Cortez', 'ディレクター')
-    await verifyTeamMemberCard(cards[1], 'Maria Tenorio', 'リード')
-    await verifyTeamMemberCard(cards[2], 'バジェニナ・ダリヤ', 'ML＆データサイエンス・リード')
+    await verifyTeamMemberCard(cards[0], 'コルテス・パティ', 'ディレクター')
+    await verifyTeamMemberCard(cards[1], 'バジェニナ・ダリヤ', 'ディレクター')
+    await verifyTeamMemberCard(cards[2], 'テノリオ・マリア', 'リード')
     await verifyTeamMemberCard(cards[3], 'フェッランディノ・ロッセッラ', 'リード')
     await verifyTeamMemberCard(cards[4], 'ビーオゼール・イシカ', 'リード')
     await verifyTeamMemberCard(cards[5], 'キルザー・杏', '共同創立者・レガシー・ディレクター')

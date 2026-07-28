@@ -14,9 +14,20 @@ const Team: FC = () => {
 
     const teamGrid: ReactNode[] = []
     team.forEach((member: TeamMember) => {
-        teamGrid.push(<Grid key={member.nameEN}>
-            <TeamMemberCard member={member} />
-        </Grid>)
+        if (member.status == 'active') {
+            teamGrid.push(<Grid key={member.nameEN}>
+                <TeamMemberCard member={member} />
+            </Grid>)
+        }
+    })
+
+    const legacyTeamGrid: ReactNode[] = []
+    team.forEach((member: TeamMember) => {
+        if (member.status == 'legacy') {
+            legacyTeamGrid.push(<Grid key={member.nameEN}>
+                <TeamMemberCard member={member} />
+            </Grid>)
+        }
     })
 
     return <Container style={{ padding: 32 }} aria-label="team-container">
@@ -24,6 +35,12 @@ const Team: FC = () => {
             <Typography variant="h1">{t('team.title')}</Typography>
             <Grid container spacing={2}>
                 {teamGrid}
+            </Grid>
+        </Stack>
+        <Stack spacing={2}>
+            <Typography variant="h1">{t('team.subtitle')}</Typography>
+            <Grid container spacing={2}>
+                {legacyTeamGrid}
             </Grid>
         </Stack>
     </Container>
