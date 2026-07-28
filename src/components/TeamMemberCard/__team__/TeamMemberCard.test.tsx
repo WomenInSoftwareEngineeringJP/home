@@ -14,6 +14,7 @@ describe('TeamMemberCard', () => {
         titleEN: 'Lead',
         titleJA: 'リード',
         image: 'example.png',
+        status: 'active',
         url: 'https://example.com'
     } as TeamMember
 
@@ -49,6 +50,7 @@ describe('TeamMemberCard', () => {
         titleEN: 'Lead',
         titleJA: '',
         image: 'example.png',
+        status: 'active',
         url: 'https://example.com'
     } as TeamMember
 
