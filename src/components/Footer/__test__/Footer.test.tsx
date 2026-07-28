@@ -8,7 +8,7 @@ describe('Footer', () => {
         render(<Footer />)
         const events = await screen.findByLabelText('Events')
         expect(events).toBeVisible()
-        expect(events).toHaveAttribute('href', 'https://womeninsoftware-japan.connpass.com/')
+        expect(events).toHaveAttribute('href', 'https://luma.com/womeninsoftwarejp')
         const instagram = await screen.findByLabelText('Instagram')
         expect(instagram).toBeVisible()
         expect(instagram).toHaveAttribute('href', 'https://www.instagram.com/womeninsoftwarejp/')

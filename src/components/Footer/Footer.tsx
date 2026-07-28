@@ -15,7 +15,7 @@ const Footer: FC = () => {
     const isHome = /^\/$/.test(path)
     return <Paper sx={{ position: { xs: 'relative', sm: isHome ? 'fixed' : 'relative' }, bottom: 0, left: 0, right: 0 }} elevation={0} aria-label="footer">
         <BottomNavigation sx={{ backgroundColor: '#512da8' }}>
-            <FooterIcon label="Events" icon={<EventIcon />} href="https://womeninsoftware-japan.connpass.com/" />
+            <FooterIcon label="Events" icon={<EventIcon />} href="https://luma.com/womeninsoftwarejp" />
             <FooterIcon label="Instagram" icon={<InstagramIcon />} href="https://www.instagram.com/womeninsoftwarejp/" />
             <FooterIcon label="LinkedIn" icon={<LinkedInIcon />} href="https://www.linkedin.com/company/womeninsoftwarejp/" />
             <FooterIcon label="GitHub" icon={<GitHubIcon />} href="https://github.com/WomenInSoftwareEngineeringJP" />
