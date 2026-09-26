@@ -1,11 +1,23 @@
 [
+    {
+    "id": 397680,
+    "title": "WiSE JP Online Study Session: Autumn Edition",
+    "description": "Online Study Session: 🍁 Autumn Edition 🍁\n💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\nLearning is a cycle: Starting something new, turning ideas into projects, reflecting and refining skills, and celebrating growth with the community.\nDuring this session, participants are encouraged to: Star…",
+    "url": "https://luma.com/o0ldgxcu",
+    "limit": "20",
+    "accepted": "0",
+    "waiting": "0",
+    "eventDate": "2026-10-22T19:30:00+09:00",
+    "place": "Online",
+    "address": "Google Meet"
+  },
   {
     "id": 397680,
     "title": "WiSE JP Online Study Session: Summer Edition",
     "description": "Online Study Session: ☀️ Summer Edition ☀️\n💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\nLearning is a cycle: Starting something new, turning ideas into projects, reflecting and refining skills, and celebrating growth with the community.\nDuring this session, participants are encouraged to: Star…",
     "url": "https://womeninsoftware-japan.connpass.com/event/397680/",
     "limit": "25",
-    "accepted": "0",
+    "accepted": "5",
     "waiting": "0",
     "eventDate": "2026-08-05T19:30:00+09:00",
     "place": "Online",
@@ -17,7 +29,7 @@
     "description": "✨ ᯅ XR Connections: Women in XR &amp; Game Dev Night 🎮✨\nA collaborative event by WiSE JP, XR Tokyo, TGB &amp; Le Wagon\nWe are thrilled to host an exciting event dedicated to XR (Augmented reality, Virtual reality, Mixed reality) technologies and Game development in collaboration with the XR Tokyo and Tokyo Game Bridge community at Le Wagon Tokyo!\nWiSE JP is focused on empowering diverse women in Japan to succeed in technology careers.\nAt this event, women working in XR and Video Games will share…",
     "url": "https://womeninsoftware-japan.connpass.com/event/394040/",
     "limit": "50",
-    "accepted": "0",
+    "accepted": "50",
     "waiting": "0",
     "eventDate": "2026-06-12T19:00:00+09:00",
     "place": "Le Wagon Tokyo",
