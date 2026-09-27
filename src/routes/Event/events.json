@@ -1,5 +1,17 @@
 [
   {
+    "id": 407557,
+    "title": "WiSE JP Online Study Session: Autumn Edition",
+    "description": "Online Study Session:  Autumn Edition\n💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\nLearning is a cycle: Starting something new, turning ideas into projects, reflecting and refining skills, and celebrating growth with the community.\nDuring this session, participants are encouraged to: Start exp…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/407557/",
+    "limit": "20",
+    "accepted": "0",
+    "waiting": "0",
+    "eventDate": "2026-10-22T19:30:00+09:00",
+    "place": "Online",
+    "address": "Google meet"
+  },
+  {
     "id": 397680,
     "title": "WiSE JP Online Study Session: Summer Edition",
     "description": "Online Study Session: ☀️ Summer Edition ☀️\n💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\nLearning is a cycle: Starting something new, turning ideas into projects, reflecting and refining skills, and celebrating growth with the community.\nDuring this session, participants are encouraged to: Star…",
@@ -46,17 +58,5 @@
     "eventDate": "2025-12-04T19:30:00+09:00",
     "place": "Google Meet",
     "address": "Online"
-  },
-  {
-    "id": 374797,
-    "title": "WiSE JPとPyLadiesのコラボ Python LT大会",
-    "description": "✨ 今回はPyLadiesとコラボして、Pythonをテーマに女性エンジニアのためのLT会を開催します！ 🚀\nあなたのPythonの知見をぜひシェアしてください✨ 美味しいフードやドリンクを楽しめながら、女性エンジニアと交流しましょう！テクノロジーへの情熱する女性エンジニアとつながる絶好の機会です。\n今回のイベントは日本語で開催します\nまだスピーカーを募集中です！ご興味ある場合ここから応募できます：\nhttps://forms.gle/fUqfUowCLCsfwFQt8\nスケジュール\n18:30 - 受付開始、フード・交流タイム・ネットワーキング\n19:30 - WiSEによるイントロダクション\n19:35 - スポンサーHENNGEによるイントロダクション\n19:40 - PyLadiesによるイントロダクション\n19:45 - LTスピーカー1（５〜10分）+ Q&amp;A\n20:00 - LTスピーカー2（５〜10分）+ Q&amp;A\n20:15 - LTスピーカー3（５〜10分）+ Q&amp;A\n20:30 - LTスピーカー4（５〜10分）+ Q&amp;A\n20:45…",
-    "url": "https://womeninsoftware-japan.connpass.com/event/374797/",
-    "limit": "27",
-    "accepted": "8",
-    "waiting": "0",
-    "eventDate": "2025-11-27T18:30:00+09:00",
-    "place": "HENNGE株式会社",
-    "address": "〒150-0036　東京都渋谷区南平台町16番28号Daiwa渋谷スクエア"
   }
 ]
