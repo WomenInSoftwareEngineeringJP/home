@@ -1,5 +1,17 @@
 [
   {
+    "id": 409588,
+    "title": "Technology for Good",
+    "description": "We are excited to host our next in-person event at HENNGE!\nWiSE JP is focused on empowering diverse women in Japan to succeed in technology careers. Technology for Good brings together engineering stories from projects addressing meaningful real-world challenges.\nThrough deep-dive talks and community lightning talks, speakers will take us behind the technology: the problems they set out to solve, what they built, the technical decisions and trade-offs they encountered, and what they learned alon…",
+    "url": "https://womeninsoftware-japan.connpass.com/event/409588/",
+    "limit": "50",
+    "accepted": "0",
+    "waiting": "0",
+    "eventDate": "2026-11-17T19:00:00+09:00",
+    "place": "HENNGE K.K. Shibuya Headquarters",
+    "address": "Daiwa Shibuya Square, 16-28 Nanpeidai-cho, Shibuya-ku, Tokyo"
+  },
+  {
     "id": 407557,
     "title": "WiSE JP Online Study Session: Autumn Edition",
     "description": "Online Study Session:  Autumn Edition\n💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning?\nLearning is a cycle: Starting something new, turning ideas into projects, reflecting and refining skills, and celebrating growth with the community.\nDuring this session, participants are encouraged to: Start exp…",
@@ -44,18 +56,6 @@
     "accepted": "10",
     "waiting": "0",
     "eventDate": "2026-04-15T19:30:00+09:00",
-    "place": "Google Meet",
-    "address": "Online"
-  },
-  {
-    "id": 376828,
-    "title": "The Next Move: WiSE JP Online Study Session",
-    "description": "💻 Event details:\nHave you been working on a side project? Do you want to be self-accountable for your progress and share your knowledge with the community? Are you excited to share insights into a tech topic/ software platform you have been learning? \nThis event is a great place to do so. \nWe will share the link (Google Meet) on the day of the event. \n📌 TIME:\nThursday, 19:30 to 21:15 JST (GMT+9)\n👀 For the best experience for our members, please note that admission will close at 19:45.\n📌AGENDA:\n\n…",
-    "url": "https://womeninsoftware-japan.connpass.com/event/376828/",
-    "limit": "20",
-    "accepted": "4",
-    "waiting": "0",
-    "eventDate": "2025-12-04T19:30:00+09:00",
     "place": "Google Meet",
     "address": "Online"
   }
