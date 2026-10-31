@@ -55,8 +55,8 @@ const JobCard: FC<JobCardProps> = ({ job }) => {
                         }
                     </Grid>
                     <Stack direction='row' mt={2} justifyContent="flex-start" flexWrap="wrap" sx={{ gap: 2, spacing: { sx: 0, md: 1 } }}>
-                        {job.tags.map((tag, index) => (
-                            <Chip aria-label="chip" key={index} label={tag} sx={{ bgcolor: 'secondary.dark', color: 'white', height: 32, borderRadius: '8px' }} />
+                        {job.tags.map((tag) => (
+                            <Chip aria-label="chip" key={tag} label={tag} sx={{ bgcolor: 'secondary.dark', color: 'white', height: 32, borderRadius: '8px' }} />
                         ))}
                     </Stack>
                 </Grid>

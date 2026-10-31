@@ -4,64 +4,51 @@ import {
 } from 'eslint/config'
 
 import globals from 'globals'
-
-import {
-    fixupConfigRules,
-} from '@eslint/compat'
-
-import tsParser from '@typescript-eslint/parser'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import reactHooks from 'eslint-plugin-react-hooks'
 import stylistic from '@stylistic/eslint-plugin'
 import js from '@eslint/js'
+import eslintReact from '@eslint-react/eslint-plugin'
+import tseslint from 'typescript-eslint'
 
-import {
-    FlatCompat,
-} from '@eslint/eslintrc'
+export default defineConfig(
+    globalIgnores(['**/dist', '**/eslint.config.js', '**/lighthouserc.cjs', '**/*.html', '**/coverage']),
+    {
+        files: ['**/*.{ts,tsx}'],
 
-import path from 'path'
-import { fileURLToPath } from 'url'
+        extends: [
+            js.configs.recommended,
+            tseslint.configs.recommendedTypeChecked,
+            eslintReact.configs['recommended-type-checked'],
+            reactHooks.configs.flat.recommended,
+        ],
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
-})
-
-export default defineConfig([{
     languageOptions: {
         globals: {
             ...globals.browser,
         },
 
-        parser: tsParser,
+        parser: tseslint.parser,
 
         parserOptions: {
             project: ['tsconfig.json', 'tsconfig.node.json'],
         },
     },
 
-    extends: fixupConfigRules(compat.extends(
-        'eslint:recommended',
-        'plugin:@typescript-eslint/recommended-type-checked',
-        'plugin:react-hooks/recommended',
-        'plugin:react/recommended',
-        'plugin:react/jsx-runtime',
-    )),
-
     plugins: {
+            '@eslint-react': eslintReact,
         'react-refresh': reactRefresh,
         '@stylistic': stylistic,
     },
 
     rules: {
+            // This was enabled by the legacy React preset but is absent from the new Hooks preset.
+            'react-hooks/component-hook-factories': 'error',
+
         'react-refresh/only-export-components': ['warn', {
             allowConstantExport: true,
         }],
 
-        'react/react-in-jsx-scope': 'off',
         'quotes': ['error', 'single'],
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
         '@typescript-eslint/no-unsafe-call': ['off'],
@@ -72,10 +59,4 @@ export default defineConfig([{
         '@stylistic/no-mixed-spaces-and-tabs': 'error',
         '@typescript-eslint/no-explicit-any': 'error',
     },
-
-    settings: {
-        react: {
-            version: 'detect',
-        },
-    },
-}, globalIgnores(['**/dist', '**/eslint.config.js', '**/lighthouserc.cjs', '**/*.html', '**/coverage'])])
+})

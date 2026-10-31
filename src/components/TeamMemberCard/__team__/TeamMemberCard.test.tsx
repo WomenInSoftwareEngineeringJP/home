@@ -8,7 +8,7 @@ import i18next from 'i18next'
 
 
 describe('TeamMemberCard', () => {
-    const member = {
+    const member: TeamMember = {
         nameEN: 'Alice',
         nameJA: 'アリス',
         titleEN: 'Lead',
@@ -16,7 +16,7 @@ describe('TeamMemberCard', () => {
         image: 'example.png',
         status: 'active',
         url: 'https://example.com'
-    } as TeamMember
+    }
 
     it('should render a TeamMemberCard in English', async () => {
         render(<TeamMemberCard member={member} />)
@@ -44,7 +44,7 @@ describe('TeamMemberCard', () => {
         expect(image).toBeVisible()
     })
 
-    const partialMember = {
+    const partialMember: TeamMember = {
         nameEN: 'Alice',
         nameJA: '',
         titleEN: 'Lead',
@@ -52,7 +52,7 @@ describe('TeamMemberCard', () => {
         image: 'example.png',
         status: 'active',
         url: 'https://example.com'
-    } as TeamMember
+    }
 
     it('should render a TeamMemberCard in Japanese and fall back to English when fields are unset', async () => {
         await i18next.changeLanguage('ja')
