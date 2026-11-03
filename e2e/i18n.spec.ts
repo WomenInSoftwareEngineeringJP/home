@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-const enSentence = 'We are proud to celebrate one year as an independent, grassroots organization empowering diverse women in technology careers.'
+const enSentence = 'We are proud to celebrate two years as an independent, grassroots organization empowering diverse women in technology careers.'
 const jaSentence = '私たちはテクノロジー業界で活躍する多様な女性に力を与える草の根組織として1周年を迎えられたことを誇りに思います。'
 
 test.describe('Japanese Locale', () => {
