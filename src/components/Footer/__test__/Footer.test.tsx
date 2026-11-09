@@ -18,6 +18,10 @@ describe('Footer', () => {
         const github = await screen.findByLabelText('GitHub')
         expect(github).toBeVisible()
         expect(github).toHaveAttribute('href', 'https://github.com/WomenInSoftwareEngineeringJP')
+
+        const analyticsBadge = await screen.findByLabelText('100% privacy-first analytics by Simple Analytics')
+        expect(analyticsBadge).toHaveAttribute('href', 'https://www.simpleanalytics.com?utm_source=womeninsoftware.jp&utm_content=badge')
+        expect(analyticsBadge).toHaveAttribute('target', '_blank')
     })
 
 })
